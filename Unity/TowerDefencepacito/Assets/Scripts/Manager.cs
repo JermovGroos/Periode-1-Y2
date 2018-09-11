@@ -27,6 +27,7 @@ public class Manager : MonoBehaviour
     int diaNumber = 0;
     [Header("Other")]
     public PostProcessingBehaviour pp;
+    public bool mouseVisible = false;
     public enum MouseState
     {
         Unused,
@@ -69,18 +70,15 @@ public class Manager : MonoBehaviour
         switch (mouseState)
         {
             case MouseState.Unused:
-                // mouseState = newMouseState;
                 toReturn = true;
                 break;
             case MouseState.OverUI:
                 switch (newMouseState)
                 {
                     case MouseState.Used:
-                        // mouseState = newMouseState;
                         toReturn = true;
                         break;
                     case MouseState.Dialogue:
-                        //mouseState = newMouseState;
                         toReturn = true;
                         break;
                 }
@@ -122,7 +120,10 @@ public class Manager : MonoBehaviour
         {
             DialogueStuff();
             SetMouseState(MouseState.Dialogue);
+            mouseVisible = false;
         }
+        mouseInfo.visible =  mouseVisible;
+        mouseVisible = false;
     }
 
     void NormalStuff()

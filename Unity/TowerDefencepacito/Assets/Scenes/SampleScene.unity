@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.60784316}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2902,7 +2902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &971951526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2939,6 +2939,8 @@ MonoBehaviour:
   rend:
   - {fileID: 21992802}
   - {fileID: 250318950}
+  text: Place Tower
+  txt: {fileID: 250318953}
 --- !u!1 &1019634073
 GameObject:
   m_ObjectHideFlags: 0
@@ -10601,6 +10603,7 @@ MonoBehaviour:
   normalUIHider: {fileID: 813415004}
   diaHider: {fileID: 250969693}
   pp: {fileID: 282840812}
+  mouseVisible: 0
   mouseState: 0
   mouseInfo: {fileID: 0}
 --- !u!1 &2047832770

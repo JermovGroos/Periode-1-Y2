@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseInfo : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class MouseInfo : MonoBehaviour
 	[HideInInspector]
     public bool visible = true;
     public GameObject[] rend;
+    public string text;
+    public Text txt;
 
     void Start()
     {
@@ -22,5 +25,6 @@ public class MouseInfo : MonoBehaviour
         if(visible == false){
 			rect.anchoredPosition = new Vector3(100000,0,0);
 		}
+        txt.text = text;
     }
 }

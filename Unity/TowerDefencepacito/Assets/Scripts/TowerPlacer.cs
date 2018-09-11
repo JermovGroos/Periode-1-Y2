@@ -31,14 +31,24 @@ public class TowerPlacer : MonoBehaviour
                 }
             }
         }
-
-     //   if(MouseOverField() == true){
-//            manager.mouseInfo.visible = true;
-   //         wasOver = true;
-    //    } else if(wasOver == true) {
-   //         manager.mouseInfo.visible = false;
-   //         wasOver = false;
-     //   }
+        if (manager.mouseState == Manager.MouseState.Unused)
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+            {
+                if (hit.transform.tag == "TowerPlacer")
+                {
+                    if (hit.transform == transform)
+                    {
+                        if (used == false)
+                        {
+                            manager.mouseVisible = true;
+                            manager.mouseInfo.text = "Place Tower";
+                        }
+                    }
+                }
+            }
+        }
     }
 
     bool MouseOverField()
@@ -51,7 +61,7 @@ public class TowerPlacer : MonoBehaviour
             {
                 if (hit.transform == transform)
                 {
-                   // Manager manager = FindObjectOfType<Manager>();
+                    // Manager manager = FindObjectOfType<Manager>();
                     if (manager.SetMouseState(Manager.MouseState.Used) == true)
                     {
                         toReturn = true;
