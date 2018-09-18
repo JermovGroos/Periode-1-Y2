@@ -308,7 +308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &290545492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -958,6 +958,7 @@ GameObject:
   - component: {fileID: 783813608}
   - component: {fileID: 783813607}
   - component: {fileID: 783813609}
+  - component: {fileID: 783813610}
   m_Layer: 5
   m_Name: MotionBlurToggle
   m_TagString: Untagged
@@ -1034,6 +1035,18 @@ MonoBehaviour:
   menuParent: {fileID: 0}
   pp: {fileID: 456084043}
   newRes: {x: 1920, y: 1080}
+--- !u!114 &783813610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783813605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9832dba0917e643a81837e6702bf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotVector: {x: 0, y: 0, z: 80}
 --- !u!1 &862210363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +1587,7 @@ GameObject:
   - component: {fileID: 1096475632}
   - component: {fileID: 1096475631}
   - component: {fileID: 1096475633}
+  - component: {fileID: 1096475634}
   m_Layer: 5
   m_Name: AntiAliasingToggle
   m_TagString: Untagged
@@ -1650,6 +1664,18 @@ MonoBehaviour:
   menuParent: {fileID: 0}
   pp: {fileID: 456084043}
   newRes: {x: 1920, y: 1080}
+--- !u!114 &1096475634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096475629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9832dba0917e643a81837e6702bf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotVector: {x: 0, y: 0, z: 80}
 --- !u!1 &1202224739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,7 +1778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7fde4ea434e6442ad471b0c6bd4196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickEvent: 0
+  clickEvent: 2
   nextLevel: 0
   otherMenuParent: {fileID: 0}
   menuParent: {fileID: 0}
@@ -1929,6 +1955,7 @@ GameObject:
   - component: {fileID: 1274144295}
   - component: {fileID: 1274144294}
   - component: {fileID: 1274144296}
+  - component: {fileID: 1274144297}
   m_Layer: 5
   m_Name: FullScreenToggle
   m_TagString: Untagged
@@ -2005,6 +2032,18 @@ MonoBehaviour:
   menuParent: {fileID: 0}
   pp: {fileID: 0}
   newRes: {x: 1920, y: 1080}
+--- !u!114 &1274144297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274144292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9832dba0917e643a81837e6702bf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotVector: {x: 0, y: 0, z: 80}
 --- !u!1 &1281596892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,6 +2150,7 @@ GameObject:
   - component: {fileID: 1285461714}
   - component: {fileID: 1285461713}
   - component: {fileID: 1285461715}
+  - component: {fileID: 1285461716}
   m_Layer: 5
   m_Name: SSRToggle
   m_TagString: Untagged
@@ -2187,6 +2227,18 @@ MonoBehaviour:
   menuParent: {fileID: 0}
   pp: {fileID: 456084043}
   newRes: {x: 1920, y: 1080}
+--- !u!114 &1285461716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285461711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9832dba0917e643a81837e6702bf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotVector: {x: 0, y: 0, z: 80}
 --- !u!1 &1290130465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,6 +2622,7 @@ GameObject:
   - component: {fileID: 1570907129}
   - component: {fileID: 1570907128}
   - component: {fileID: 1570907130}
+  - component: {fileID: 1570907131}
   m_Layer: 5
   m_Name: BloomToggle
   m_TagString: Untagged
@@ -2646,6 +2699,18 @@ MonoBehaviour:
   menuParent: {fileID: 0}
   pp: {fileID: 456084043}
   newRes: {x: 1920, y: 1080}
+--- !u!114 &1570907131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570907126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9832dba0917e643a81837e6702bf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotVector: {x: 0, y: 0, z: 80}
 --- !u!1 &1699075165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,7 +2977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1863765448
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3126,7 +3191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickEvent: 0
-  nextLevel: 0
+  nextLevel: 3
   otherMenuParent: {fileID: 0}
   menuParent: {fileID: 0}
   pp: {fileID: 0}
