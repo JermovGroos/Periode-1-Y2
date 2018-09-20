@@ -29,17 +29,23 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public GameObject otherMenuParent;
     public GameObject menuParent;
     bool onOff = true;
-    Image rend;
+    AutoRotate rend;
+	Image rendImage;
     public PostProcessingBehaviour pp;
     public Vector2 newRes = new Vector2(1920, 1080);
     bool fullScreen = true;
+	List<MainMenuButton> others = new List<MainMenuButton>();
+	public Transform selecter;
 
 
     void Start()
     {
+		others.Clear();
+		others.AddRange(FindObjectsOfType<MainMenuButton>());
         if (transform.GetComponent<Image>() != null)
         {
-            rend = transform.GetComponent<Image>();
+            rend = transform.GetComponent<AutoRotate>();
+			rendImage = transform.GetComponent<Image>();
         }
         fullScreen = Screen.fullScreen;
         if (clickEvent == Ev.FulScreen)
@@ -66,19 +72,26 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         {
             if (onOff == true)
             {
-                rend.color = Color.white;
+                rendImage.color = Color.white;
             }
             else
             {
-                rend.color = Color.clear;
+                rendImage.color = new Color(1,1,1,0.5f);
             }
+			rend.enabled = onOff;
         }
     }
 
     void Update()
     {
+		if(gameObject.activeSelf == false){
+			isOver = false;
+		}
         if (isOver == true)
         {
+			if(selecter != null){
+				selecter.position = transform.position;
+			}
             if (Input.GetButtonDown("Fire1"))
             {
                 switch (clickEvent)
@@ -126,6 +139,10 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     void Options()
     {
         otherMenuParent.SetActive(true);
+		for (int i = 0; i < others.Count - 1; i++)
+		{
+			others[i].isOver = false;
+		}
         menuParent.SetActive(false);
     }
 
@@ -151,12 +168,13 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         {
             if (onOff == true)
             {
-                rend.color = Color.white;
+                rendImage.color = Color.white;
             }
             else
             {
-                rend.color = Color.clear;
+                rendImage.color = new Color(1,1,1,0.5f);
             }
+			rend.enabled = onOff;
         }
     }
 
