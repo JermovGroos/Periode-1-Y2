@@ -115,6 +115,8 @@
      <Compile Include="Assets\Scripts\ScrollUI.cs" />
      <Compile Include="Assets\Scripts\TowerHealth.cs" />
      <Compile Include="Assets\Scripts\TowerPlacer.cs" />
+     <Compile Include="Assets\Scripts\UIHealth.cs" />
+     <Compile Include="Assets\Scripts\UIMouseText.cs" />
      <Compile Include="Assets\Scripts\UITowerLeft.cs" />
      <Compile Include="Assets\Scripts\WaveIndicator.cs" />
      <Compile Include="Assets\Scripts\WaveStats.cs" />

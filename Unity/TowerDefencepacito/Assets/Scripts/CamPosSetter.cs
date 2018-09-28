@@ -31,7 +31,7 @@ public class CamPosSetter : MonoBehaviour
                 }
             }
         }
-
+/*
         if (manager.mouseState == Manager.MouseState.Unused)
         {
             if (IsMouseOver() == true)
@@ -40,7 +40,7 @@ public class CamPosSetter : MonoBehaviour
                 manager.mouseInfo.text = "Move Camera";
             }
         }
-
+*/
         if (cam.curCamPos == camPos)
         {
             col.enabled = false;

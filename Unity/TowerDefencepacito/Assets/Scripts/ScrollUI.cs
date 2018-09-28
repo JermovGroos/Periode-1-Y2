@@ -55,12 +55,12 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
         isOver = true;
-        manager.SetMouseState(Manager.MouseState.OverUI);
+        //manager.SetMouseState(Manager.MouseState.OverUI);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         isOver = false;
-        manager.SetMouseState(Manager.MouseState.Unused);
+       // manager.SetMouseState(Manager.MouseState.Unused);
     }
 }
