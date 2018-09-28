@@ -81,6 +81,9 @@ public class Manager : MonoBehaviour
                     case MouseState.Dialogue:
                         toReturn = true;
                         break;
+                    case MouseState.Unused:
+                        toReturn = true;
+                        break;
                 }
                 break;
 
@@ -122,7 +125,7 @@ public class Manager : MonoBehaviour
             SetMouseState(MouseState.Dialogue);
             mouseVisible = false;
         }
-        mouseInfo.visible =  mouseVisible;
+        mouseInfo.visible = mouseVisible;
         mouseVisible = false;
     }
 
