@@ -26,6 +26,9 @@ public float range = 10;
 				toReturn = enemies[i].gameObject;
 			}
 		}
+		if(toReturn != null){
+			FindObjectOfType<Manager>().PlayAudio(2);
+		}
 		return toReturn;
 	}
 
