@@ -20,6 +20,6 @@ Text txt;
 	void Update () {
 		//rect.position = startPos + new Vector3(0, Mathf.PingPong(Time.time * 10,10),0);
 		//towersLeft = 4 - FindObjectsOfType<DefenceTower>().Length;
-		txt.text = towersLeft + " Towers left";
+		txt.text = towersLeft + "00 000 Euro";
 	}
 }

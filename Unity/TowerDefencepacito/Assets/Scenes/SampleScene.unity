@@ -1567,7 +1567,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526117067}
-  m_LocalRotation: {x: 0, y: 0, z: 0.341881, w: -0.9397432}
+  m_LocalRotation: {x: 0, y: 0, z: 0.87219024, w: 0.48916695}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.68673205, y: 0.6867333, z: 0.68673205}
   m_Children: []
@@ -4368,7 +4368,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7372358782217b94e9aa634445ff5a12, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9734,7 +9734,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1649440118}
-  m_LocalRotation: {x: 0, y: 0, z: -0.77562857, w: 0.63118964}
+  m_LocalRotation: {x: 0, y: 0, z: 0.02120312, w: -0.9997752}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3484906, y: 1.3484923, z: 1.3484906}
   m_Children: []
@@ -10215,7 +10215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1835393405
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10930,6 +10930,23 @@ MonoBehaviour:
   justTalked: 0
   normalUIHider: {fileID: 813415004}
   diaHider: {fileID: 250969693}
+  audioPrefab: {fileID: 1317772903898570, guid: acbd1e428a36f8b459c200bf6274ab36,
+    type: 2}
+  clips:
+  - {fileID: 8300000, guid: a4e44baca8f8b33489c021306c2d6335, type: 3}
+  - {fileID: 8300000, guid: 5405b269ecd0f5b4eaaf2d008a4c4edd, type: 3}
+  - {fileID: 8300000, guid: e6b8c095ea509a44e9bdb45a07aa9492, type: 3}
+  - {fileID: 8300000, guid: 49b47bf9b4827ff43a98c59f095bb3a3, type: 3}
+  - {fileID: 8300000, guid: e6c64ee268482424893924277d12308d, type: 3}
+  - {fileID: 8300000, guid: 8641aa6ff23b8ef47ac0334cb94fd232, type: 3}
+  - {fileID: 8300000, guid: 4a47329bd04ee984f8a72d732d62d01d, type: 3}
+  - {fileID: 8300000, guid: 6a1e571709889de428e8680f628574b1, type: 3}
+  - {fileID: 8300000, guid: 4b58b6d15e7bcdf49a9ee16b368e85bc, type: 3}
+  - {fileID: 8300000, guid: 4d908ef9f73f39c45a48dabf848f9202, type: 3}
+  - {fileID: 8300000, guid: 8fe6e50a9238b6c45b4a0763eefc4daf, type: 3}
+  - {fileID: 8300000, guid: b42dcb97d774e7b42a2a0270be3e7428, type: 3}
+  - {fileID: 8300000, guid: b5d152e571d7933478e4fb428058df4e, type: 3}
+  - {fileID: 8300000, guid: 5ef2eb896e6c1ad4f910c3ac46f778c6, type: 3}
   pp: {fileID: 282840812}
   mouseVisible: 0
   mouseState: 0

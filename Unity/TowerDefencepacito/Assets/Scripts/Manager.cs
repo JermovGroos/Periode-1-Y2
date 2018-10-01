@@ -25,6 +25,9 @@ public class Manager : MonoBehaviour
     public RectTransform diaHider;
     Dialogue diaScript;
     int diaNumber = 0;
+    [Header("SoundEffects")]
+    public GameObject audioPrefab;
+    public AudioClip[] clips;
     [Header("Other")]
     public PostProcessingBehaviour pp;
     public bool mouseVisible = false;
@@ -215,6 +218,7 @@ public class Manager : MonoBehaviour
         curWave++;
         if (allWaves.Count > curWave)
         {
+            PlayAudio(4);
             waveIndicator.waveNumber = curWave;
             waveIndicator.NewWave();
             for (int i = 0; i < spawner.Length; i++)
@@ -228,5 +232,13 @@ public class Manager : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
+    }
+
+    public void PlayAudio(int clip)
+    {
+        AudioSource a = Instantiate(audioPrefab, transform.position, Quaternion.identity).GetComponent<AudioSource>();
+        a.clip = clips[clip];
+        a.Play();
+        Destroy(a.gameObject, a.clip.length);
     }
 }
