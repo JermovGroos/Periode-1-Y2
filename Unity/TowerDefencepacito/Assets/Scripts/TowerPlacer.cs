@@ -76,5 +76,6 @@ public class TowerPlacer : MonoBehaviour
     {
         Instantiate(toSpawn, transform.position, Quaternion.identity);
         ui.towersLeft--;
+        manager.PlayAudio(10);
     }
 }
