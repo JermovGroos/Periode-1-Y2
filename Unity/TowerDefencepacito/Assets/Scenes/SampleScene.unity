@@ -1386,8 +1386,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.5283874, z: 1}
+  m_Center: {x: 0, y: -0.23580612, z: 0}
 --- !u!23 &469543519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1437,7 +1437,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469543517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6288385, y: 37.122967, z: -32.83189}
+  m_LocalPosition: {x: -6.6288385, y: 47.8, z: -32.83189}
   m_LocalScale: {x: 1, y: 6.6231375, z: 1}
   m_Children:
   - {fileID: 1873599939}
@@ -1581,6 +1581,48 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1001 &525421755
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -30.364265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -37.403862
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 14.999092
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145509305082372, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &526117067
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,7 +3997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!154 &1199833662
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -5716,7 +5758,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 50
     size3D: 0
     rotation3D: 0
     gravityModifier:
