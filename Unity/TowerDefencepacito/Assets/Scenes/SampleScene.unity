@@ -1971,7 +1971,7 @@ Prefab:
     - target: {fileID: 218325164330702228, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb,
         type: 2}
       propertyPath: m_DetailObjectDistance
-      value: 193
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 218325164330702228, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb,
         type: 2}
@@ -1987,6 +1987,21 @@ Prefab:
         type: 2}
       propertyPath: m_TreeBillboardDistance
       value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 218325164330702228, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb,
+        type: 2}
+      propertyPath: m_HeightmapPixelError
+      value: 21.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 218325164330702228, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb,
+        type: 2}
+      propertyPath: m_MaterialType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 218325164330702228, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb,
+        type: 2}
+      propertyPath: m_DetailObjectDensity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e6e80fae22b0774c8fc4b9ca3b1e8fb, type: 2}
