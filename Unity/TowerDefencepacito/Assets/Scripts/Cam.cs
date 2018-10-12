@@ -15,6 +15,10 @@ public class Cam : MonoBehaviour
     [HideInInspector]
     public int curCamPos = 0;
     Manager manager;
+    [Range(0,100)]
+    public float maxZoomDistance = 100;
+    [Range(0,100)]
+    public float minZoomDistance = 30;
 
     void Start()
     {
@@ -44,7 +48,7 @@ public class Cam : MonoBehaviour
     void Zoom()
     {
         orthoSize -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed * Vector3.Distance(new Vector3(0, 0, orthoSize), new Vector3(0, 0, 0));
-        orthoSize = Mathf.Clamp(orthoSize, 37, 67);
+        orthoSize = Mathf.Clamp(orthoSize, minZoomDistance, maxZoomDistance);
         cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, orthoSize, Time.deltaTime * 20);
     }
 

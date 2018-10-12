@@ -115,6 +115,7 @@
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Music.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -182,6 +183,7 @@
      <Compile Include="Assets\Scripts\UITowerLeft.cs" />
      <Compile Include="Assets\Scripts\WaveIndicator.cs" />
      <Compile Include="Assets\Scripts\WaveStats.cs" />
+     <Compile Include="Assets\VolumeSlider.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
