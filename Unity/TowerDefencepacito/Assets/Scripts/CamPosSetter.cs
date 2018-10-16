@@ -23,24 +23,27 @@ public class CamPosSetter : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if (IsMouseOver() == true)
+            if (cam.curCamPos == 0)
             {
-                if (manager.SetMouseState(Manager.MouseState.Used) == true)
+                if (IsMouseOver() == true)
                 {
-                    cam.curCamPos = camPos;
+                    if (manager.SetMouseState(Manager.MouseState.Used) == true)
+                    {
+                        cam.curCamPos = camPos;
+                    }
                 }
             }
         }
-/*
-        if (manager.mouseState == Manager.MouseState.Unused)
-        {
-            if (IsMouseOver() == true)
-            {
-                manager.mouseVisible = true;
-                manager.mouseInfo.text = "Move Camera";
-            }
-        }
-*/
+        /*
+                if (manager.mouseState == Manager.MouseState.Unused)
+                {
+                    if (IsMouseOver() == true)
+                    {
+                        manager.mouseVisible = true;
+                        manager.mouseInfo.text = "Move Camera";
+                    }
+                }
+        */
         if (cam.curCamPos == camPos)
         {
             col.enabled = false;

@@ -15,9 +15,9 @@ public class Cam : MonoBehaviour
     [HideInInspector]
     public int curCamPos = 0;
     Manager manager;
-    [Range(0,100)]
+    [Range(0, 100)]
     public float maxZoomDistance = 100;
-    [Range(0,100)]
+    [Range(0, 100)]
     public float minZoomDistance = 30;
 
     void Start()
@@ -40,9 +40,16 @@ public class Cam : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            curCamPos++;
+            //curCamPos++;
         }
-        camHelp.position = Vector3.Lerp(camHelp.position, otherCamPosses[curCamPos].position, Time.deltaTime * 10);
+        //camHelp.position = Vector3.Lerp(camHelp.position, otherCamPosses[curCamPos].position, Time.deltaTime * 10);
+        if (curCamPos == 0)
+        {
+            camHelp.position = Vector3.Lerp(camHelp.position, otherCamPosses[curCamPos].position, Time.deltaTime * 10);
+        } else {
+            camHelp.position = otherCamPosses[curCamPos].position;
+        }
+
     }
 
     void Zoom()
@@ -67,6 +74,13 @@ public class Cam : MonoBehaviour
         {
             rotValue.y -= 360;
         }
-        camHelp.rotation = Quaternion.Lerp(camHelp.rotation, Quaternion.Euler(rotValue), Time.deltaTime * 20);
+        if (curCamPos == 0)
+        {
+            camHelp.rotation = Quaternion.Lerp(camHelp.rotation, Quaternion.Euler(rotValue), Time.deltaTime * 20);
+        }
+        else
+        {
+            camHelp.rotation = otherCamPosses[curCamPos].rotation;
+        }
     }
 }
