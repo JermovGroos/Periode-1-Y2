@@ -11,6 +11,6 @@ Transform cam;
 	}
 	
 	void Update () {
-		transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,cam.eulerAngles.y);
+		transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,cam.eulerAngles.y + 90);
 	}
 }

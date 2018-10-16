@@ -30,22 +30,23 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public GameObject menuParent;
     bool onOff = true;
     AutoRotate rend;
-	Image rendImage;
+    Image rendImage;
     public PostProcessingBehaviour pp;
     public Vector2 newRes = new Vector2(1920, 1080);
     bool fullScreen = true;
-	List<MainMenuButton> others = new List<MainMenuButton>();
-	public Transform selecter;
+    List<MainMenuButton> others = new List<MainMenuButton>();
+    public Transform selecter;
+    public Transform transition;
 
 
     void Start()
     {
-		others.Clear();
-		others.AddRange(FindObjectsOfType<MainMenuButton>());
+        others.Clear();
+        others.AddRange(FindObjectsOfType<MainMenuButton>());
         if (transform.GetComponent<Image>() != null)
         {
             rend = transform.GetComponent<AutoRotate>();
-			rendImage = transform.GetComponent<Image>();
+            rendImage = transform.GetComponent<Image>();
         }
         fullScreen = Screen.fullScreen;
         if (clickEvent == Ev.FulScreen)
@@ -76,24 +77,30 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             }
             else
             {
-                rendImage.color = new Color(1,1,1,0.5f);
+                rendImage.color = new Color(1, 1, 1, 0.5f);
             }
-			rend.enabled = onOff;
+            rend.enabled = onOff;
         }
     }
 
     void Update()
     {
-		if(gameObject.activeSelf == false){
-			isOver = false;
-		}
+        if (gameObject.activeSelf == false)
+        {
+            isOver = false;
+        }
         if (isOver == true)
         {
-			if(selecter != null){
-				selecter.position = transform.position;
-			}
+            if (selecter != null)
+            {
+                selecter.position = transform.position;
+            }
             if (Input.GetButtonDown("Fire1"))
             {
+                if (transition != null)
+                {
+                    transition.eulerAngles = new Vector3(0, 0, 71.12601f);
+                }
                 switch (clickEvent)
                 {
                     case Ev.StartGame:
@@ -139,10 +146,10 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     void Options()
     {
         otherMenuParent.SetActive(true);
-		for (int i = 0; i < others.Count - 1; i++)
-		{
-			others[i].isOver = false;
-		}
+        for (int i = 0; i < others.Count - 1; i++)
+        {
+            others[i].isOver = false;
+        }
         menuParent.SetActive(false);
     }
 
@@ -172,9 +179,9 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             }
             else
             {
-                rendImage.color = new Color(1,1,1,0.5f);
+                rendImage.color = new Color(1, 1, 1, 0.5f);
             }
-			rend.enabled = onOff;
+            rend.enabled = onOff;
         }
     }
 
