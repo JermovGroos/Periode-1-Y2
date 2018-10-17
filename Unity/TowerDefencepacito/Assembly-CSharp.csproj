@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CamBack.cs" />
      <Compile Include="Assets\Main Export Folder\Scripts\CamToggle.cs" />
      <Compile Include="Assets\Main Export Folder\Scripts\ChainLightning.cs" />
      <Compile Include="Assets\Main Export Folder\Scripts\FlameThrower.cs" />
@@ -115,7 +116,6 @@
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointProgressTracker.cs" />
-     <Compile Include="Assets\Music.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -172,8 +172,10 @@
      <Compile Include="Assets\Scripts\EnemyCounter.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\MainMenuButton.cs" />
+     <Compile Include="Assets\Scripts\MainMenuTransition.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
      <Compile Include="Assets\Scripts\MouseInfo.cs" />
+     <Compile Include="Assets\Scripts\Music.cs" />
      <Compile Include="Assets\Scripts\NewWaveActivator.cs" />
      <Compile Include="Assets\Scripts\ScrollUI.cs" />
      <Compile Include="Assets\Scripts\TowerHealth.cs" />
@@ -181,9 +183,9 @@
      <Compile Include="Assets\Scripts\UIHealth.cs" />
      <Compile Include="Assets\Scripts\UIMouseText.cs" />
      <Compile Include="Assets\Scripts\UITowerLeft.cs" />
+     <Compile Include="Assets\Scripts\VolumeSlider.cs" />
      <Compile Include="Assets\Scripts\WaveIndicator.cs" />
      <Compile Include="Assets\Scripts\WaveStats.cs" />
-     <Compile Include="Assets\VolumeSlider.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
