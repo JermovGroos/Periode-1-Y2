@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 163
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 303
     height: 442
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -143,7 +143,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -165,7 +165,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Default
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1225
     height: 731
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 164
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,10 +230,10 @@ MonoBehaviour:
     y: 0
     width: 1225
     height: 442
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 165
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/TowersaAndEnemies/TowersAndEnemies
+    - Assets/TowersaAndEnemies/Models/snipertornsk
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/TowersaAndEnemies/TowersAndEnemies
+  - Assets/TowersaAndEnemies/Models/snipertornsk
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\stefa\OneDrive\Documenten\Periode-1-Y2\Unity\TowerDefencepacito
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 569}
-    m_SelectedIDs: 1c570000
-    m_LastClickedID: 22300
-    m_ExpandedIDs: 00000000c44b0000664c0000944c0000964c0000ea4c0000984d0000504e00002a4f0000c24f0000d44f00008a500000225100001c520000947f000000ca9a3b
+    m_SelectedIDs: dc110000
+    m_LastClickedID: 4572
+    m_ExpandedIDs: 00000000e80a00004e0b0000e40b0000300c0000320c0000d20c0000da100000f011000020130000321400005c14000060150000721600003618000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c44b0000664c0000944c0000964c0000ea4c0000504e00002a4f0000c24f0000d44f0000225100001c520000
+    m_ExpandedIDs: 00000000e80a00004e0b0000e40b0000300c0000320c0000d20c0000da100000f011000020130000321400005c140000601500007216000036180000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -479,10 +479,10 @@ MonoBehaviour:
     height: 421
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 10570000
+    scrollPos: {x: 0, y: 32}
+    m_SelectedIDs: f08effff
     m_LastClickedID: 0
-    m_ExpandedIDs: 6047feff6447feff3ab9ffff46baffff1cbbffff0000000086530000c2550000f8550000
+    m_ExpandedIDs: c2fbffffdcfbffffdefbffff00000000c81c0000781d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.850186, y: -30.456194, z: -46.90526}
+    m_Target: {x: -26.531054, y: -12.30547, z: -81.23056}
     speed: 2
-    m_Value: {x: -9.850186, y: -30.456194, z: -46.90526}
+    m_Value: {x: -26.531054, y: -12.30547, z: -81.23056}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -567,13 +567,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.05200311, y: 0.9472941, z: -0.20400077, w: -0.24148147}
+    m_Target: {x: 0.0127687985, y: -0.98702335, z: 0.102535665, w: 0.122915395}
     speed: 2
-    m_Value: {x: -0.05200311, y: 0.9472941, z: -0.20400077, w: -0.24148147}
+    m_Value: {x: 0.0127688, y: -0.9870235, z: 0.10253568, w: 0.12291541}
   m_Size:
-    m_Target: 91.51127
+    m_Target: 180.71642
     speed: 2
-    m_Value: 91.51127
+    m_Value: 180.71642
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -632,7 +632,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
