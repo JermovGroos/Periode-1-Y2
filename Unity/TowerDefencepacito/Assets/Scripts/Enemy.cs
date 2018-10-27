@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public float speed = 10;
     Transform child;
     Transform cam;
+    public float health = 1;
 //    SpriteRenderer rend;
     CharacterController cc;
     public enum Heading
@@ -34,11 +35,20 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
         transform.LookAt(goal.position);
         //transform.position += transform.forward * Time.deltaTime * speed;
         cc.Move(transform.forward * Time.deltaTime * speed);
         child.LookAt(cam.position);
         // rend.flipX = !rend.flipX;
+    }
+
+    public void DoDamage(float damage)
+    {
+        health -= damage;
     }
 
     void OnTriggerEnter(Collider other)
