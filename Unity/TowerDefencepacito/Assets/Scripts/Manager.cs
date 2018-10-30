@@ -149,9 +149,9 @@ public class Manager : MonoBehaviour
         if (isSpawning == false)
         {
             int total = 0;
-            for (int i = 0; i < enemyCounter.noswEnemies.Length; i++)
+            for (int i = 0; i < enemyCounter.typeCounter.Length; i++)
             {
-                total += enemyCounter.noswEnemies[i];
+                total += enemyCounter.typeCounter[i];
             }
             if (total == 0)
             {

@@ -14,15 +14,14 @@ public class Enemy : MonoBehaviour
     public float health = 1;
 //    SpriteRenderer rend;
     CharacterController cc;
-    public enum Heading
+    public enum EnemyType
     {
-        North,
-        East,
-        South,
-        West
+        Boombox = 0,
+        Tire = 1,
+        Digger = 2
     }
     [HideInInspector]
-    public Heading heading = Heading.North;
+    public EnemyType type = EnemyType.Boombox;
 
     void Start()
     {
