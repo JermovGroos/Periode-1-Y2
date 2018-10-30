@@ -38,7 +38,7 @@ public class TowerSelection : MonoBehaviour {
         if (canDoStuff)
         {
             TheRotation();
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 //BuySelected(currencyAmount, towers[currentTowerSelected], 
                 BuySelected(currencyAmount, towers[currentTowerSelected], location.transform.position);
@@ -82,7 +82,7 @@ public class TowerSelection : MonoBehaviour {
             if (hit.transform.gameObject.tag == "Platform" && hit.transform.gameObject.GetComponent<TowerSpawnPlace>().isTaken == false)
             {
                 buildspot = hit.transform.gameObject;
-                if (Input.GetButtonDown("Fire1"))
+                if (Input.GetButtonDown("Fire2"))
                 {
                     gameObject.transform.position = Input.mousePosition;
                     gameObject.transform.localScale = new Vector3(3, 3, 3);
@@ -111,7 +111,7 @@ public class TowerSelection : MonoBehaviour {
         }
         if (!isRotatingLeft && !isRotatingRight)
         {
-            if (Input.GetAxis("Horizontal") > 0)
+            if (Input.GetAxis("Mouse ScrollWheel") > 0)
             {
                 //rotatingObject.transform.Rotate(0, 0, 72);
                 movement = 72;
@@ -128,7 +128,7 @@ public class TowerSelection : MonoBehaviour {
             }
             else
             {
-                if (Input.GetAxis("Horizontal") < 0)
+                if (Input.GetAxis("Mouse ScrollWheel") < 0)
                 {
                     //rotatingObject.transform.Rotate(0, 0, -72);
                     movement = -72;
