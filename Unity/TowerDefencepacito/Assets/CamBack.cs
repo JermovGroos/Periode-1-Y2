@@ -9,10 +9,12 @@ public class CamBack : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     bool isOver = false;
     Cam cam;
 	RectTransform rect;
+    Transition transition;
     void Start()
     {
         cam = FindObjectOfType<Cam>();
 		rect = transform.parent.GetComponent<RectTransform>();
+        transition = FindObjectOfType<Transition>();
     }
 
     void Update()
@@ -25,6 +27,7 @@ public class CamBack : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 if (isOver == true)
                 {
                     cam.curCamPos = 0;
+                     transition.rect.anchoredPosition = Vector3.zero;
                 }
             }
         } else {

@@ -180,10 +180,12 @@
      <Compile Include="Assets\Scripts\WaveStats.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\AreaOfEffect.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\BulletTower.cs" />
+     <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\Frost.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\Ranged.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\Tower.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\TowerSelection.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\TowerSpawnPlace.cs" />
+     <Compile Include="Assets\Transition.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />

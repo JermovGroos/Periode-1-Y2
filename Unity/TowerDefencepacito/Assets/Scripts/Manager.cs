@@ -112,6 +112,7 @@ public class Manager : MonoBehaviour
             if (mouseState == MouseState.Dialogue)
             {
                 mouseState = MouseState.Unused;
+                Cursor.lockState = CursorLockMode.None;
             }
             if (Input.GetButtonUp("Fire1"))
             {
@@ -127,6 +128,7 @@ public class Manager : MonoBehaviour
             DialogueStuff();
             SetMouseState(MouseState.Dialogue);
             mouseVisible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
         mouseInfo.visible = mouseVisible;
         mouseVisible = false;
