@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
 
     public GameObject toSpawn;
     public float spawnTime = 1;
-    public Enemy.Heading heading = Enemy.Heading.North;
+    public Enemy.EnemyType heading = Enemy.EnemyType.Boombox;
     public int spawnAmount = 10;
     [HideInInspector]
     public bool busy = true;
@@ -44,7 +44,7 @@ public class EnemySpawner : MonoBehaviour
         {
             //busy = true;
             Enemy t = Instantiate(toSpawn, transform.position, Quaternion.identity).GetComponent<Enemy>();
-            t.heading = heading;
+            t.type = heading;
             spawnAmount--;
         }
         else

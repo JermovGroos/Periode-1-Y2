@@ -30,7 +30,10 @@ public class Cam : MonoBehaviour
     {
         if (manager.talking == false)
         {
-            Zoom();
+            if (Cursor.lockState == CursorLockMode.None)
+            {
+                Zoom();
+            }
             Rotate();
             SetCamPos();
         }
@@ -46,7 +49,9 @@ public class Cam : MonoBehaviour
         if (curCamPos == 0)
         {
             camHelp.position = Vector3.Lerp(camHelp.position, otherCamPosses[curCamPos].position, Time.deltaTime * 10);
-        } else {
+        }
+        else
+        {
             camHelp.position = otherCamPosses[curCamPos].position;
         }
 
@@ -81,6 +86,7 @@ public class Cam : MonoBehaviour
         else
         {
             camHelp.rotation = otherCamPosses[curCamPos].rotation;
+            rotValue.y = camHelp.eulerAngles.y;
         }
     }
 }

@@ -9,29 +9,27 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     bool isOver = false;
     RectTransform rect;
     bool holding = false;
-	float scrollPercent = 0;
-	float scrollCamStartY;
-	public Transform scrollCam;
+    float scrollPercent = 0;
+    float scrollCamStartY;
+    public Transform scrollCam;
     Manager manager;
+    float startY;
     void Start()
     {
-        rect = transform.GetComponent<RectTransform>();
-		scrollCamStartY = scrollCam.position.y;
-        SetSliderPos();
         manager = FindObjectOfType<Manager>();
+        rect = transform.GetComponent<RectTransform>();
+        scrollCamStartY = scrollCam.position.y;
+        startY = rect.anchoredPosition.y - (1080 / 2);
     }
 
     void Update()
     {
-        if (holding == true)
-        {
-            SetSliderPos();
-        }
         if (Input.GetButtonDown("Fire1") == true)
         {
             if (isOver == true)
             {
-                if(manager.SetMouseState(Manager.MouseState.Used)){
+                if (manager.SetMouseState(Manager.MouseState.Used))
+                {
                     holding = true;
                 }
             }
@@ -40,15 +38,20 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             holding = false;
         }
-		scrollCam.position = new Vector3(scrollCam.position.x,scrollCamStartY + (scrollPercent * 12),scrollCam.position.z);
+        if (holding == true)
+        {
+            SetSliderPos(Input.mousePosition.y);
+        } else{
+           // SetSliderPos(0);
+        }
+        scrollCam.position = new Vector3(scrollCam.position.x, scrollCamStartY + (scrollPercent * 12), scrollCam.position.z);
     }
 
-    void SetSliderPos()
+    void SetSliderPos(float yPos)
     {
-        float yPos = Input.mousePosition.y - 550;
-        yPos = Mathf.Clamp(yPos, -121, 121) + (scrollCamStartY - 75);
-		scrollPercent = (yPos + 121) / 242;
-        rect.anchoredPosition = new Vector2(rect.anchoredPosition.x, yPos);
+        yPos = Mathf.Clamp(yPos, Screen.height / 3, (Screen.height / 2) + (Screen.height / 6)) + startY;
+        scrollPercent = (rect.anchoredPosition.y - 484) / 242;
+        rect.localPosition = new Vector2(rect.localPosition.x, yPos);
     }
 
 
@@ -61,6 +64,6 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerExit(PointerEventData eventData)
     {
         isOver = false;
-       // manager.SetMouseState(Manager.MouseState.Unused);
+        // manager.SetMouseState(Manager.MouseState.Unused);
     }
 }

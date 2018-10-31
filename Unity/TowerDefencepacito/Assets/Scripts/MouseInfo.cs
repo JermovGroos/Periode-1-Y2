@@ -21,7 +21,7 @@ public class MouseInfo : MonoBehaviour
 
     void Update()
     {
-        rect.anchoredPosition = Input.mousePosition + offset;
+        rect.position = Input.mousePosition;
         if(visible == false){
 			rect.anchoredPosition = new Vector3(100000,0,0);
 		}

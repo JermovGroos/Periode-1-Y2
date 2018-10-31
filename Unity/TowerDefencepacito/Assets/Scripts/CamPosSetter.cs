@@ -11,12 +11,14 @@ public class CamPosSetter : MonoBehaviour
     [Range(0, 4)]
     public int camPos = 1;
     Manager manager;
+    Transition transition;
     void Start()
     {
         mainCam = Camera.main;
         cam = mainCam.GetComponent<Cam>();
         col = transform.GetComponent<Collider>();
         manager = FindObjectOfType<Manager>();
+        transition = FindObjectOfType<Transition>();
     }
 
     void Update()
@@ -27,9 +29,13 @@ public class CamPosSetter : MonoBehaviour
             {
                 if (IsMouseOver() == true)
                 {
-                    if (manager.SetMouseState(Manager.MouseState.Used) == true)
+                    if (transition.rect.anchoredPosition3D == transition.goal)
                     {
-                        cam.curCamPos = camPos;
+                        if (manager.SetMouseState(Manager.MouseState.Used) == true)
+                        {
+                            cam.curCamPos = camPos;
+                            transition.rect.anchoredPosition = Vector3.zero;
+                        }
                     }
                 }
             }
