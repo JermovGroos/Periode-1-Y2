@@ -11,22 +11,21 @@ public class WaveIndicator : MonoBehaviour
     public Text txt;
     public int waveNumber = 1;
     public GameObject[] rend;
+    bool began = false;
     void Start()
     {
         rect = transform.GetComponent<RectTransform>();
+        active = false;
+        rect.anchoredPosition = new Vector2(0, -974);
     }
 
     void Update()
     {
-        //  if (Input.GetKeyDown(KeyCode.Space) == true)
-        //   {
-        //     if (active == false)
-        //     {
-        //        active = true;
-        //         waveNumber++;
-        //         txt.text = "Wave " + waveNumber;
-        //    }
-        //  }
+        if (began == false)
+        {
+            active = false;
+            began = true;
+        }
         if (active == true)
         {
             Activate();

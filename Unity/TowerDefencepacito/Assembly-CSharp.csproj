@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CamBack.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -155,6 +154,7 @@
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
      <Compile Include="Assets\Scripts\AutoRotate.cs" />
      <Compile Include="Assets\Scripts\Cam.cs" />
+     <Compile Include="Assets\Scripts\CamBack.cs" />
      <Compile Include="Assets\Scripts\CamPosSetter.cs" />
      <Compile Include="Assets\Scripts\Compass.cs" />
      <Compile Include="Assets\Scripts\DefenceTower.cs" />
@@ -172,6 +172,7 @@
      <Compile Include="Assets\Scripts\ScrollUI.cs" />
      <Compile Include="Assets\Scripts\TowerHealth.cs" />
      <Compile Include="Assets\Scripts\TowerPlacer.cs" />
+     <Compile Include="Assets\Scripts\Transition.cs" />
      <Compile Include="Assets\Scripts\UIHealth.cs" />
      <Compile Include="Assets\Scripts\UIMouseText.cs" />
      <Compile Include="Assets\Scripts\UITowerLeft.cs" />
@@ -185,7 +186,7 @@
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\Tower.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\TowerSelection.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\TowerSpawnPlace.cs" />
-     <Compile Include="Assets\Transition.cs" />
+     <Compile Include="Assets\UIMouseButtonText.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Main Export Folder\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />

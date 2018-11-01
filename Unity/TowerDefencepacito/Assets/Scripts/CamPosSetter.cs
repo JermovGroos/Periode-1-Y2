@@ -57,6 +57,17 @@ public class CamPosSetter : MonoBehaviour
         else
         {
             col.enabled = true;
+            if (cam.curCamPos == 0)
+            {
+                if (IsMouseOver() == true)
+                {
+                    if (transition.rect.anchoredPosition3D == transition.goal)
+                    {
+                        manager.mouseInfo.text = "Camera";
+                        manager.mouseInfo.visible = true;
+                    }
+                }
+            }
         }
     }
 

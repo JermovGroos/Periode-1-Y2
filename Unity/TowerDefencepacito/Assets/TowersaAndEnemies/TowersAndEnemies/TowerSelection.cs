@@ -18,7 +18,8 @@ public class TowerSelection : MonoBehaviour
     float hasRotated;
     public float currencyAmount;
     GameObject buildspot;
-    bool canDoStuff;
+    [HideInInspector]
+    public bool canDoStuff;
     public Text currencyShower;
     GameObject location;
     //72
