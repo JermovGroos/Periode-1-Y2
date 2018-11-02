@@ -19,7 +19,7 @@ public class BulletTower : Ranged {
 
     public void Shoot()
     {
-        if (canShoot())
+        if (CanShoot())
         {
             RaycastHit hit = new RaycastHit();
             if(Physics.Raycast(barrel.transform.position, barrel.transform.forward, out hit, range, lM))

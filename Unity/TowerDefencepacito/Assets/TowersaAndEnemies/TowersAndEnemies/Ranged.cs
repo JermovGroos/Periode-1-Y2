@@ -37,7 +37,7 @@ public class Ranged : Tower {
         barrel.transform.LookAt(closestEnemy.transform);
     }
 
-    public bool canShoot()
+    public bool CanShoot()
     {
         if(Physics.OverlapSphere(transform.position, range, lM).Length > 0)
         {

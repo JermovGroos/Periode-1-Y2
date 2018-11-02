@@ -1,0 +1,2248 @@
+fileFormatVersion: 2
+guid: 79463464fc15ff548a6f6589fcb5d051
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Digger
+    100002: //RootNode
+    100004: Engine
+    100006: Gear
+    100008: Gear1
+    100010: Gear1.001
+    100012: Gear10
+    100014: Gear11
+    100016: Gear12
+    100018: Gear13
+    100020: Gear14
+    100022: Gear15
+    100024: Gear16
+    100026: Gear17
+    100028: Gear18
+    100030: Gear18.001
+    100032: Gear19
+    100034: Gear20
+    100036: Gear21
+    100038: Gear22
+    100040: Gear23
+    100042: Gear24
+    100044: Gear25
+    100046: Gear26
+    100048: Gear27
+    100050: Gear28
+    100052: Gear29
+    100054: Gear3
+    100056: Gear30
+    100058: Gear31
+    100060: Gear32
+    100062: Gear5
+    100064: Gear5.001
+    100066: Gear5.002
+    100068: Gear6
+    100070: Gear7
+    100072: Gear8
+    100074: Gear9
+    100076: PipeForGears
+    100078: Wheel 5
+    100080: Wheel 5.001
+    100082: Wheel 5.002
+    100084: Wheel 5.003
+    100086: Wheel 5.004
+    100088: Wheel 5.005
+    400000: Digger
+    400002: //RootNode
+    400004: Engine
+    400006: Gear
+    400008: Gear1
+    400010: Gear1.001
+    400012: Gear10
+    400014: Gear11
+    400016: Gear12
+    400018: Gear13
+    400020: Gear14
+    400022: Gear15
+    400024: Gear16
+    400026: Gear17
+    400028: Gear18
+    400030: Gear18.001
+    400032: Gear19
+    400034: Gear20
+    400036: Gear21
+    400038: Gear22
+    400040: Gear23
+    400042: Gear24
+    400044: Gear25
+    400046: Gear26
+    400048: Gear27
+    400050: Gear28
+    400052: Gear29
+    400054: Gear3
+    400056: Gear30
+    400058: Gear31
+    400060: Gear32
+    400062: Gear5
+    400064: Gear5.001
+    400066: Gear5.002
+    400068: Gear6
+    400070: Gear7
+    400072: Gear8
+    400074: Gear9
+    400076: PipeForGears
+    400078: Wheel 5
+    400080: Wheel 5.001
+    400082: Wheel 5.002
+    400084: Wheel 5.003
+    400086: Wheel 5.004
+    400088: Wheel 5.005
+    2100000: No Name
+    2300000: Digger
+    2300002: Engine
+    2300004: Gear
+    2300006: Gear1
+    2300008: Gear1.001
+    2300010: Gear10
+    2300012: Gear11
+    2300014: Gear12
+    2300016: Gear13
+    2300018: Gear14
+    2300020: Gear15
+    2300022: Gear16
+    2300024: Gear17
+    2300026: Gear18
+    2300028: Gear18.001
+    2300030: Gear19
+    2300032: Gear20
+    2300034: Gear21
+    2300036: Gear22
+    2300038: Gear23
+    2300040: Gear24
+    2300042: Gear25
+    2300044: Gear26
+    2300046: Gear27
+    2300048: Gear28
+    2300050: Gear29
+    2300052: Gear3
+    2300054: Gear30
+    2300056: Gear31
+    2300058: Gear32
+    2300060: Gear5
+    2300062: Gear5.001
+    2300064: Gear5.002
+    2300066: Gear6
+    2300068: Gear7
+    2300070: Gear8
+    2300072: Gear9
+    2300074: PipeForGears
+    2300076: Wheel 5
+    2300078: Wheel 5.001
+    2300080: Wheel 5.002
+    2300082: Wheel 5.003
+    2300084: Wheel 5.004
+    2300086: Wheel 5.005
+    3300000: Digger
+    3300002: Engine
+    3300004: Gear
+    3300006: Gear1
+    3300008: Gear1.001
+    3300010: Gear10
+    3300012: Gear11
+    3300014: Gear12
+    3300016: Gear13
+    3300018: Gear14
+    3300020: Gear15
+    3300022: Gear16
+    3300024: Gear17
+    3300026: Gear18
+    3300028: Gear18.001
+    3300030: Gear19
+    3300032: Gear20
+    3300034: Gear21
+    3300036: Gear22
+    3300038: Gear23
+    3300040: Gear24
+    3300042: Gear25
+    3300044: Gear26
+    3300046: Gear27
+    3300048: Gear28
+    3300050: Gear29
+    3300052: Gear3
+    3300054: Gear30
+    3300056: Gear31
+    3300058: Gear32
+    3300060: Gear5
+    3300062: Gear5.001
+    3300064: Gear5.002
+    3300066: Gear6
+    3300068: Gear7
+    3300070: Gear8
+    3300072: Gear9
+    3300074: PipeForGears
+    3300076: Wheel 5
+    3300078: Wheel 5.001
+    3300080: Wheel 5.002
+    3300082: Wheel 5.003
+    3300084: Wheel 5.004
+    3300086: Wheel 5.005
+    4300000: Digger
+    4300002: Engine
+    4300004: Gear
+    4300006: Gear1
+    4300008: Gear1.001
+    4300010: Gear10
+    4300012: Gear11
+    4300014: Gear12
+    4300016: Gear13
+    4300018: Gear14
+    4300020: Gear15
+    4300022: Gear16
+    4300024: Gear17
+    4300026: Gear18
+    4300028: Gear18.001
+    4300030: Gear19
+    4300032: Gear20
+    4300034: Gear21
+    4300036: Gear22
+    4300038: Gear23
+    4300040: Gear24
+    4300042: Gear25
+    4300044: Gear26
+    4300046: Gear27
+    4300048: Gear28
+    4300050: Gear29
+    4300052: Gear3
+    4300054: Gear30
+    4300056: Gear31
+    4300058: Gear32
+    4300060: Gear5
+    4300062: Gear5.001
+    4300064: Gear6
+    4300066: Gear7
+    4300068: Gear8
+    4300070: Gear9
+    4300072: PipeForGears
+    4300074: Wheel 5
+    4300076: Wheel 5.001
+    4300078: Wheel 5.002
+    4300080: Wheel 5.003
+    4300082: Wheel 5.004
+    4300084: Wheel 5.005
+    4300086: Gear5.002
+    7400000: Digger|DiggerAction
+    7400002: Digger|EngineAction
+    7400004: Digger|Gear1.001Action
+    7400006: Digger|Gear10Action
+    7400008: Digger|Gear11Action
+    7400010: Digger|Gear12Action
+    7400012: Digger|Gear13Action
+    7400014: Digger|Gear14Action
+    7400016: Digger|Gear15Action
+    7400018: Digger|Gear16Action
+    7400020: Digger|Gear17Action
+    7400022: Digger|Gear18.001Action
+    7400024: Digger|Gear18Action
+    7400026: Digger|Gear19Action
+    7400028: Digger|Gear1Action
+    7400030: Digger|Gear20Action
+    7400032: Digger|Gear21Action
+    7400034: Digger|Gear22Action
+    7400036: Digger|Gear23Action
+    7400038: Digger|Gear24Action
+    7400040: Digger|Gear25Action
+    7400042: Digger|Gear26Action
+    7400044: Digger|Gear27Action
+    7400046: Digger|Gear28Action
+    7400048: Digger|Gear29Action
+    7400050: Digger|Gear30Action
+    7400052: Digger|Gear31Action
+    7400054: Digger|Gear32Action
+    7400056: Digger|Gear3Action
+    7400058: Digger|Gear5.001Action
+    7400060: Digger|Gear5.001Action.001
+    7400062: Digger|Gear5Action
+    7400064: Digger|Gear6Action
+    7400066: Digger|Gear7Action
+    7400068: Digger|Gear8Action
+    7400070: Digger|Gear9Action
+    7400072: Digger|GearAction
+    7400074: Digger|PipeForGearsAction
+    7400076: Digger|Wheel 5.001Action
+    7400078: Digger|Wheel 5.002Action
+    7400080: Digger|Wheel 5.003Action
+    7400082: Digger|Wheel 5.004Action
+    7400084: Digger|Wheel 5.005Action
+    7400086: Digger|Wheel 5Action
+    7400088: Engine|DiggerAction
+    7400090: Engine|EngineAction
+    7400092: Engine|Gear1.001Action
+    7400094: Engine|Gear10Action
+    7400096: Engine|Gear11Action
+    7400098: Engine|Gear12Action
+    7400100: Engine|Gear13Action
+    7400102: Engine|Gear14Action
+    7400104: Engine|Gear15Action
+    7400106: Engine|Gear16Action
+    7400108: Engine|Gear17Action
+    7400110: Engine|Gear18.001Action
+    7400112: Engine|Gear18Action
+    7400114: Engine|Gear19Action
+    7400116: Engine|Gear1Action
+    7400118: Engine|Gear20Action
+    7400120: Engine|Gear21Action
+    7400122: Engine|Gear22Action
+    7400124: Engine|Gear23Action
+    7400126: Engine|Gear24Action
+    7400128: Engine|Gear25Action
+    7400130: Engine|Gear26Action
+    7400132: Engine|Gear27Action
+    7400134: Engine|Gear28Action
+    7400136: Engine|Gear29Action
+    7400138: Engine|Gear30Action
+    7400140: Engine|Gear31Action
+    7400142: Engine|Gear32Action
+    7400144: Engine|Gear3Action
+    7400146: Engine|Gear5.001Action
+    7400148: Engine|Gear5.001Action.001
+    7400150: Engine|Gear5Action
+    7400152: Engine|Gear6Action
+    7400154: Engine|Gear7Action
+    7400156: Engine|Gear8Action
+    7400158: Engine|Gear9Action
+    7400160: Engine|GearAction
+    7400162: Engine|PipeForGearsAction
+    7400164: Engine|Wheel 5.001Action
+    7400166: Engine|Wheel 5.002Action
+    7400168: Engine|Wheel 5.003Action
+    7400170: Engine|Wheel 5.004Action
+    7400172: Engine|Wheel 5.005Action
+    7400174: Engine|Wheel 5Action
+    7400176: Gear|DiggerAction
+    7400178: Gear|EngineAction
+    7400180: Gear|Gear1.001Action
+    7400182: Gear|Gear10Action
+    7400184: Gear|Gear11Action
+    7400186: Gear|Gear12Action
+    7400188: Gear|Gear13Action
+    7400190: Gear|Gear14Action
+    7400192: Gear|Gear15Action
+    7400194: Gear|Gear16Action
+    7400196: Gear|Gear17Action
+    7400198: Gear|Gear18.001Action
+    7400200: Gear|Gear18Action
+    7400202: Gear|Gear19Action
+    7400204: Gear|Gear1Action
+    7400206: Gear|Gear20Action
+    7400208: Gear|Gear21Action
+    7400210: Gear|Gear22Action
+    7400212: Gear|Gear23Action
+    7400214: Gear|Gear24Action
+    7400216: Gear|Gear25Action
+    7400218: Gear|Gear26Action
+    7400220: Gear|Gear27Action
+    7400222: Gear|Gear28Action
+    7400224: Gear|Gear29Action
+    7400226: Gear|Gear30Action
+    7400228: Gear|Gear31Action
+    7400230: Gear|Gear32Action
+    7400232: Gear|Gear3Action
+    7400234: Gear|Gear5.001Action
+    7400236: Gear|Gear5.001Action.001
+    7400238: Gear|Gear5Action
+    7400240: Gear|Gear6Action
+    7400242: Gear|Gear7Action
+    7400244: Gear|Gear8Action
+    7400246: Gear|Gear9Action
+    7400248: Gear|GearAction
+    7400250: Gear|PipeForGearsAction
+    7400252: Gear|Wheel 5.001Action
+    7400254: Gear|Wheel 5.002Action
+    7400256: Gear|Wheel 5.003Action
+    7400258: Gear|Wheel 5.004Action
+    7400260: Gear|Wheel 5.005Action
+    7400262: Gear|Wheel 5Action
+    7400264: Gear1|DiggerAction
+    7400266: Gear1|EngineAction
+    7400268: Gear1|Gear1.001Action
+    7400270: Gear1|Gear10Action
+    7400272: Gear1|Gear11Action
+    7400274: Gear1|Gear12Action
+    7400276: Gear1|Gear13Action
+    7400278: Gear1|Gear14Action
+    7400280: Gear1|Gear15Action
+    7400282: Gear1|Gear16Action
+    7400284: Gear1|Gear17Action
+    7400286: Gear1|Gear18.001Action
+    7400288: Gear1|Gear18Action
+    7400290: Gear1|Gear19Action
+    7400292: Gear1|Gear1Action
+    7400294: Gear1|Gear20Action
+    7400296: Gear1|Gear21Action
+    7400298: Gear1|Gear22Action
+    7400300: Gear1|Gear23Action
+    7400302: Gear1|Gear24Action
+    7400304: Gear1|Gear25Action
+    7400306: Gear1|Gear26Action
+    7400308: Gear1|Gear27Action
+    7400310: Gear1|Gear28Action
+    7400312: Gear1|Gear29Action
+    7400314: Gear1|Gear30Action
+    7400316: Gear1|Gear31Action
+    7400318: Gear1|Gear32Action
+    7400320: Gear1|Gear3Action
+    7400322: Gear1|Gear5.001Action
+    7400324: Gear1|Gear5.001Action.001
+    7400326: Gear1|Gear5Action
+    7400328: Gear1|Gear6Action
+    7400330: Gear1|Gear7Action
+    7400332: Gear1|Gear8Action
+    7400334: Gear1|Gear9Action
+    7400336: Gear1|GearAction
+    7400338: Gear1|PipeForGearsAction
+    7400340: Gear1|Wheel 5.001Action
+    7400342: Gear1|Wheel 5.002Action
+    7400344: Gear1|Wheel 5.003Action
+    7400346: Gear1|Wheel 5.004Action
+    7400348: Gear1|Wheel 5.005Action
+    7400350: Gear1|Wheel 5Action
+    7400352: Gear1.001|DiggerAction
+    7400354: Gear1.001|EngineAction
+    7400356: Gear1.001|Gear1.001Action
+    7400358: Gear1.001|Gear10Action
+    7400360: Gear1.001|Gear11Action
+    7400362: Gear1.001|Gear12Action
+    7400364: Gear1.001|Gear13Action
+    7400366: Gear1.001|Gear14Action
+    7400368: Gear1.001|Gear15Action
+    7400370: Gear1.001|Gear16Action
+    7400372: Gear1.001|Gear17Action
+    7400374: Gear1.001|Gear18.001Action
+    7400376: Gear1.001|Gear18Action
+    7400378: Gear1.001|Gear19Action
+    7400380: Gear1.001|Gear1Action
+    7400382: Gear1.001|Gear20Action
+    7400384: Gear1.001|Gear21Action
+    7400386: Gear1.001|Gear22Action
+    7400388: Gear1.001|Gear23Action
+    7400390: Gear1.001|Gear24Action
+    7400392: Gear1.001|Gear25Action
+    7400394: Gear1.001|Gear26Action
+    7400396: Gear1.001|Gear27Action
+    7400398: Gear1.001|Gear28Action
+    7400400: Gear1.001|Gear29Action
+    7400402: Gear1.001|Gear30Action
+    7400404: Gear1.001|Gear31Action
+    7400406: Gear1.001|Gear32Action
+    7400408: Gear1.001|Gear3Action
+    7400410: Gear1.001|Gear5.001Action
+    7400412: Gear1.001|Gear5.001Action.001
+    7400414: Gear1.001|Gear5Action
+    7400416: Gear1.001|Gear6Action
+    7400418: Gear1.001|Gear7Action
+    7400420: Gear1.001|Gear8Action
+    7400422: Gear1.001|Gear9Action
+    7400424: Gear1.001|GearAction
+    7400426: Gear1.001|PipeForGearsAction
+    7400428: Gear1.001|Wheel 5.001Action
+    7400430: Gear1.001|Wheel 5.002Action
+    7400432: Gear1.001|Wheel 5.003Action
+    7400434: Gear1.001|Wheel 5.004Action
+    7400436: Gear1.001|Wheel 5.005Action
+    7400438: Gear1.001|Wheel 5Action
+    7400440: Gear10|DiggerAction
+    7400442: Gear10|EngineAction
+    7400444: Gear10|Gear1.001Action
+    7400446: Gear10|Gear10Action
+    7400448: Gear10|Gear11Action
+    7400450: Gear10|Gear12Action
+    7400452: Gear10|Gear13Action
+    7400454: Gear10|Gear14Action
+    7400456: Gear10|Gear15Action
+    7400458: Gear10|Gear16Action
+    7400460: Gear10|Gear17Action
+    7400462: Gear10|Gear18.001Action
+    7400464: Gear10|Gear18Action
+    7400466: Gear10|Gear19Action
+    7400468: Gear10|Gear1Action
+    7400470: Gear10|Gear20Action
+    7400472: Gear10|Gear21Action
+    7400474: Gear10|Gear22Action
+    7400476: Gear10|Gear23Action
+    7400478: Gear10|Gear24Action
+    7400480: Gear10|Gear25Action
+    7400482: Gear10|Gear26Action
+    7400484: Gear10|Gear27Action
+    7400486: Gear10|Gear28Action
+    7400488: Gear10|Gear29Action
+    7400490: Gear10|Gear30Action
+    7400492: Gear10|Gear31Action
+    7400494: Gear10|Gear32Action
+    7400496: Gear10|Gear3Action
+    7400498: Gear10|Gear5.001Action
+    7400500: Gear10|Gear5.001Action.001
+    7400502: Gear10|Gear5Action
+    7400504: Gear10|Gear6Action
+    7400506: Gear10|Gear7Action
+    7400508: Gear10|Gear8Action
+    7400510: Gear10|Gear9Action
+    7400512: Gear10|GearAction
+    7400514: Gear10|PipeForGearsAction
+    7400516: Gear10|Wheel 5.001Action
+    7400518: Gear10|Wheel 5.002Action
+    7400520: Gear10|Wheel 5.003Action
+    7400522: Gear10|Wheel 5.004Action
+    7400524: Gear10|Wheel 5.005Action
+    7400526: Gear10|Wheel 5Action
+    7400528: Gear11|DiggerAction
+    7400530: Gear11|EngineAction
+    7400532: Gear11|Gear1.001Action
+    7400534: Gear11|Gear10Action
+    7400536: Gear11|Gear11Action
+    7400538: Gear11|Gear12Action
+    7400540: Gear11|Gear13Action
+    7400542: Gear11|Gear14Action
+    7400544: Gear11|Gear15Action
+    7400546: Gear11|Gear16Action
+    7400548: Gear11|Gear17Action
+    7400550: Gear11|Gear18.001Action
+    7400552: Gear11|Gear18Action
+    7400554: Gear11|Gear19Action
+    7400556: Gear11|Gear1Action
+    7400558: Gear11|Gear20Action
+    7400560: Gear11|Gear21Action
+    7400562: Gear11|Gear22Action
+    7400564: Gear11|Gear23Action
+    7400566: Gear11|Gear24Action
+    7400568: Gear11|Gear25Action
+    7400570: Gear11|Gear26Action
+    7400572: Gear11|Gear27Action
+    7400574: Gear11|Gear28Action
+    7400576: Gear11|Gear29Action
+    7400578: Gear11|Gear30Action
+    7400580: Gear11|Gear31Action
+    7400582: Gear11|Gear32Action
+    7400584: Gear11|Gear3Action
+    7400586: Gear11|Gear5.001Action
+    7400588: Gear11|Gear5.001Action.001
+    7400590: Gear11|Gear5Action
+    7400592: Gear11|Gear6Action
+    7400594: Gear11|Gear7Action
+    7400596: Gear11|Gear8Action
+    7400598: Gear11|Gear9Action
+    7400600: Gear11|GearAction
+    7400602: Gear11|PipeForGearsAction
+    7400604: Gear11|Wheel 5.001Action
+    7400606: Gear11|Wheel 5.002Action
+    7400608: Gear11|Wheel 5.003Action
+    7400610: Gear11|Wheel 5.004Action
+    7400612: Gear11|Wheel 5.005Action
+    7400614: Gear11|Wheel 5Action
+    7400616: Gear12|DiggerAction
+    7400618: Gear12|EngineAction
+    7400620: Gear12|Gear1.001Action
+    7400622: Gear12|Gear10Action
+    7400624: Gear12|Gear11Action
+    7400626: Gear12|Gear12Action
+    7400628: Gear12|Gear13Action
+    7400630: Gear12|Gear14Action
+    7400632: Gear12|Gear15Action
+    7400634: Gear12|Gear16Action
+    7400636: Gear12|Gear17Action
+    7400638: Gear12|Gear18.001Action
+    7400640: Gear12|Gear18Action
+    7400642: Gear12|Gear19Action
+    7400644: Gear12|Gear1Action
+    7400646: Gear12|Gear20Action
+    7400648: Gear12|Gear21Action
+    7400650: Gear12|Gear22Action
+    7400652: Gear12|Gear23Action
+    7400654: Gear12|Gear24Action
+    7400656: Gear12|Gear25Action
+    7400658: Gear12|Gear26Action
+    7400660: Gear12|Gear27Action
+    7400662: Gear12|Gear28Action
+    7400664: Gear12|Gear29Action
+    7400666: Gear12|Gear30Action
+    7400668: Gear12|Gear31Action
+    7400670: Gear12|Gear32Action
+    7400672: Gear12|Gear3Action
+    7400674: Gear12|Gear5.001Action
+    7400676: Gear12|Gear5.001Action.001
+    7400678: Gear12|Gear5Action
+    7400680: Gear12|Gear6Action
+    7400682: Gear12|Gear7Action
+    7400684: Gear12|Gear8Action
+    7400686: Gear12|Gear9Action
+    7400688: Gear12|GearAction
+    7400690: Gear12|PipeForGearsAction
+    7400692: Gear12|Wheel 5.001Action
+    7400694: Gear12|Wheel 5.002Action
+    7400696: Gear12|Wheel 5.003Action
+    7400698: Gear12|Wheel 5.004Action
+    7400700: Gear12|Wheel 5.005Action
+    7400702: Gear12|Wheel 5Action
+    7400704: Gear13|DiggerAction
+    7400706: Gear13|EngineAction
+    7400708: Gear13|Gear1.001Action
+    7400710: Gear13|Gear10Action
+    7400712: Gear13|Gear11Action
+    7400714: Gear13|Gear12Action
+    7400716: Gear13|Gear13Action
+    7400718: Gear13|Gear14Action
+    7400720: Gear13|Gear15Action
+    7400722: Gear13|Gear16Action
+    7400724: Gear13|Gear17Action
+    7400726: Gear13|Gear18.001Action
+    7400728: Gear13|Gear18Action
+    7400730: Gear13|Gear19Action
+    7400732: Gear13|Gear1Action
+    7400734: Gear13|Gear20Action
+    7400736: Gear13|Gear21Action
+    7400738: Gear13|Gear22Action
+    7400740: Gear13|Gear23Action
+    7400742: Gear13|Gear24Action
+    7400744: Gear13|Gear25Action
+    7400746: Gear13|Gear26Action
+    7400748: Gear13|Gear27Action
+    7400750: Gear13|Gear28Action
+    7400752: Gear13|Gear29Action
+    7400754: Gear13|Gear30Action
+    7400756: Gear13|Gear31Action
+    7400758: Gear13|Gear32Action
+    7400760: Gear13|Gear3Action
+    7400762: Gear13|Gear5.001Action
+    7400764: Gear13|Gear5.001Action.001
+    7400766: Gear13|Gear5Action
+    7400768: Gear13|Gear6Action
+    7400770: Gear13|Gear7Action
+    7400772: Gear13|Gear8Action
+    7400774: Gear13|Gear9Action
+    7400776: Gear13|GearAction
+    7400778: Gear13|PipeForGearsAction
+    7400780: Gear13|Wheel 5.001Action
+    7400782: Gear13|Wheel 5.002Action
+    7400784: Gear13|Wheel 5.003Action
+    7400786: Gear13|Wheel 5.004Action
+    7400788: Gear13|Wheel 5.005Action
+    7400790: Gear13|Wheel 5Action
+    7400792: Gear14|DiggerAction
+    7400794: Gear14|EngineAction
+    7400796: Gear14|Gear1.001Action
+    7400798: Gear14|Gear10Action
+    7400800: Gear14|Gear11Action
+    7400802: Gear14|Gear12Action
+    7400804: Gear14|Gear13Action
+    7400806: Gear14|Gear14Action
+    7400808: Gear14|Gear15Action
+    7400810: Gear14|Gear16Action
+    7400812: Gear14|Gear17Action
+    7400814: Gear14|Gear18.001Action
+    7400816: Gear14|Gear18Action
+    7400818: Gear14|Gear19Action
+    7400820: Gear14|Gear1Action
+    7400822: Gear14|Gear20Action
+    7400824: Gear14|Gear21Action
+    7400826: Gear14|Gear22Action
+    7400828: Gear14|Gear23Action
+    7400830: Gear14|Gear24Action
+    7400832: Gear14|Gear25Action
+    7400834: Gear14|Gear26Action
+    7400836: Gear14|Gear27Action
+    7400838: Gear14|Gear28Action
+    7400840: Gear14|Gear29Action
+    7400842: Gear14|Gear30Action
+    7400844: Gear14|Gear31Action
+    7400846: Gear14|Gear32Action
+    7400848: Gear14|Gear3Action
+    7400850: Gear14|Gear5.001Action
+    7400852: Gear14|Gear5.001Action.001
+    7400854: Gear14|Gear5Action
+    7400856: Gear14|Gear6Action
+    7400858: Gear14|Gear7Action
+    7400860: Gear14|Gear8Action
+    7400862: Gear14|Gear9Action
+    7400864: Gear14|GearAction
+    7400866: Gear14|PipeForGearsAction
+    7400868: Gear14|Wheel 5.001Action
+    7400870: Gear14|Wheel 5.002Action
+    7400872: Gear14|Wheel 5.003Action
+    7400874: Gear14|Wheel 5.004Action
+    7400876: Gear14|Wheel 5.005Action
+    7400878: Gear14|Wheel 5Action
+    7400880: Gear15|DiggerAction
+    7400882: Gear15|EngineAction
+    7400884: Gear15|Gear1.001Action
+    7400886: Gear15|Gear10Action
+    7400888: Gear15|Gear11Action
+    7400890: Gear15|Gear12Action
+    7400892: Gear15|Gear13Action
+    7400894: Gear15|Gear14Action
+    7400896: Gear15|Gear15Action
+    7400898: Gear15|Gear16Action
+    7400900: Gear15|Gear17Action
+    7400902: Gear15|Gear18.001Action
+    7400904: Gear15|Gear18Action
+    7400906: Gear15|Gear19Action
+    7400908: Gear15|Gear1Action
+    7400910: Gear15|Gear20Action
+    7400912: Gear15|Gear21Action
+    7400914: Gear15|Gear22Action
+    7400916: Gear15|Gear23Action
+    7400918: Gear15|Gear24Action
+    7400920: Gear15|Gear25Action
+    7400922: Gear15|Gear26Action
+    7400924: Gear15|Gear27Action
+    7400926: Gear15|Gear28Action
+    7400928: Gear15|Gear29Action
+    7400930: Gear15|Gear30Action
+    7400932: Gear15|Gear31Action
+    7400934: Gear15|Gear32Action
+    7400936: Gear15|Gear3Action
+    7400938: Gear15|Gear5.001Action
+    7400940: Gear15|Gear5.001Action.001
+    7400942: Gear15|Gear5Action
+    7400944: Gear15|Gear6Action
+    7400946: Gear15|Gear7Action
+    7400948: Gear15|Gear8Action
+    7400950: Gear15|Gear9Action
+    7400952: Gear15|GearAction
+    7400954: Gear15|PipeForGearsAction
+    7400956: Gear15|Wheel 5.001Action
+    7400958: Gear15|Wheel 5.002Action
+    7400960: Gear15|Wheel 5.003Action
+    7400962: Gear15|Wheel 5.004Action
+    7400964: Gear15|Wheel 5.005Action
+    7400966: Gear15|Wheel 5Action
+    7400968: Gear16|DiggerAction
+    7400970: Gear16|EngineAction
+    7400972: Gear16|Gear1.001Action
+    7400974: Gear16|Gear10Action
+    7400976: Gear16|Gear11Action
+    7400978: Gear16|Gear12Action
+    7400980: Gear16|Gear13Action
+    7400982: Gear16|Gear14Action
+    7400984: Gear16|Gear15Action
+    7400986: Gear16|Gear16Action
+    7400988: Gear16|Gear17Action
+    7400990: Gear16|Gear18.001Action
+    7400992: Gear16|Gear18Action
+    7400994: Gear16|Gear19Action
+    7400996: Gear16|Gear1Action
+    7400998: Gear16|Gear20Action
+    7401000: Gear16|Gear21Action
+    7401002: Gear16|Gear22Action
+    7401004: Gear16|Gear23Action
+    7401006: Gear16|Gear24Action
+    7401008: Gear16|Gear25Action
+    7401010: Gear16|Gear26Action
+    7401012: Gear16|Gear27Action
+    7401014: Gear16|Gear28Action
+    7401016: Gear16|Gear29Action
+    7401018: Gear16|Gear30Action
+    7401020: Gear16|Gear31Action
+    7401022: Gear16|Gear32Action
+    7401024: Gear16|Gear3Action
+    7401026: Gear16|Gear5.001Action
+    7401028: Gear16|Gear5.001Action.001
+    7401030: Gear16|Gear5Action
+    7401032: Gear16|Gear6Action
+    7401034: Gear16|Gear7Action
+    7401036: Gear16|Gear8Action
+    7401038: Gear16|Gear9Action
+    7401040: Gear16|GearAction
+    7401042: Gear16|PipeForGearsAction
+    7401044: Gear16|Wheel 5.001Action
+    7401046: Gear16|Wheel 5.002Action
+    7401048: Gear16|Wheel 5.003Action
+    7401050: Gear16|Wheel 5.004Action
+    7401052: Gear16|Wheel 5.005Action
+    7401054: Gear16|Wheel 5Action
+    7401056: Gear17|DiggerAction
+    7401058: Gear17|EngineAction
+    7401060: Gear17|Gear1.001Action
+    7401062: Gear17|Gear10Action
+    7401064: Gear17|Gear11Action
+    7401066: Gear17|Gear12Action
+    7401068: Gear17|Gear13Action
+    7401070: Gear17|Gear14Action
+    7401072: Gear17|Gear15Action
+    7401074: Gear17|Gear16Action
+    7401076: Gear17|Gear17Action
+    7401078: Gear17|Gear18.001Action
+    7401080: Gear17|Gear18Action
+    7401082: Gear17|Gear19Action
+    7401084: Gear17|Gear1Action
+    7401086: Gear17|Gear20Action
+    7401088: Gear17|Gear21Action
+    7401090: Gear17|Gear22Action
+    7401092: Gear17|Gear23Action
+    7401094: Gear17|Gear24Action
+    7401096: Gear17|Gear25Action
+    7401098: Gear17|Gear26Action
+    7401100: Gear17|Gear27Action
+    7401102: Gear17|Gear28Action
+    7401104: Gear17|Gear29Action
+    7401106: Gear17|Gear30Action
+    7401108: Gear17|Gear31Action
+    7401110: Gear17|Gear32Action
+    7401112: Gear17|Gear3Action
+    7401114: Gear17|Gear5.001Action
+    7401116: Gear17|Gear5.001Action.001
+    7401118: Gear17|Gear5Action
+    7401120: Gear17|Gear6Action
+    7401122: Gear17|Gear7Action
+    7401124: Gear17|Gear8Action
+    7401126: Gear17|Gear9Action
+    7401128: Gear17|GearAction
+    7401130: Gear17|PipeForGearsAction
+    7401132: Gear17|Wheel 5.001Action
+    7401134: Gear17|Wheel 5.002Action
+    7401136: Gear17|Wheel 5.003Action
+    7401138: Gear17|Wheel 5.004Action
+    7401140: Gear17|Wheel 5.005Action
+    7401142: Gear17|Wheel 5Action
+    7401144: Gear18|DiggerAction
+    7401146: Gear18|EngineAction
+    7401148: Gear18|Gear1.001Action
+    7401150: Gear18|Gear10Action
+    7401152: Gear18|Gear11Action
+    7401154: Gear18|Gear12Action
+    7401156: Gear18|Gear13Action
+    7401158: Gear18|Gear14Action
+    7401160: Gear18|Gear15Action
+    7401162: Gear18|Gear16Action
+    7401164: Gear18|Gear17Action
+    7401166: Gear18|Gear18.001Action
+    7401168: Gear18|Gear18Action
+    7401170: Gear18|Gear19Action
+    7401172: Gear18|Gear1Action
+    7401174: Gear18|Gear20Action
+    7401176: Gear18|Gear21Action
+    7401178: Gear18|Gear22Action
+    7401180: Gear18|Gear23Action
+    7401182: Gear18|Gear24Action
+    7401184: Gear18|Gear25Action
+    7401186: Gear18|Gear26Action
+    7401188: Gear18|Gear27Action
+    7401190: Gear18|Gear28Action
+    7401192: Gear18|Gear29Action
+    7401194: Gear18|Gear30Action
+    7401196: Gear18|Gear31Action
+    7401198: Gear18|Gear32Action
+    7401200: Gear18|Gear3Action
+    7401202: Gear18|Gear5.001Action
+    7401204: Gear18|Gear5.001Action.001
+    7401206: Gear18|Gear5Action
+    7401208: Gear18|Gear6Action
+    7401210: Gear18|Gear7Action
+    7401212: Gear18|Gear8Action
+    7401214: Gear18|Gear9Action
+    7401216: Gear18|GearAction
+    7401218: Gear18|PipeForGearsAction
+    7401220: Gear18|Wheel 5.001Action
+    7401222: Gear18|Wheel 5.002Action
+    7401224: Gear18|Wheel 5.003Action
+    7401226: Gear18|Wheel 5.004Action
+    7401228: Gear18|Wheel 5.005Action
+    7401230: Gear18|Wheel 5Action
+    7401232: Gear18.001|DiggerAction
+    7401234: Gear18.001|EngineAction
+    7401236: Gear18.001|Gear1.001Action
+    7401238: Gear18.001|Gear10Action
+    7401240: Gear18.001|Gear11Action
+    7401242: Gear18.001|Gear12Action
+    7401244: Gear18.001|Gear13Action
+    7401246: Gear18.001|Gear14Action
+    7401248: Gear18.001|Gear15Action
+    7401250: Gear18.001|Gear16Action
+    7401252: Gear18.001|Gear17Action
+    7401254: Gear18.001|Gear18.001Action
+    7401256: Gear18.001|Gear18Action
+    7401258: Gear18.001|Gear19Action
+    7401260: Gear18.001|Gear1Action
+    7401262: Gear18.001|Gear20Action
+    7401264: Gear18.001|Gear21Action
+    7401266: Gear18.001|Gear22Action
+    7401268: Gear18.001|Gear23Action
+    7401270: Gear18.001|Gear24Action
+    7401272: Gear18.001|Gear25Action
+    7401274: Gear18.001|Gear26Action
+    7401276: Gear18.001|Gear27Action
+    7401278: Gear18.001|Gear28Action
+    7401280: Gear18.001|Gear29Action
+    7401282: Gear18.001|Gear30Action
+    7401284: Gear18.001|Gear31Action
+    7401286: Gear18.001|Gear32Action
+    7401288: Gear18.001|Gear3Action
+    7401290: Gear18.001|Gear5.001Action
+    7401292: Gear18.001|Gear5.001Action.001
+    7401294: Gear18.001|Gear5Action
+    7401296: Gear18.001|Gear6Action
+    7401298: Gear18.001|Gear7Action
+    7401300: Gear18.001|Gear8Action
+    7401302: Gear18.001|Gear9Action
+    7401304: Gear18.001|GearAction
+    7401306: Gear18.001|PipeForGearsAction
+    7401308: Gear18.001|Wheel 5.001Action
+    7401310: Gear18.001|Wheel 5.002Action
+    7401312: Gear18.001|Wheel 5.003Action
+    7401314: Gear18.001|Wheel 5.004Action
+    7401316: Gear18.001|Wheel 5.005Action
+    7401318: Gear18.001|Wheel 5Action
+    7401320: Gear19|DiggerAction
+    7401322: Gear19|EngineAction
+    7401324: Gear19|Gear1.001Action
+    7401326: Gear19|Gear10Action
+    7401328: Gear19|Gear11Action
+    7401330: Gear19|Gear12Action
+    7401332: Gear19|Gear13Action
+    7401334: Gear19|Gear14Action
+    7401336: Gear19|Gear15Action
+    7401338: Gear19|Gear16Action
+    7401340: Gear19|Gear17Action
+    7401342: Gear19|Gear18.001Action
+    7401344: Gear19|Gear18Action
+    7401346: Gear19|Gear19Action
+    7401348: Gear19|Gear1Action
+    7401350: Gear19|Gear20Action
+    7401352: Gear19|Gear21Action
+    7401354: Gear19|Gear22Action
+    7401356: Gear19|Gear23Action
+    7401358: Gear19|Gear24Action
+    7401360: Gear19|Gear25Action
+    7401362: Gear19|Gear26Action
+    7401364: Gear19|Gear27Action
+    7401366: Gear19|Gear28Action
+    7401368: Gear19|Gear29Action
+    7401370: Gear19|Gear30Action
+    7401372: Gear19|Gear31Action
+    7401374: Gear19|Gear32Action
+    7401376: Gear19|Gear3Action
+    7401378: Gear19|Gear5.001Action
+    7401380: Gear19|Gear5.001Action.001
+    7401382: Gear19|Gear5Action
+    7401384: Gear19|Gear6Action
+    7401386: Gear19|Gear7Action
+    7401388: Gear19|Gear8Action
+    7401390: Gear19|Gear9Action
+    7401392: Gear19|GearAction
+    7401394: Gear19|PipeForGearsAction
+    7401396: Gear19|Wheel 5.001Action
+    7401398: Gear19|Wheel 5.002Action
+    7401400: Gear19|Wheel 5.003Action
+    7401402: Gear19|Wheel 5.004Action
+    7401404: Gear19|Wheel 5.005Action
+    7401406: Gear19|Wheel 5Action
+    7401408: Gear20|DiggerAction
+    7401410: Gear20|EngineAction
+    7401412: Gear20|Gear1.001Action
+    7401414: Gear20|Gear10Action
+    7401416: Gear20|Gear11Action
+    7401418: Gear20|Gear12Action
+    7401420: Gear20|Gear13Action
+    7401422: Gear20|Gear14Action
+    7401424: Gear20|Gear15Action
+    7401426: Gear20|Gear16Action
+    7401428: Gear20|Gear17Action
+    7401430: Gear20|Gear18.001Action
+    7401432: Gear20|Gear18Action
+    7401434: Gear20|Gear19Action
+    7401436: Gear20|Gear1Action
+    7401438: Gear20|Gear20Action
+    7401440: Gear20|Gear21Action
+    7401442: Gear20|Gear22Action
+    7401444: Gear20|Gear23Action
+    7401446: Gear20|Gear24Action
+    7401448: Gear20|Gear25Action
+    7401450: Gear20|Gear26Action
+    7401452: Gear20|Gear27Action
+    7401454: Gear20|Gear28Action
+    7401456: Gear20|Gear29Action
+    7401458: Gear20|Gear30Action
+    7401460: Gear20|Gear31Action
+    7401462: Gear20|Gear32Action
+    7401464: Gear20|Gear3Action
+    7401466: Gear20|Gear5.001Action
+    7401468: Gear20|Gear5.001Action.001
+    7401470: Gear20|Gear5Action
+    7401472: Gear20|Gear6Action
+    7401474: Gear20|Gear7Action
+    7401476: Gear20|Gear8Action
+    7401478: Gear20|Gear9Action
+    7401480: Gear20|GearAction
+    7401482: Gear20|PipeForGearsAction
+    7401484: Gear20|Wheel 5.001Action
+    7401486: Gear20|Wheel 5.002Action
+    7401488: Gear20|Wheel 5.003Action
+    7401490: Gear20|Wheel 5.004Action
+    7401492: Gear20|Wheel 5.005Action
+    7401494: Gear20|Wheel 5Action
+    7401496: Gear21|DiggerAction
+    7401498: Gear21|EngineAction
+    7401500: Gear21|Gear1.001Action
+    7401502: Gear21|Gear10Action
+    7401504: Gear21|Gear11Action
+    7401506: Gear21|Gear12Action
+    7401508: Gear21|Gear13Action
+    7401510: Gear21|Gear14Action
+    7401512: Gear21|Gear15Action
+    7401514: Gear21|Gear16Action
+    7401516: Gear21|Gear17Action
+    7401518: Gear21|Gear18.001Action
+    7401520: Gear21|Gear18Action
+    7401522: Gear21|Gear19Action
+    7401524: Gear21|Gear1Action
+    7401526: Gear21|Gear20Action
+    7401528: Gear21|Gear21Action
+    7401530: Gear21|Gear22Action
+    7401532: Gear21|Gear23Action
+    7401534: Gear21|Gear24Action
+    7401536: Gear21|Gear25Action
+    7401538: Gear21|Gear26Action
+    7401540: Gear21|Gear27Action
+    7401542: Gear21|Gear28Action
+    7401544: Gear21|Gear29Action
+    7401546: Gear21|Gear30Action
+    7401548: Gear21|Gear31Action
+    7401550: Gear21|Gear32Action
+    7401552: Gear21|Gear3Action
+    7401554: Gear21|Gear5.001Action
+    7401556: Gear21|Gear5.001Action.001
+    7401558: Gear21|Gear5Action
+    7401560: Gear21|Gear6Action
+    7401562: Gear21|Gear7Action
+    7401564: Gear21|Gear8Action
+    7401566: Gear21|Gear9Action
+    7401568: Gear21|GearAction
+    7401570: Gear21|PipeForGearsAction
+    7401572: Gear21|Wheel 5.001Action
+    7401574: Gear21|Wheel 5.002Action
+    7401576: Gear21|Wheel 5.003Action
+    7401578: Gear21|Wheel 5.004Action
+    7401580: Gear21|Wheel 5.005Action
+    7401582: Gear21|Wheel 5Action
+    7401584: Gear22|DiggerAction
+    7401586: Gear22|EngineAction
+    7401588: Gear22|Gear1.001Action
+    7401590: Gear22|Gear10Action
+    7401592: Gear22|Gear11Action
+    7401594: Gear22|Gear12Action
+    7401596: Gear22|Gear13Action
+    7401598: Gear22|Gear14Action
+    7401600: Gear22|Gear15Action
+    7401602: Gear22|Gear16Action
+    7401604: Gear22|Gear17Action
+    7401606: Gear22|Gear18.001Action
+    7401608: Gear22|Gear18Action
+    7401610: Gear22|Gear19Action
+    7401612: Gear22|Gear1Action
+    7401614: Gear22|Gear20Action
+    7401616: Gear22|Gear21Action
+    7401618: Gear22|Gear22Action
+    7401620: Gear22|Gear23Action
+    7401622: Gear22|Gear24Action
+    7401624: Gear22|Gear25Action
+    7401626: Gear22|Gear26Action
+    7401628: Gear22|Gear27Action
+    7401630: Gear22|Gear28Action
+    7401632: Gear22|Gear29Action
+    7401634: Gear22|Gear30Action
+    7401636: Gear22|Gear31Action
+    7401638: Gear22|Gear32Action
+    7401640: Gear22|Gear3Action
+    7401642: Gear22|Gear5.001Action
+    7401644: Gear22|Gear5.001Action.001
+    7401646: Gear22|Gear5Action
+    7401648: Gear22|Gear6Action
+    7401650: Gear22|Gear7Action
+    7401652: Gear22|Gear8Action
+    7401654: Gear22|Gear9Action
+    7401656: Gear22|GearAction
+    7401658: Gear22|PipeForGearsAction
+    7401660: Gear22|Wheel 5.001Action
+    7401662: Gear22|Wheel 5.002Action
+    7401664: Gear22|Wheel 5.003Action
+    7401666: Gear22|Wheel 5.004Action
+    7401668: Gear22|Wheel 5.005Action
+    7401670: Gear22|Wheel 5Action
+    7401672: Gear23|DiggerAction
+    7401674: Gear23|EngineAction
+    7401676: Gear23|Gear1.001Action
+    7401678: Gear23|Gear10Action
+    7401680: Gear23|Gear11Action
+    7401682: Gear23|Gear12Action
+    7401684: Gear23|Gear13Action
+    7401686: Gear23|Gear14Action
+    7401688: Gear23|Gear15Action
+    7401690: Gear23|Gear16Action
+    7401692: Gear23|Gear17Action
+    7401694: Gear23|Gear18.001Action
+    7401696: Gear23|Gear18Action
+    7401698: Gear23|Gear19Action
+    7401700: Gear23|Gear1Action
+    7401702: Gear23|Gear20Action
+    7401704: Gear23|Gear21Action
+    7401706: Gear23|Gear22Action
+    7401708: Gear23|Gear23Action
+    7401710: Gear23|Gear24Action
+    7401712: Gear23|Gear25Action
+    7401714: Gear23|Gear26Action
+    7401716: Gear23|Gear27Action
+    7401718: Gear23|Gear28Action
+    7401720: Gear23|Gear29Action
+    7401722: Gear23|Gear30Action
+    7401724: Gear23|Gear31Action
+    7401726: Gear23|Gear32Action
+    7401728: Gear23|Gear3Action
+    7401730: Gear23|Gear5.001Action
+    7401732: Gear23|Gear5.001Action.001
+    7401734: Gear23|Gear5Action
+    7401736: Gear23|Gear6Action
+    7401738: Gear23|Gear7Action
+    7401740: Gear23|Gear8Action
+    7401742: Gear23|Gear9Action
+    7401744: Gear23|GearAction
+    7401746: Gear23|PipeForGearsAction
+    7401748: Gear23|Wheel 5.001Action
+    7401750: Gear23|Wheel 5.002Action
+    7401752: Gear23|Wheel 5.003Action
+    7401754: Gear23|Wheel 5.004Action
+    7401756: Gear23|Wheel 5.005Action
+    7401758: Gear23|Wheel 5Action
+    7401760: Gear24|DiggerAction
+    7401762: Gear24|EngineAction
+    7401764: Gear24|Gear1.001Action
+    7401766: Gear24|Gear10Action
+    7401768: Gear24|Gear11Action
+    7401770: Gear24|Gear12Action
+    7401772: Gear24|Gear13Action
+    7401774: Gear24|Gear14Action
+    7401776: Gear24|Gear15Action
+    7401778: Gear24|Gear16Action
+    7401780: Gear24|Gear17Action
+    7401782: Gear24|Gear18.001Action
+    7401784: Gear24|Gear18Action
+    7401786: Gear24|Gear19Action
+    7401788: Gear24|Gear1Action
+    7401790: Gear24|Gear20Action
+    7401792: Gear24|Gear21Action
+    7401794: Gear24|Gear22Action
+    7401796: Gear24|Gear23Action
+    7401798: Gear24|Gear24Action
+    7401800: Gear24|Gear25Action
+    7401802: Gear24|Gear26Action
+    7401804: Gear24|Gear27Action
+    7401806: Gear24|Gear28Action
+    7401808: Gear24|Gear29Action
+    7401810: Gear24|Gear30Action
+    7401812: Gear24|Gear31Action
+    7401814: Gear24|Gear32Action
+    7401816: Gear24|Gear3Action
+    7401818: Gear24|Gear5.001Action
+    7401820: Gear24|Gear5.001Action.001
+    7401822: Gear24|Gear5Action
+    7401824: Gear24|Gear6Action
+    7401826: Gear24|Gear7Action
+    7401828: Gear24|Gear8Action
+    7401830: Gear24|Gear9Action
+    7401832: Gear24|GearAction
+    7401834: Gear24|PipeForGearsAction
+    7401836: Gear24|Wheel 5.001Action
+    7401838: Gear24|Wheel 5.002Action
+    7401840: Gear24|Wheel 5.003Action
+    7401842: Gear24|Wheel 5.004Action
+    7401844: Gear24|Wheel 5.005Action
+    7401846: Gear24|Wheel 5Action
+    7401848: Gear25|DiggerAction
+    7401850: Gear25|EngineAction
+    7401852: Gear25|Gear1.001Action
+    7401854: Gear25|Gear10Action
+    7401856: Gear25|Gear11Action
+    7401858: Gear25|Gear12Action
+    7401860: Gear25|Gear13Action
+    7401862: Gear25|Gear14Action
+    7401864: Gear25|Gear15Action
+    7401866: Gear25|Gear16Action
+    7401868: Gear25|Gear17Action
+    7401870: Gear25|Gear18.001Action
+    7401872: Gear25|Gear18Action
+    7401874: Gear25|Gear19Action
+    7401876: Gear25|Gear1Action
+    7401878: Gear25|Gear20Action
+    7401880: Gear25|Gear21Action
+    7401882: Gear25|Gear22Action
+    7401884: Gear25|Gear23Action
+    7401886: Gear25|Gear24Action
+    7401888: Gear25|Gear25Action
+    7401890: Gear25|Gear26Action
+    7401892: Gear25|Gear27Action
+    7401894: Gear25|Gear28Action
+    7401896: Gear25|Gear29Action
+    7401898: Gear25|Gear30Action
+    7401900: Gear25|Gear31Action
+    7401902: Gear25|Gear32Action
+    7401904: Gear25|Gear3Action
+    7401906: Gear25|Gear5.001Action
+    7401908: Gear25|Gear5.001Action.001
+    7401910: Gear25|Gear5Action
+    7401912: Gear25|Gear6Action
+    7401914: Gear25|Gear7Action
+    7401916: Gear25|Gear8Action
+    7401918: Gear25|Gear9Action
+    7401920: Gear25|GearAction
+    7401922: Gear25|PipeForGearsAction
+    7401924: Gear25|Wheel 5.001Action
+    7401926: Gear25|Wheel 5.002Action
+    7401928: Gear25|Wheel 5.003Action
+    7401930: Gear25|Wheel 5.004Action
+    7401932: Gear25|Wheel 5.005Action
+    7401934: Gear25|Wheel 5Action
+    7401936: Gear26|DiggerAction
+    7401938: Gear26|EngineAction
+    7401940: Gear26|Gear1.001Action
+    7401942: Gear26|Gear10Action
+    7401944: Gear26|Gear11Action
+    7401946: Gear26|Gear12Action
+    7401948: Gear26|Gear13Action
+    7401950: Gear26|Gear14Action
+    7401952: Gear26|Gear15Action
+    7401954: Gear26|Gear16Action
+    7401956: Gear26|Gear17Action
+    7401958: Gear26|Gear18.001Action
+    7401960: Gear26|Gear18Action
+    7401962: Gear26|Gear19Action
+    7401964: Gear26|Gear1Action
+    7401966: Gear26|Gear20Action
+    7401968: Gear26|Gear21Action
+    7401970: Gear26|Gear22Action
+    7401972: Gear26|Gear23Action
+    7401974: Gear26|Gear24Action
+    7401976: Gear26|Gear25Action
+    7401978: Gear26|Gear26Action
+    7401980: Gear26|Gear27Action
+    7401982: Gear26|Gear28Action
+    7401984: Gear26|Gear29Action
+    7401986: Gear26|Gear30Action
+    7401988: Gear26|Gear31Action
+    7401990: Gear26|Gear32Action
+    7401992: Gear26|Gear3Action
+    7401994: Gear26|Gear5.001Action
+    7401996: Gear26|Gear5.001Action.001
+    7401998: Gear26|Gear5Action
+    7402000: Gear26|Gear6Action
+    7402002: Gear26|Gear7Action
+    7402004: Gear26|Gear8Action
+    7402006: Gear26|Gear9Action
+    7402008: Gear26|GearAction
+    7402010: Gear26|PipeForGearsAction
+    7402012: Gear26|Wheel 5.001Action
+    7402014: Gear26|Wheel 5.002Action
+    7402016: Gear26|Wheel 5.003Action
+    7402018: Gear26|Wheel 5.004Action
+    7402020: Gear26|Wheel 5.005Action
+    7402022: Gear26|Wheel 5Action
+    7402024: Gear27|DiggerAction
+    7402026: Gear27|EngineAction
+    7402028: Gear27|Gear1.001Action
+    7402030: Gear27|Gear10Action
+    7402032: Gear27|Gear11Action
+    7402034: Gear27|Gear12Action
+    7402036: Gear27|Gear13Action
+    7402038: Gear27|Gear14Action
+    7402040: Gear27|Gear15Action
+    7402042: Gear27|Gear16Action
+    7402044: Gear27|Gear17Action
+    7402046: Gear27|Gear18.001Action
+    7402048: Gear27|Gear18Action
+    7402050: Gear27|Gear19Action
+    7402052: Gear27|Gear1Action
+    7402054: Gear27|Gear20Action
+    7402056: Gear27|Gear21Action
+    7402058: Gear27|Gear22Action
+    7402060: Gear27|Gear23Action
+    7402062: Gear27|Gear24Action
+    7402064: Gear27|Gear25Action
+    7402066: Gear27|Gear26Action
+    7402068: Gear27|Gear27Action
+    7402070: Gear27|Gear28Action
+    7402072: Gear27|Gear29Action
+    7402074: Gear27|Gear30Action
+    7402076: Gear27|Gear31Action
+    7402078: Gear27|Gear32Action
+    7402080: Gear27|Gear3Action
+    7402082: Gear27|Gear5.001Action
+    7402084: Gear27|Gear5.001Action.001
+    7402086: Gear27|Gear5Action
+    7402088: Gear27|Gear6Action
+    7402090: Gear27|Gear7Action
+    7402092: Gear27|Gear8Action
+    7402094: Gear27|Gear9Action
+    7402096: Gear27|GearAction
+    7402098: Gear27|PipeForGearsAction
+    7402100: Gear27|Wheel 5.001Action
+    7402102: Gear27|Wheel 5.002Action
+    7402104: Gear27|Wheel 5.003Action
+    7402106: Gear27|Wheel 5.004Action
+    7402108: Gear27|Wheel 5.005Action
+    7402110: Gear27|Wheel 5Action
+    7402112: Gear28|DiggerAction
+    7402114: Gear28|EngineAction
+    7402116: Gear28|Gear1.001Action
+    7402118: Gear28|Gear10Action
+    7402120: Gear28|Gear11Action
+    7402122: Gear28|Gear12Action
+    7402124: Gear28|Gear13Action
+    7402126: Gear28|Gear14Action
+    7402128: Gear28|Gear15Action
+    7402130: Gear28|Gear16Action
+    7402132: Gear28|Gear17Action
+    7402134: Gear28|Gear18.001Action
+    7402136: Gear28|Gear18Action
+    7402138: Gear28|Gear19Action
+    7402140: Gear28|Gear1Action
+    7402142: Gear28|Gear20Action
+    7402144: Gear28|Gear21Action
+    7402146: Gear28|Gear22Action
+    7402148: Gear28|Gear23Action
+    7402150: Gear28|Gear24Action
+    7402152: Gear28|Gear25Action
+    7402154: Gear28|Gear26Action
+    7402156: Gear28|Gear27Action
+    7402158: Gear28|Gear28Action
+    7402160: Gear28|Gear29Action
+    7402162: Gear28|Gear30Action
+    7402164: Gear28|Gear31Action
+    7402166: Gear28|Gear32Action
+    7402168: Gear28|Gear3Action
+    7402170: Gear28|Gear5.001Action
+    7402172: Gear28|Gear5.001Action.001
+    7402174: Gear28|Gear5Action
+    7402176: Gear28|Gear6Action
+    7402178: Gear28|Gear7Action
+    7402180: Gear28|Gear8Action
+    7402182: Gear28|Gear9Action
+    7402184: Gear28|GearAction
+    7402186: Gear28|PipeForGearsAction
+    7402188: Gear28|Wheel 5.001Action
+    7402190: Gear28|Wheel 5.002Action
+    7402192: Gear28|Wheel 5.003Action
+    7402194: Gear28|Wheel 5.004Action
+    7402196: Gear28|Wheel 5.005Action
+    7402198: Gear28|Wheel 5Action
+    7402200: Gear29|DiggerAction
+    7402202: Gear29|EngineAction
+    7402204: Gear29|Gear1.001Action
+    7402206: Gear29|Gear10Action
+    7402208: Gear29|Gear11Action
+    7402210: Gear29|Gear12Action
+    7402212: Gear29|Gear13Action
+    7402214: Gear29|Gear14Action
+    7402216: Gear29|Gear15Action
+    7402218: Gear29|Gear16Action
+    7402220: Gear29|Gear17Action
+    7402222: Gear29|Gear18.001Action
+    7402224: Gear29|Gear18Action
+    7402226: Gear29|Gear19Action
+    7402228: Gear29|Gear1Action
+    7402230: Gear29|Gear20Action
+    7402232: Gear29|Gear21Action
+    7402234: Gear29|Gear22Action
+    7402236: Gear29|Gear23Action
+    7402238: Gear29|Gear24Action
+    7402240: Gear29|Gear25Action
+    7402242: Gear29|Gear26Action
+    7402244: Gear29|Gear27Action
+    7402246: Gear29|Gear28Action
+    7402248: Gear29|Gear29Action
+    7402250: Gear29|Gear30Action
+    7402252: Gear29|Gear31Action
+    7402254: Gear29|Gear32Action
+    7402256: Gear29|Gear3Action
+    7402258: Gear29|Gear5.001Action
+    7402260: Gear29|Gear5.001Action.001
+    7402262: Gear29|Gear5Action
+    7402264: Gear29|Gear6Action
+    7402266: Gear29|Gear7Action
+    7402268: Gear29|Gear8Action
+    7402270: Gear29|Gear9Action
+    7402272: Gear29|GearAction
+    7402274: Gear29|PipeForGearsAction
+    7402276: Gear29|Wheel 5.001Action
+    7402278: Gear29|Wheel 5.002Action
+    7402280: Gear29|Wheel 5.003Action
+    7402282: Gear29|Wheel 5.004Action
+    7402284: Gear29|Wheel 5.005Action
+    7402286: Gear29|Wheel 5Action
+    7402288: Gear3|DiggerAction
+    7402290: Gear3|EngineAction
+    7402292: Gear3|Gear1.001Action
+    7402294: Gear3|Gear10Action
+    7402296: Gear3|Gear11Action
+    7402298: Gear3|Gear12Action
+    7402300: Gear3|Gear13Action
+    7402302: Gear3|Gear14Action
+    7402304: Gear3|Gear15Action
+    7402306: Gear3|Gear16Action
+    7402308: Gear3|Gear17Action
+    7402310: Gear3|Gear18.001Action
+    7402312: Gear3|Gear18Action
+    7402314: Gear3|Gear19Action
+    7402316: Gear3|Gear1Action
+    7402318: Gear3|Gear20Action
+    7402320: Gear3|Gear21Action
+    7402322: Gear3|Gear22Action
+    7402324: Gear3|Gear23Action
+    7402326: Gear3|Gear24Action
+    7402328: Gear3|Gear25Action
+    7402330: Gear3|Gear26Action
+    7402332: Gear3|Gear27Action
+    7402334: Gear3|Gear28Action
+    7402336: Gear3|Gear29Action
+    7402338: Gear3|Gear30Action
+    7402340: Gear3|Gear31Action
+    7402342: Gear3|Gear32Action
+    7402344: Gear3|Gear3Action
+    7402346: Gear3|Gear5.001Action
+    7402348: Gear3|Gear5.001Action.001
+    7402350: Gear3|Gear5Action
+    7402352: Gear3|Gear6Action
+    7402354: Gear3|Gear7Action
+    7402356: Gear3|Gear8Action
+    7402358: Gear3|Gear9Action
+    7402360: Gear3|GearAction
+    7402362: Gear3|PipeForGearsAction
+    7402364: Gear3|Wheel 5.001Action
+    7402366: Gear3|Wheel 5.002Action
+    7402368: Gear3|Wheel 5.003Action
+    7402370: Gear3|Wheel 5.004Action
+    7402372: Gear3|Wheel 5.005Action
+    7402374: Gear3|Wheel 5Action
+    7402376: Gear30|DiggerAction
+    7402378: Gear30|EngineAction
+    7402380: Gear30|Gear1.001Action
+    7402382: Gear30|Gear10Action
+    7402384: Gear30|Gear11Action
+    7402386: Gear30|Gear12Action
+    7402388: Gear30|Gear13Action
+    7402390: Gear30|Gear14Action
+    7402392: Gear30|Gear15Action
+    7402394: Gear30|Gear16Action
+    7402396: Gear30|Gear17Action
+    7402398: Gear30|Gear18.001Action
+    7402400: Gear30|Gear18Action
+    7402402: Gear30|Gear19Action
+    7402404: Gear30|Gear1Action
+    7402406: Gear30|Gear20Action
+    7402408: Gear30|Gear21Action
+    7402410: Gear30|Gear22Action
+    7402412: Gear30|Gear23Action
+    7402414: Gear30|Gear24Action
+    7402416: Gear30|Gear25Action
+    7402418: Gear30|Gear26Action
+    7402420: Gear30|Gear27Action
+    7402422: Gear30|Gear28Action
+    7402424: Gear30|Gear29Action
+    7402426: Gear30|Gear30Action
+    7402428: Gear30|Gear31Action
+    7402430: Gear30|Gear32Action
+    7402432: Gear30|Gear3Action
+    7402434: Gear30|Gear5.001Action
+    7402436: Gear30|Gear5.001Action.001
+    7402438: Gear30|Gear5Action
+    7402440: Gear30|Gear6Action
+    7402442: Gear30|Gear7Action
+    7402444: Gear30|Gear8Action
+    7402446: Gear30|Gear9Action
+    7402448: Gear30|GearAction
+    7402450: Gear30|PipeForGearsAction
+    7402452: Gear30|Wheel 5.001Action
+    7402454: Gear30|Wheel 5.002Action
+    7402456: Gear30|Wheel 5.003Action
+    7402458: Gear30|Wheel 5.004Action
+    7402460: Gear30|Wheel 5.005Action
+    7402462: Gear30|Wheel 5Action
+    7402464: Gear31|DiggerAction
+    7402466: Gear31|EngineAction
+    7402468: Gear31|Gear1.001Action
+    7402470: Gear31|Gear10Action
+    7402472: Gear31|Gear11Action
+    7402474: Gear31|Gear12Action
+    7402476: Gear31|Gear13Action
+    7402478: Gear31|Gear14Action
+    7402480: Gear31|Gear15Action
+    7402482: Gear31|Gear16Action
+    7402484: Gear31|Gear17Action
+    7402486: Gear31|Gear18.001Action
+    7402488: Gear31|Gear18Action
+    7402490: Gear31|Gear19Action
+    7402492: Gear31|Gear1Action
+    7402494: Gear31|Gear20Action
+    7402496: Gear31|Gear21Action
+    7402498: Gear31|Gear22Action
+    7402500: Gear31|Gear23Action
+    7402502: Gear31|Gear24Action
+    7402504: Gear31|Gear25Action
+    7402506: Gear31|Gear26Action
+    7402508: Gear31|Gear27Action
+    7402510: Gear31|Gear28Action
+    7402512: Gear31|Gear29Action
+    7402514: Gear31|Gear30Action
+    7402516: Gear31|Gear31Action
+    7402518: Gear31|Gear32Action
+    7402520: Gear31|Gear3Action
+    7402522: Gear31|Gear5.001Action
+    7402524: Gear31|Gear5.001Action.001
+    7402526: Gear31|Gear5Action
+    7402528: Gear31|Gear6Action
+    7402530: Gear31|Gear7Action
+    7402532: Gear31|Gear8Action
+    7402534: Gear31|Gear9Action
+    7402536: Gear31|GearAction
+    7402538: Gear31|PipeForGearsAction
+    7402540: Gear31|Wheel 5.001Action
+    7402542: Gear31|Wheel 5.002Action
+    7402544: Gear31|Wheel 5.003Action
+    7402546: Gear31|Wheel 5.004Action
+    7402548: Gear31|Wheel 5.005Action
+    7402550: Gear31|Wheel 5Action
+    7402552: Gear32|DiggerAction
+    7402554: Gear32|EngineAction
+    7402556: Gear32|Gear1.001Action
+    7402558: Gear32|Gear10Action
+    7402560: Gear32|Gear11Action
+    7402562: Gear32|Gear12Action
+    7402564: Gear32|Gear13Action
+    7402566: Gear32|Gear14Action
+    7402568: Gear32|Gear15Action
+    7402570: Gear32|Gear16Action
+    7402572: Gear32|Gear17Action
+    7402574: Gear32|Gear18.001Action
+    7402576: Gear32|Gear18Action
+    7402578: Gear32|Gear19Action
+    7402580: Gear32|Gear1Action
+    7402582: Gear32|Gear20Action
+    7402584: Gear32|Gear21Action
+    7402586: Gear32|Gear22Action
+    7402588: Gear32|Gear23Action
+    7402590: Gear32|Gear24Action
+    7402592: Gear32|Gear25Action
+    7402594: Gear32|Gear26Action
+    7402596: Gear32|Gear27Action
+    7402598: Gear32|Gear28Action
+    7402600: Gear32|Gear29Action
+    7402602: Gear32|Gear30Action
+    7402604: Gear32|Gear31Action
+    7402606: Gear32|Gear32Action
+    7402608: Gear32|Gear3Action
+    7402610: Gear32|Gear5.001Action
+    7402612: Gear32|Gear5.001Action.001
+    7402614: Gear32|Gear5Action
+    7402616: Gear32|Gear6Action
+    7402618: Gear32|Gear7Action
+    7402620: Gear32|Gear8Action
+    7402622: Gear32|Gear9Action
+    7402624: Gear32|GearAction
+    7402626: Gear32|PipeForGearsAction
+    7402628: Gear32|Wheel 5.001Action
+    7402630: Gear32|Wheel 5.002Action
+    7402632: Gear32|Wheel 5.003Action
+    7402634: Gear32|Wheel 5.004Action
+    7402636: Gear32|Wheel 5.005Action
+    7402638: Gear32|Wheel 5Action
+    7402640: Gear5|DiggerAction
+    7402642: Gear5|EngineAction
+    7402644: Gear5|Gear1.001Action
+    7402646: Gear5|Gear10Action
+    7402648: Gear5|Gear11Action
+    7402650: Gear5|Gear12Action
+    7402652: Gear5|Gear13Action
+    7402654: Gear5|Gear14Action
+    7402656: Gear5|Gear15Action
+    7402658: Gear5|Gear16Action
+    7402660: Gear5|Gear17Action
+    7402662: Gear5|Gear18.001Action
+    7402664: Gear5|Gear18Action
+    7402666: Gear5|Gear19Action
+    7402668: Gear5|Gear1Action
+    7402670: Gear5|Gear20Action
+    7402672: Gear5|Gear21Action
+    7402674: Gear5|Gear22Action
+    7402676: Gear5|Gear23Action
+    7402678: Gear5|Gear24Action
+    7402680: Gear5|Gear25Action
+    7402682: Gear5|Gear26Action
+    7402684: Gear5|Gear27Action
+    7402686: Gear5|Gear28Action
+    7402688: Gear5|Gear29Action
+    7402690: Gear5|Gear30Action
+    7402692: Gear5|Gear31Action
+    7402694: Gear5|Gear32Action
+    7402696: Gear5|Gear3Action
+    7402698: Gear5|Gear5.001Action
+    7402700: Gear5|Gear5.001Action.001
+    7402702: Gear5|Gear5Action
+    7402704: Gear5|Gear6Action
+    7402706: Gear5|Gear7Action
+    7402708: Gear5|Gear8Action
+    7402710: Gear5|Gear9Action
+    7402712: Gear5|GearAction
+    7402714: Gear5|PipeForGearsAction
+    7402716: Gear5|Wheel 5.001Action
+    7402718: Gear5|Wheel 5.002Action
+    7402720: Gear5|Wheel 5.003Action
+    7402722: Gear5|Wheel 5.004Action
+    7402724: Gear5|Wheel 5.005Action
+    7402726: Gear5|Wheel 5Action
+    7402728: Gear5.001|DiggerAction
+    7402730: Gear5.001|EngineAction
+    7402732: Gear5.001|Gear1.001Action
+    7402734: Gear5.001|Gear10Action
+    7402736: Gear5.001|Gear11Action
+    7402738: Gear5.001|Gear12Action
+    7402740: Gear5.001|Gear13Action
+    7402742: Gear5.001|Gear14Action
+    7402744: Gear5.001|Gear15Action
+    7402746: Gear5.001|Gear16Action
+    7402748: Gear5.001|Gear17Action
+    7402750: Gear5.001|Gear18.001Action
+    7402752: Gear5.001|Gear18Action
+    7402754: Gear5.001|Gear19Action
+    7402756: Gear5.001|Gear1Action
+    7402758: Gear5.001|Gear20Action
+    7402760: Gear5.001|Gear21Action
+    7402762: Gear5.001|Gear22Action
+    7402764: Gear5.001|Gear23Action
+    7402766: Gear5.001|Gear24Action
+    7402768: Gear5.001|Gear25Action
+    7402770: Gear5.001|Gear26Action
+    7402772: Gear5.001|Gear27Action
+    7402774: Gear5.001|Gear28Action
+    7402776: Gear5.001|Gear29Action
+    7402778: Gear5.001|Gear30Action
+    7402780: Gear5.001|Gear31Action
+    7402782: Gear5.001|Gear32Action
+    7402784: Gear5.001|Gear3Action
+    7402786: Gear5.001|Gear5.001Action
+    7402788: Gear5.001|Gear5.001Action.001
+    7402790: Gear5.001|Gear5Action
+    7402792: Gear5.001|Gear6Action
+    7402794: Gear5.001|Gear7Action
+    7402796: Gear5.001|Gear8Action
+    7402798: Gear5.001|Gear9Action
+    7402800: Gear5.001|GearAction
+    7402802: Gear5.001|PipeForGearsAction
+    7402804: Gear5.001|Wheel 5.001Action
+    7402806: Gear5.001|Wheel 5.002Action
+    7402808: Gear5.001|Wheel 5.003Action
+    7402810: Gear5.001|Wheel 5.004Action
+    7402812: Gear5.001|Wheel 5.005Action
+    7402814: Gear5.001|Wheel 5Action
+    7402816: Gear6|DiggerAction
+    7402818: Gear6|EngineAction
+    7402820: Gear6|Gear1.001Action
+    7402822: Gear6|Gear10Action
+    7402824: Gear6|Gear11Action
+    7402826: Gear6|Gear12Action
+    7402828: Gear6|Gear13Action
+    7402830: Gear6|Gear14Action
+    7402832: Gear6|Gear15Action
+    7402834: Gear6|Gear16Action
+    7402836: Gear6|Gear17Action
+    7402838: Gear6|Gear18.001Action
+    7402840: Gear6|Gear18Action
+    7402842: Gear6|Gear19Action
+    7402844: Gear6|Gear1Action
+    7402846: Gear6|Gear20Action
+    7402848: Gear6|Gear21Action
+    7402850: Gear6|Gear22Action
+    7402852: Gear6|Gear23Action
+    7402854: Gear6|Gear24Action
+    7402856: Gear6|Gear25Action
+    7402858: Gear6|Gear26Action
+    7402860: Gear6|Gear27Action
+    7402862: Gear6|Gear28Action
+    7402864: Gear6|Gear29Action
+    7402866: Gear6|Gear30Action
+    7402868: Gear6|Gear31Action
+    7402870: Gear6|Gear32Action
+    7402872: Gear6|Gear3Action
+    7402874: Gear6|Gear5.001Action
+    7402876: Gear6|Gear5.001Action.001
+    7402878: Gear6|Gear5Action
+    7402880: Gear6|Gear6Action
+    7402882: Gear6|Gear7Action
+    7402884: Gear6|Gear8Action
+    7402886: Gear6|Gear9Action
+    7402888: Gear6|GearAction
+    7402890: Gear6|PipeForGearsAction
+    7402892: Gear6|Wheel 5.001Action
+    7402894: Gear6|Wheel 5.002Action
+    7402896: Gear6|Wheel 5.003Action
+    7402898: Gear6|Wheel 5.004Action
+    7402900: Gear6|Wheel 5.005Action
+    7402902: Gear6|Wheel 5Action
+    7402904: Gear7|DiggerAction
+    7402906: Gear7|EngineAction
+    7402908: Gear7|Gear1.001Action
+    7402910: Gear7|Gear10Action
+    7402912: Gear7|Gear11Action
+    7402914: Gear7|Gear12Action
+    7402916: Gear7|Gear13Action
+    7402918: Gear7|Gear14Action
+    7402920: Gear7|Gear15Action
+    7402922: Gear7|Gear16Action
+    7402924: Gear7|Gear17Action
+    7402926: Gear7|Gear18.001Action
+    7402928: Gear7|Gear18Action
+    7402930: Gear7|Gear19Action
+    7402932: Gear7|Gear1Action
+    7402934: Gear7|Gear20Action
+    7402936: Gear7|Gear21Action
+    7402938: Gear7|Gear22Action
+    7402940: Gear7|Gear23Action
+    7402942: Gear7|Gear24Action
+    7402944: Gear7|Gear25Action
+    7402946: Gear7|Gear26Action
+    7402948: Gear7|Gear27Action
+    7402950: Gear7|Gear28Action
+    7402952: Gear7|Gear29Action
+    7402954: Gear7|Gear30Action
+    7402956: Gear7|Gear31Action
+    7402958: Gear7|Gear32Action
+    7402960: Gear7|Gear3Action
+    7402962: Gear7|Gear5.001Action
+    7402964: Gear7|Gear5.001Action.001
+    7402966: Gear7|Gear5Action
+    7402968: Gear7|Gear6Action
+    7402970: Gear7|Gear7Action
+    7402972: Gear7|Gear8Action
+    7402974: Gear7|Gear9Action
+    7402976: Gear7|GearAction
+    7402978: Gear7|PipeForGearsAction
+    7402980: Gear7|Wheel 5.001Action
+    7402982: Gear7|Wheel 5.002Action
+    7402984: Gear7|Wheel 5.003Action
+    7402986: Gear7|Wheel 5.004Action
+    7402988: Gear7|Wheel 5.005Action
+    7402990: Gear7|Wheel 5Action
+    7402992: Gear8|DiggerAction
+    7402994: Gear8|EngineAction
+    7402996: Gear8|Gear1.001Action
+    7402998: Gear8|Gear10Action
+    7403000: Gear8|Gear11Action
+    7403002: Gear8|Gear12Action
+    7403004: Gear8|Gear13Action
+    7403006: Gear8|Gear14Action
+    7403008: Gear8|Gear15Action
+    7403010: Gear8|Gear16Action
+    7403012: Gear8|Gear17Action
+    7403014: Gear8|Gear18.001Action
+    7403016: Gear8|Gear18Action
+    7403018: Gear8|Gear19Action
+    7403020: Gear8|Gear1Action
+    7403022: Gear8|Gear20Action
+    7403024: Gear8|Gear21Action
+    7403026: Gear8|Gear22Action
+    7403028: Gear8|Gear23Action
+    7403030: Gear8|Gear24Action
+    7403032: Gear8|Gear25Action
+    7403034: Gear8|Gear26Action
+    7403036: Gear8|Gear27Action
+    7403038: Gear8|Gear28Action
+    7403040: Gear8|Gear29Action
+    7403042: Gear8|Gear30Action
+    7403044: Gear8|Gear31Action
+    7403046: Gear8|Gear32Action
+    7403048: Gear8|Gear3Action
+    7403050: Gear8|Gear5.001Action
+    7403052: Gear8|Gear5.001Action.001
+    7403054: Gear8|Gear5Action
+    7403056: Gear8|Gear6Action
+    7403058: Gear8|Gear7Action
+    7403060: Gear8|Gear8Action
+    7403062: Gear8|Gear9Action
+    7403064: Gear8|GearAction
+    7403066: Gear8|PipeForGearsAction
+    7403068: Gear8|Wheel 5.001Action
+    7403070: Gear8|Wheel 5.002Action
+    7403072: Gear8|Wheel 5.003Action
+    7403074: Gear8|Wheel 5.004Action
+    7403076: Gear8|Wheel 5.005Action
+    7403078: Gear8|Wheel 5Action
+    7403080: Gear9|DiggerAction
+    7403082: Gear9|EngineAction
+    7403084: Gear9|Gear1.001Action
+    7403086: Gear9|Gear10Action
+    7403088: Gear9|Gear11Action
+    7403090: Gear9|Gear12Action
+    7403092: Gear9|Gear13Action
+    7403094: Gear9|Gear14Action
+    7403096: Gear9|Gear15Action
+    7403098: Gear9|Gear16Action
+    7403100: Gear9|Gear17Action
+    7403102: Gear9|Gear18.001Action
+    7403104: Gear9|Gear18Action
+    7403106: Gear9|Gear19Action
+    7403108: Gear9|Gear1Action
+    7403110: Gear9|Gear20Action
+    7403112: Gear9|Gear21Action
+    7403114: Gear9|Gear22Action
+    7403116: Gear9|Gear23Action
+    7403118: Gear9|Gear24Action
+    7403120: Gear9|Gear25Action
+    7403122: Gear9|Gear26Action
+    7403124: Gear9|Gear27Action
+    7403126: Gear9|Gear28Action
+    7403128: Gear9|Gear29Action
+    7403130: Gear9|Gear30Action
+    7403132: Gear9|Gear31Action
+    7403134: Gear9|Gear32Action
+    7403136: Gear9|Gear3Action
+    7403138: Gear9|Gear5.001Action
+    7403140: Gear9|Gear5.001Action.001
+    7403142: Gear9|Gear5Action
+    7403144: Gear9|Gear6Action
+    7403146: Gear9|Gear7Action
+    7403148: Gear9|Gear8Action
+    7403150: Gear9|Gear9Action
+    7403152: Gear9|GearAction
+    7403154: Gear9|PipeForGearsAction
+    7403156: Gear9|Wheel 5.001Action
+    7403158: Gear9|Wheel 5.002Action
+    7403160: Gear9|Wheel 5.003Action
+    7403162: Gear9|Wheel 5.004Action
+    7403164: Gear9|Wheel 5.005Action
+    7403166: Gear9|Wheel 5Action
+    7403168: PipeForGears|DiggerAction
+    7403170: PipeForGears|EngineAction
+    7403172: PipeForGears|Gear1.001Action
+    7403174: PipeForGears|Gear10Action
+    7403176: PipeForGears|Gear11Action
+    7403178: PipeForGears|Gear12Action
+    7403180: PipeForGears|Gear13Action
+    7403182: PipeForGears|Gear14Action
+    7403184: PipeForGears|Gear15Action
+    7403186: PipeForGears|Gear16Action
+    7403188: PipeForGears|Gear17Action
+    7403190: PipeForGears|Gear18.001Action
+    7403192: PipeForGears|Gear18Action
+    7403194: PipeForGears|Gear19Action
+    7403196: PipeForGears|Gear1Action
+    7403198: PipeForGears|Gear20Action
+    7403200: PipeForGears|Gear21Action
+    7403202: PipeForGears|Gear22Action
+    7403204: PipeForGears|Gear23Action
+    7403206: PipeForGears|Gear24Action
+    7403208: PipeForGears|Gear25Action
+    7403210: PipeForGears|Gear26Action
+    7403212: PipeForGears|Gear27Action
+    7403214: PipeForGears|Gear28Action
+    7403216: PipeForGears|Gear29Action
+    7403218: PipeForGears|Gear30Action
+    7403220: PipeForGears|Gear31Action
+    7403222: PipeForGears|Gear32Action
+    7403224: PipeForGears|Gear3Action
+    7403226: PipeForGears|Gear5.001Action
+    7403228: PipeForGears|Gear5.001Action.001
+    7403230: PipeForGears|Gear5Action
+    7403232: PipeForGears|Gear6Action
+    7403234: PipeForGears|Gear7Action
+    7403236: PipeForGears|Gear8Action
+    7403238: PipeForGears|Gear9Action
+    7403240: PipeForGears|GearAction
+    7403242: PipeForGears|PipeForGearsAction
+    7403244: PipeForGears|Wheel 5.001Action
+    7403246: PipeForGears|Wheel 5.002Action
+    7403248: PipeForGears|Wheel 5.003Action
+    7403250: PipeForGears|Wheel 5.004Action
+    7403252: PipeForGears|Wheel 5.005Action
+    7403254: PipeForGears|Wheel 5Action
+    7403256: Wheel 5|DiggerAction
+    7403258: Wheel 5|EngineAction
+    7403260: Wheel 5|Gear1.001Action
+    7403262: Wheel 5|Gear10Action
+    7403264: Wheel 5|Gear11Action
+    7403266: Wheel 5|Gear12Action
+    7403268: Wheel 5|Gear13Action
+    7403270: Wheel 5|Gear14Action
+    7403272: Wheel 5|Gear15Action
+    7403274: Wheel 5|Gear16Action
+    7403276: Wheel 5|Gear17Action
+    7403278: Wheel 5|Gear18.001Action
+    7403280: Wheel 5|Gear18Action
+    7403282: Wheel 5|Gear19Action
+    7403284: Wheel 5|Gear1Action
+    7403286: Wheel 5|Gear20Action
+    7403288: Wheel 5|Gear21Action
+    7403290: Wheel 5|Gear22Action
+    7403292: Wheel 5|Gear23Action
+    7403294: Wheel 5|Gear24Action
+    7403296: Wheel 5|Gear25Action
+    7403298: Wheel 5|Gear26Action
+    7403300: Wheel 5|Gear27Action
+    7403302: Wheel 5|Gear28Action
+    7403304: Wheel 5|Gear29Action
+    7403306: Wheel 5|Gear30Action
+    7403308: Wheel 5|Gear31Action
+    7403310: Wheel 5|Gear32Action
+    7403312: Wheel 5|Gear3Action
+    7403314: Wheel 5|Gear5.001Action
+    7403316: Wheel 5|Gear5.001Action.001
+    7403318: Wheel 5|Gear5Action
+    7403320: Wheel 5|Gear6Action
+    7403322: Wheel 5|Gear7Action
+    7403324: Wheel 5|Gear8Action
+    7403326: Wheel 5|Gear9Action
+    7403328: Wheel 5|GearAction
+    7403330: Wheel 5|PipeForGearsAction
+    7403332: Wheel 5|Wheel 5.001Action
+    7403334: Wheel 5|Wheel 5.002Action
+    7403336: Wheel 5|Wheel 5.003Action
+    7403338: Wheel 5|Wheel 5.004Action
+    7403340: Wheel 5|Wheel 5.005Action
+    7403342: Wheel 5|Wheel 5Action
+    7403344: Wheel 5.001|DiggerAction
+    7403346: Wheel 5.001|EngineAction
+    7403348: Wheel 5.001|Gear1.001Action
+    7403350: Wheel 5.001|Gear10Action
+    7403352: Wheel 5.001|Gear11Action
+    7403354: Wheel 5.001|Gear12Action
+    7403356: Wheel 5.001|Gear13Action
+    7403358: Wheel 5.001|Gear14Action
+    7403360: Wheel 5.001|Gear15Action
+    7403362: Wheel 5.001|Gear16Action
+    7403364: Wheel 5.001|Gear17Action
+    7403366: Wheel 5.001|Gear18.001Action
+    7403368: Wheel 5.001|Gear18Action
+    7403370: Wheel 5.001|Gear19Action
+    7403372: Wheel 5.001|Gear1Action
+    7403374: Wheel 5.001|Gear20Action
+    7403376: Wheel 5.001|Gear21Action
+    7403378: Wheel 5.001|Gear22Action
+    7403380: Wheel 5.001|Gear23Action
+    7403382: Wheel 5.001|Gear24Action
+    7403384: Wheel 5.001|Gear25Action
+    7403386: Wheel 5.001|Gear26Action
+    7403388: Wheel 5.001|Gear27Action
+    7403390: Wheel 5.001|Gear28Action
+    7403392: Wheel 5.001|Gear29Action
+    7403394: Wheel 5.001|Gear30Action
+    7403396: Wheel 5.001|Gear31Action
+    7403398: Wheel 5.001|Gear32Action
+    7403400: Wheel 5.001|Gear3Action
+    7403402: Wheel 5.001|Gear5.001Action
+    7403404: Wheel 5.001|Gear5.001Action.001
+    7403406: Wheel 5.001|Gear5Action
+    7403408: Wheel 5.001|Gear6Action
+    7403410: Wheel 5.001|Gear7Action
+    7403412: Wheel 5.001|Gear8Action
+    7403414: Wheel 5.001|Gear9Action
+    7403416: Wheel 5.001|GearAction
+    7403418: Wheel 5.001|PipeForGearsAction
+    7403420: Wheel 5.001|Wheel 5.001Action
+    7403422: Wheel 5.001|Wheel 5.002Action
+    7403424: Wheel 5.001|Wheel 5.003Action
+    7403426: Wheel 5.001|Wheel 5.004Action
+    7403428: Wheel 5.001|Wheel 5.005Action
+    7403430: Wheel 5.001|Wheel 5Action
+    7403432: Wheel 5.002|DiggerAction
+    7403434: Wheel 5.002|EngineAction
+    7403436: Wheel 5.002|Gear1.001Action
+    7403438: Wheel 5.002|Gear10Action
+    7403440: Wheel 5.002|Gear11Action
+    7403442: Wheel 5.002|Gear12Action
+    7403444: Wheel 5.002|Gear13Action
+    7403446: Wheel 5.002|Gear14Action
+    7403448: Wheel 5.002|Gear15Action
+    7403450: Wheel 5.002|Gear16Action
+    7403452: Wheel 5.002|Gear17Action
+    7403454: Wheel 5.002|Gear18.001Action
+    7403456: Wheel 5.002|Gear18Action
+    7403458: Wheel 5.002|Gear19Action
+    7403460: Wheel 5.002|Gear1Action
+    7403462: Wheel 5.002|Gear20Action
+    7403464: Wheel 5.002|Gear21Action
+    7403466: Wheel 5.002|Gear22Action
+    7403468: Wheel 5.002|Gear23Action
+    7403470: Wheel 5.002|Gear24Action
+    7403472: Wheel 5.002|Gear25Action
+    7403474: Wheel 5.002|Gear26Action
+    7403476: Wheel 5.002|Gear27Action
+    7403478: Wheel 5.002|Gear28Action
+    7403480: Wheel 5.002|Gear29Action
+    7403482: Wheel 5.002|Gear30Action
+    7403484: Wheel 5.002|Gear31Action
+    7403486: Wheel 5.002|Gear32Action
+    7403488: Wheel 5.002|Gear3Action
+    7403490: Wheel 5.002|Gear5.001Action
+    7403492: Wheel 5.002|Gear5.001Action.001
+    7403494: Wheel 5.002|Gear5Action
+    7403496: Wheel 5.002|Gear6Action
+    7403498: Wheel 5.002|Gear7Action
+    7403500: Wheel 5.002|Gear8Action
+    7403502: Wheel 5.002|Gear9Action
+    7403504: Wheel 5.002|GearAction
+    7403506: Wheel 5.002|PipeForGearsAction
+    7403508: Wheel 5.002|Wheel 5.001Action
+    7403510: Wheel 5.002|Wheel 5.002Action
+    7403512: Wheel 5.002|Wheel 5.003Action
+    7403514: Wheel 5.002|Wheel 5.004Action
+    7403516: Wheel 5.002|Wheel 5.005Action
+    7403518: Wheel 5.002|Wheel 5Action
+    7403520: Wheel 5.003|DiggerAction
+    7403522: Wheel 5.003|EngineAction
+    7403524: Wheel 5.003|Gear1.001Action
+    7403526: Wheel 5.003|Gear10Action
+    7403528: Wheel 5.003|Gear11Action
+    7403530: Wheel 5.003|Gear12Action
+    7403532: Wheel 5.003|Gear13Action
+    7403534: Wheel 5.003|Gear14Action
+    7403536: Wheel 5.003|Gear15Action
+    7403538: Wheel 5.003|Gear16Action
+    7403540: Wheel 5.003|Gear17Action
+    7403542: Wheel 5.003|Gear18.001Action
+    7403544: Wheel 5.003|Gear18Action
+    7403546: Wheel 5.003|Gear19Action
+    7403548: Wheel 5.003|Gear1Action
+    7403550: Wheel 5.003|Gear20Action
+    7403552: Wheel 5.003|Gear21Action
+    7403554: Wheel 5.003|Gear22Action
+    7403556: Wheel 5.003|Gear23Action
+    7403558: Wheel 5.003|Gear24Action
+    7403560: Wheel 5.003|Gear25Action
+    7403562: Wheel 5.003|Gear26Action
+    7403564: Wheel 5.003|Gear27Action
+    7403566: Wheel 5.003|Gear28Action
+    7403568: Wheel 5.003|Gear29Action
+    7403570: Wheel 5.003|Gear30Action
+    7403572: Wheel 5.003|Gear31Action
+    7403574: Wheel 5.003|Gear32Action
+    7403576: Wheel 5.003|Gear3Action
+    7403578: Wheel 5.003|Gear5.001Action
+    7403580: Wheel 5.003|Gear5.001Action.001
+    7403582: Wheel 5.003|Gear5Action
+    7403584: Wheel 5.003|Gear6Action
+    7403586: Wheel 5.003|Gear7Action
+    7403588: Wheel 5.003|Gear8Action
+    7403590: Wheel 5.003|Gear9Action
+    7403592: Wheel 5.003|GearAction
+    7403594: Wheel 5.003|PipeForGearsAction
+    7403596: Wheel 5.003|Wheel 5.001Action
+    7403598: Wheel 5.003|Wheel 5.002Action
+    7403600: Wheel 5.003|Wheel 5.003Action
+    7403602: Wheel 5.003|Wheel 5.004Action
+    7403604: Wheel 5.003|Wheel 5.005Action
+    7403606: Wheel 5.003|Wheel 5Action
+    7403608: Wheel 5.004|DiggerAction
+    7403610: Wheel 5.004|EngineAction
+    7403612: Wheel 5.004|Gear1.001Action
+    7403614: Wheel 5.004|Gear10Action
+    7403616: Wheel 5.004|Gear11Action
+    7403618: Wheel 5.004|Gear12Action
+    7403620: Wheel 5.004|Gear13Action
+    7403622: Wheel 5.004|Gear14Action
+    7403624: Wheel 5.004|Gear15Action
+    7403626: Wheel 5.004|Gear16Action
+    7403628: Wheel 5.004|Gear17Action
+    7403630: Wheel 5.004|Gear18.001Action
+    7403632: Wheel 5.004|Gear18Action
+    7403634: Wheel 5.004|Gear19Action
+    7403636: Wheel 5.004|Gear1Action
+    7403638: Wheel 5.004|Gear20Action
+    7403640: Wheel 5.004|Gear21Action
+    7403642: Wheel 5.004|Gear22Action
+    7403644: Wheel 5.004|Gear23Action
+    7403646: Wheel 5.004|Gear24Action
+    7403648: Wheel 5.004|Gear25Action
+    7403650: Wheel 5.004|Gear26Action
+    7403652: Wheel 5.004|Gear27Action
+    7403654: Wheel 5.004|Gear28Action
+    7403656: Wheel 5.004|Gear29Action
+    7403658: Wheel 5.004|Gear30Action
+    7403660: Wheel 5.004|Gear31Action
+    7403662: Wheel 5.004|Gear32Action
+    7403664: Wheel 5.004|Gear3Action
+    7403666: Wheel 5.004|Gear5.001Action
+    7403668: Wheel 5.004|Gear5.001Action.001
+    7403670: Wheel 5.004|Gear5Action
+    7403672: Wheel 5.004|Gear6Action
+    7403674: Wheel 5.004|Gear7Action
+    7403676: Wheel 5.004|Gear8Action
+    7403678: Wheel 5.004|Gear9Action
+    7403680: Wheel 5.004|GearAction
+    7403682: Wheel 5.004|PipeForGearsAction
+    7403684: Wheel 5.004|Wheel 5.001Action
+    7403686: Wheel 5.004|Wheel 5.002Action
+    7403688: Wheel 5.004|Wheel 5.003Action
+    7403690: Wheel 5.004|Wheel 5.004Action
+    7403692: Wheel 5.004|Wheel 5.005Action
+    7403694: Wheel 5.004|Wheel 5Action
+    7403696: Wheel 5.005|DiggerAction
+    7403698: Wheel 5.005|EngineAction
+    7403700: Wheel 5.005|Gear1.001Action
+    7403702: Wheel 5.005|Gear10Action
+    7403704: Wheel 5.005|Gear11Action
+    7403706: Wheel 5.005|Gear12Action
+    7403708: Wheel 5.005|Gear13Action
+    7403710: Wheel 5.005|Gear14Action
+    7403712: Wheel 5.005|Gear15Action
+    7403714: Wheel 5.005|Gear16Action
+    7403716: Wheel 5.005|Gear17Action
+    7403718: Wheel 5.005|Gear18.001Action
+    7403720: Wheel 5.005|Gear18Action
+    7403722: Wheel 5.005|Gear19Action
+    7403724: Wheel 5.005|Gear1Action
+    7403726: Wheel 5.005|Gear20Action
+    7403728: Wheel 5.005|Gear21Action
+    7403730: Wheel 5.005|Gear22Action
+    7403732: Wheel 5.005|Gear23Action
+    7403734: Wheel 5.005|Gear24Action
+    7403736: Wheel 5.005|Gear25Action
+    7403738: Wheel 5.005|Gear26Action
+    7403740: Wheel 5.005|Gear27Action
+    7403742: Wheel 5.005|Gear28Action
+    7403744: Wheel 5.005|Gear29Action
+    7403746: Wheel 5.005|Gear30Action
+    7403748: Wheel 5.005|Gear31Action
+    7403750: Wheel 5.005|Gear32Action
+    7403752: Wheel 5.005|Gear3Action
+    7403754: Wheel 5.005|Gear5.001Action
+    7403756: Wheel 5.005|Gear5.001Action.001
+    7403758: Wheel 5.005|Gear5Action
+    7403760: Wheel 5.005|Gear6Action
+    7403762: Wheel 5.005|Gear7Action
+    7403764: Wheel 5.005|Gear8Action
+    7403766: Wheel 5.005|Gear9Action
+    7403768: Wheel 5.005|GearAction
+    7403770: Wheel 5.005|PipeForGearsAction
+    7403772: Wheel 5.005|Wheel 5.001Action
+    7403774: Wheel 5.005|Wheel 5.002Action
+    7403776: Wheel 5.005|Wheel 5.003Action
+    7403778: Wheel 5.005|Wheel 5.004Action
+    7403780: Wheel 5.005|Wheel 5.005Action
+    7403782: Wheel 5.005|Wheel 5Action
+    7403784: Gear5.002|DiggerAction
+    7403786: Gear5.002|EngineAction
+    7403788: Gear5.002|Gear1.001Action
+    7403790: Gear5.002|Gear10Action
+    7403792: Gear5.002|Gear11Action
+    7403794: Gear5.002|Gear12Action
+    7403796: Gear5.002|Gear13Action
+    7403798: Gear5.002|Gear14Action
+    7403800: Gear5.002|Gear15Action
+    7403802: Gear5.002|Gear16Action
+    7403804: Gear5.002|Gear17Action
+    7403806: Gear5.002|Gear18.001Action
+    7403808: Gear5.002|Gear18Action
+    7403810: Gear5.002|Gear19Action
+    7403812: Gear5.002|Gear1Action
+    7403814: Gear5.002|Gear20Action
+    7403816: Gear5.002|Gear21Action
+    7403818: Gear5.002|Gear22Action
+    7403820: Gear5.002|Gear23Action
+    7403822: Gear5.002|Gear24Action
+    7403824: Gear5.002|Gear25Action
+    7403826: Gear5.002|Gear26Action
+    7403828: Gear5.002|Gear27Action
+    7403830: Gear5.002|Gear28Action
+    7403832: Gear5.002|Gear29Action
+    7403834: Gear5.002|Gear30Action
+    7403836: Gear5.002|Gear31Action
+    7403838: Gear5.002|Gear32Action
+    7403840: Gear5.002|Gear3Action
+    7403842: Gear5.002|Gear5.001Action
+    7403844: Gear5.002|Gear5.001Action.001
+    7403846: Gear5.002|Gear5Action
+    7403848: Gear5.002|Gear6Action
+    7403850: Gear5.002|Gear7Action
+    7403852: Gear5.002|Gear8Action
+    7403854: Gear5.002|Gear9Action
+    7403856: Gear5.002|GearAction
+    7403858: Gear5.002|PipeForGearsAction
+    7403860: Gear5.002|Wheel 5.001Action
+    7403862: Gear5.002|Wheel 5.002Action
+    7403864: Gear5.002|Wheel 5.003Action
+    7403866: Gear5.002|Wheel 5.004Action
+    7403868: Gear5.002|Wheel 5.005Action
+    7403870: Gear5.002|Wheel 5Action
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

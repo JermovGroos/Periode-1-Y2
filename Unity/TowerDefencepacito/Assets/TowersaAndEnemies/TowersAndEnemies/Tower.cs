@@ -10,5 +10,4 @@ public class Tower : MonoBehaviour {
     public float cost;
     [Tooltip("The Range of this Tower")]
     public float range;
-
 }

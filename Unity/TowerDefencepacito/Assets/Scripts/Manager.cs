@@ -8,8 +8,6 @@ public class Manager : MonoBehaviour
 {
     [Header("WaveStats")]
     public List<WaveStats> allWaves;
-    public EnemySpawner[] spawner = new EnemySpawner[4];
-    EnemyCounter enemyCounter;
     WaveIndicator waveIndicator;
     public int curWave = 1;
     [HideInInspector]
@@ -46,23 +44,11 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
-        enemyCounter = FindObjectOfType<EnemyCounter>();
         waveIndicator = FindObjectOfType<WaveIndicator>();
         mouseInfo = FindObjectOfType<MouseInfo>();
         waveIndicator.waveNumber = curWave + 1;
         waveIndicator.NewWave();
         diaScript = FindObjectOfType<Dialogue>();
-        for (int i = 0; i < FindObjectsOfType<Enemy>().Length; i++)
-        {
-            spawner[i].spawnAmount = 0;
-            spawner[i].spawnTime = allWaves[0].spawnSpeed[i];
-            spawner[i].toSpawn = allWaves[0].enemyPrefab[i];
-        }
-        Enemy[] allEnemies = FindObjectsOfType<Enemy>();
-        for (int i = 0; i < allEnemies.Length; i++)
-        {
-            Destroy(allEnemies[i]);
-        }
         normalUIHider.anchoredPosition = new Vector3(0, 2239, 0);
         diaHider.anchoredPosition = new Vector3(380, -177, 0);
     }
@@ -140,26 +126,6 @@ public class Manager : MonoBehaviour
         pp.profile.depthOfField.enabled = false;
         normalUIHider.anchoredPosition = Vector3.MoveTowards(normalUIHider.anchoredPosition, new Vector3(-0, 0, 0), Time.deltaTime * 5000);
         diaHider.anchoredPosition = Vector3.MoveTowards(diaHider.anchoredPosition, new Vector3(380, -845, 0), Time.deltaTime * 5000);
-        bool isSpawning = false;
-        for (int i = 0; i < spawner.Length; i++)
-        {
-            if (spawner[i].busy == true)
-            {
-                isSpawning = true;
-            }
-        }
-        if (isSpawning == false)
-        {
-            int total = 0;
-            for (int i = 0; i < enemyCounter.typeCounter.Length; i++)
-            {
-                total += enemyCounter.typeCounter[i];
-            }
-            if (total == 0)
-            {
-                NoEnemiesLeft();
-            }
-        }
 
     }
 
@@ -223,12 +189,6 @@ public class Manager : MonoBehaviour
             PlayAudio(4);
             waveIndicator.waveNumber = curWave;
             waveIndicator.NewWave();
-            for (int i = 0; i < spawner.Length; i++)
-            {
-                spawner[i].spawnAmount = allWaves[curWave].spawns[i];
-                spawner[i].spawnTime = allWaves[curWave].spawnSpeed[i];
-                spawner[i].toSpawn = allWaves[curWave].enemyPrefab[i];
-            }
         }
         else
         {

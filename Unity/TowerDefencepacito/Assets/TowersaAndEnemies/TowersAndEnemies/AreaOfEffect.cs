@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class AreaOfEffect : Tower {
 
-    Collider[] enemiesInRange;
+    public Collider[] enemiesInRange;
     public LayerMask lM;
 
-    public Collider[] GetEnemies(float range)
+    public Collider[] GetEnemies(Collider[] targetArray ,float range)
     {
-        enemiesInRange = Physics.OverlapSphere(transform.position, range, lM);
-        return enemiesInRange;
+        targetArray = Physics.OverlapSphere(transform.position, range, lM);
+        return targetArray;
     }
 }
