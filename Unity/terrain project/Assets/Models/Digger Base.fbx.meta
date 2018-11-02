@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 77324a3b97b345644ab92467412cfb12
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Engine
+    400000: //RootNode
+    400002: Engine
+    2100000: Material.002
+    2100002: Material.001
+    2100004: No Name
+    2300000: //RootNode
+    2300002: Engine
+    3300000: //RootNode
+    3300002: Engine
+    4300000: Digger
+    4300002: Engine
+    7400000: Digger|DiggerAction
+    7400002: Digger|EngineAction
+    7400004: Digger|Gear1.001Action
+    7400006: Digger|Gear10Action
+    7400008: Digger|Gear11Action
+    7400010: Digger|Gear12Action
+    7400012: Digger|Gear13Action
+    7400014: Digger|Gear14Action
+    7400016: Digger|Gear15Action
+    7400018: Digger|Gear16Action
+    7400020: Digger|Gear17Action
+    7400022: Digger|Gear18.001Action
+    7400024: Digger|Gear18Action
+    7400026: Digger|Gear19Action
+    7400028: Digger|Gear1Action
+    7400030: Digger|Gear20Action
+    7400032: Digger|Gear21Action
+    7400034: Digger|Gear22Action
+    7400036: Digger|Gear23Action
+    7400038: Digger|Gear24Action
+    7400040: Digger|Gear25Action
+    7400042: Digger|Gear26Action
+    7400044: Digger|Gear27Action
+    7400046: Digger|Gear28Action
+    7400048: Digger|Gear29Action
+    7400050: Digger|Gear30Action
+    7400052: Digger|Gear31Action
+    7400054: Digger|Gear32Action
+    7400056: Digger|Gear3Action
+    7400058: Digger|Gear5.001Action
+    7400060: Digger|Gear5.001Action.001
+    7400062: Digger|Gear5Action
+    7400064: Digger|Gear6Action
+    7400066: Digger|Gear7Action
+    7400068: Digger|Gear8Action
+    7400070: Digger|Gear9Action
+    7400072: Digger|GearAction
+    7400074: Digger|PipeForGearsAction
+    7400076: Digger|Wheel 5.001Action
+    7400078: Digger|Wheel 5.002Action
+    7400080: Digger|Wheel 5.003Action
+    7400082: Digger|Wheel 5.004Action
+    7400084: Digger|Wheel 5.005Action
+    7400086: Digger|Wheel 5Action
+    7400088: Engine|DiggerAction
+    7400090: Engine|EngineAction
+    7400092: Engine|Gear1.001Action
+    7400094: Engine|Gear10Action
+    7400096: Engine|Gear11Action
+    7400098: Engine|Gear12Action
+    7400100: Engine|Gear13Action
+    7400102: Engine|Gear14Action
+    7400104: Engine|Gear15Action
+    7400106: Engine|Gear16Action
+    7400108: Engine|Gear17Action
+    7400110: Engine|Gear18.001Action
+    7400112: Engine|Gear18Action
+    7400114: Engine|Gear19Action
+    7400116: Engine|Gear1Action
+    7400118: Engine|Gear20Action
+    7400120: Engine|Gear21Action
+    7400122: Engine|Gear22Action
+    7400124: Engine|Gear23Action
+    7400126: Engine|Gear24Action
+    7400128: Engine|Gear25Action
+    7400130: Engine|Gear26Action
+    7400132: Engine|Gear27Action
+    7400134: Engine|Gear28Action
+    7400136: Engine|Gear29Action
+    7400138: Engine|Gear30Action
+    7400140: Engine|Gear31Action
+    7400142: Engine|Gear32Action
+    7400144: Engine|Gear3Action
+    7400146: Engine|Gear5.001Action
+    7400148: Engine|Gear5.001Action.001
+    7400150: Engine|Gear5Action
+    7400152: Engine|Gear6Action
+    7400154: Engine|Gear7Action
+    7400156: Engine|Gear8Action
+    7400158: Engine|Gear9Action
+    7400160: Engine|GearAction
+    7400162: Engine|PipeForGearsAction
+    7400164: Engine|Wheel 5.001Action
+    7400166: Engine|Wheel 5.002Action
+    7400168: Engine|Wheel 5.003Action
+    7400170: Engine|Wheel 5.004Action
+    7400172: Engine|Wheel 5.005Action
+    7400174: Engine|Wheel 5Action
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
