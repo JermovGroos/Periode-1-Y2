@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 1001
+  controlID: 1272
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 1095
+  controlID: 1273
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 192}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 1002
+  controlID: 1239
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,9 +393,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e91ffff
-    m_LastClickedID: -28290
-    m_ExpandedIDs: ec9affffdefbffff00000000
+    m_SelectedIDs: 70540000
+    m_LastClickedID: 21616
+    m_ExpandedIDs: 26f5ffffdefbffff00000000f8510000e4530000c4540000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -450,9 +450,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.1936789, y: 41.10623, z: -43.37173}
+    m_Target: {x: -28.777145, y: -11.538871, z: -65.31897}
     speed: 2
-    m_Value: {x: -2.1936789, y: 41.10623, z: -43.37173}
+    m_Value: {x: -28.777145, y: -11.538871, z: -65.31897}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -480,13 +480,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.37689018, y: 0.50576234, z: -0.26081225, w: 0.7308456}
+    m_Target: {x: 0.09237366, y: -0.8630732, z: 0.17102596, w: 0.466178}
     speed: 2
-    m_Value: {x: 0.37689018, y: 0.50576234, z: -0.26081225, w: 0.7308456}
+    m_Value: {x: -0.09237366, y: 0.8630732, z: -0.17102596, w: -0.466178}
   m_Size:
-    m_Target: 23.794832
+    m_Target: 61.784378
     speed: 2
-    m_Value: 23.794832
+    m_Value: 61.784378
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -560,19 +560,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/TowersaAndEnemies/Models
+    - Assets/Main Export Folder
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/TowersaAndEnemies/Models
+  - Assets/Main Export Folder
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\stefa\OneDrive\Documenten\Periode-1-Y2\Unity\TowerDefencepacito
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 332}
-    m_SelectedIDs: 600b0000
-    m_LastClickedID: 2912
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: aa240000
+    m_LastClickedID: 9386
     m_ExpandedIDs: 00000000f60a0000600b0000140c00006e0c0000700c00001021000068230000aa24000056270000c2280000b62a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -653,7 +653,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 120}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 374
 --- !u!114 &18
