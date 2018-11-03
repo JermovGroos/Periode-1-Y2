@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -14,12 +15,16 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public Transform scrollCam;
     Manager manager;
     float startY;
+    Image img;
+    Color startColor;
     void Start()
     {
         manager = FindObjectOfType<Manager>();
         rect = transform.GetComponent<RectTransform>();
         scrollCamStartY = scrollCam.position.y;
         startY = rect.anchoredPosition.y - (1080 / 2);
+        img = GetComponent<Image>();
+        startColor = img.color;
     }
 
     void Update()
@@ -28,6 +33,7 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             if (isOver == true)
             {
+                img.color = Color.Lerp(img.color, Color.yellow, Time.deltaTime * 5);
                 if (manager.SetMouseState(Manager.MouseState.Used))
                 {
                     holding = true;
@@ -41,10 +47,23 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if (holding == true)
         {
             SetSliderPos(Input.mousePosition.y);
-        } else{
-           // SetSliderPos(0);
+            img.color = Color.white;
+        }
+        else
+        {
+            // SetSliderPos(0);
         }
         scrollCam.position = new Vector3(scrollCam.position.x, scrollCamStartY + (scrollPercent * 12), scrollCam.position.z);
+
+
+        if (isOver == true)
+        {
+            img.color = Color.Lerp(img.color, Color.yellow, Time.deltaTime * 5);
+        }
+        else
+        {
+            img.color = Color.Lerp(img.color, startColor, Time.deltaTime * 5);
+        }
     }
 
     void SetSliderPos(float yPos)

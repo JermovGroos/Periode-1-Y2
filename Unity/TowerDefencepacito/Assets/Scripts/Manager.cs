@@ -39,7 +39,7 @@ public class Manager : MonoBehaviour
     public MouseState mouseState = MouseState.Unused;
     [HideInInspector]
     public MouseInfo mouseInfo;
-
+    TowerSelection twrWheel;
 
 
     void Start()
@@ -51,6 +51,7 @@ public class Manager : MonoBehaviour
         diaScript = FindObjectOfType<Dialogue>();
         normalUIHider.anchoredPosition = new Vector3(0, 2239, 0);
         diaHider.anchoredPosition = new Vector3(380, -177, 0);
+        twrWheel = FindObjectOfType<TowerSelection>();
     }
 
     public bool SetMouseState(MouseState newMouseState)
@@ -124,7 +125,12 @@ public class Manager : MonoBehaviour
     {
 
         pp.profile.depthOfField.enabled = false;
-        normalUIHider.anchoredPosition = Vector3.MoveTowards(normalUIHider.anchoredPosition, new Vector3(-0, 0, 0), Time.deltaTime * 5000);
+        Vector3 mousePos = (-Input.mousePosition - new Vector3(Screen.width / 2, Screen.height / 2)) / 200;
+        if (twrWheel.canDoStuff == true)
+        {
+            mousePos = normalUIHider.anchoredPosition;
+        }
+        normalUIHider.anchoredPosition = Vector3.MoveTowards(normalUIHider.anchoredPosition, mousePos, Time.deltaTime * 5000);
         diaHider.anchoredPosition = Vector3.MoveTowards(diaHider.anchoredPosition, new Vector3(380, -845, 0), Time.deltaTime * 5000);
 
     }

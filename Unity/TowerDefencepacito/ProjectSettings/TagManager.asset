@@ -8,6 +8,7 @@ TagManager:
   - Tower
   - Currency
   - Platform
+  - UIColor
   layers:
   - Default
   - TransparentFX
