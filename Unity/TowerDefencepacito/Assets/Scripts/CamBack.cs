@@ -32,6 +32,7 @@ public class CamBack : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 if (isOver == true)
                 {
                     cam.curCamPos = 0;
+                    FindObjectOfType<Manager>().PlayAudio(4);
                     transition.rect.anchoredPosition = Vector3.zero;
                     
                 }

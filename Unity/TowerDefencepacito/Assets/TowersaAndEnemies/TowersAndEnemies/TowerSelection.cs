@@ -61,6 +61,7 @@ public class TowerSelection : MonoBehaviour
                 gameObject.transform.localScale = new Vector3(0, 0, 0);
                 canDoStuff = false;
                 Cursor.lockState = CursorLockMode.None;
+                 manager.PlayAudio(2);
             }
         }
     }
@@ -77,10 +78,14 @@ public class TowerSelection : MonoBehaviour
             currencyAmount -= t.cost;
             location.GetComponent<TowerSpawnPlace>().isTaken = true;
             Instantiate(towers[currentTowerSelected], location.transform, false);
+            manager.PlayAudio(1);
+             manager.PlayAudio(0);
+              manager.PlayAudio(13);
         }
         else
         {
             print("not enough money");
+            manager.PlayAudio(0);
         }
     }
 
@@ -116,13 +121,17 @@ public class TowerSelection : MonoBehaviour
                         location = buildspot;
                         canDoStuff = true;
                         Cursor.lockState = CursorLockMode.Locked;
+                        manager.PlayAudio(2);
                     }
-                } else {
+                }
+                else
+                {
                     buildspot = hit.transform.gameObject;
                     if (Input.GetButtonUp("Fire1"))
                     {
                         Destroy(buildspot.transform.GetChild(0).gameObject);
                         hit.transform.gameObject.GetComponent<TowerSpawnPlace>().isTaken = false;
+                         manager.PlayAudio(1);
                     }
                     buildspot = null;
                     SetMouseInfo(true);
@@ -143,11 +152,15 @@ public class TowerSelection : MonoBehaviour
         if (buildspot != null)
         {
             SetMouseInfo(true);
-            selectLight.transform.position = buildspot.transform.position;
-            selectLight.transform.position += new Vector3(0,10,0);
-            selectLight.enabled = true;
+            if (selectLight.transform.position != buildspot.transform.position + new Vector3(0, 10, 0) || selectLight.enabled == false)
+            {
+                selectLight.transform.position = buildspot.transform.position;
+                selectLight.transform.position += new Vector3(0, 10, 0);
+                selectLight.enabled = true;
+                manager.PlayAudio(10);
+            }
         }
-        else if(checkForExeption == false)
+        else if (checkForExeption == false)
         {
             SetMouseInfo(false);
             selectLight.enabled = false;
@@ -167,6 +180,7 @@ public class TowerSelection : MonoBehaviour
                 //rotatingObject.transform.Rotate(0, 0, 72);
                 movement = 72;
                 isRotatingRight = true;
+                manager.PlayAudio(10);
 
                 if (currentTowerSelected == 4)
                 {
@@ -184,6 +198,7 @@ public class TowerSelection : MonoBehaviour
                     //rotatingObject.transform.Rotate(0, 0, -72);
                     movement = -72;
                     isRotatingLeft = true;
+                    manager.PlayAudio(10);
 
                     if (currentTowerSelected == 0)
                     {

@@ -36,7 +36,11 @@ public class ScrollUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 img.color = Color.Lerp(img.color, Color.yellow, Time.deltaTime * 5);
                 if (manager.SetMouseState(Manager.MouseState.Used))
                 {
-                    holding = true;
+                    if (holding == false)
+                    {
+                        manager.PlayAudio(10);
+                        holding = true;
+                    }
                 }
             }
         }

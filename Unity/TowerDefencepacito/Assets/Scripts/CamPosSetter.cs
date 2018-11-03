@@ -34,6 +34,7 @@ public class CamPosSetter : MonoBehaviour
                         if (manager.SetMouseState(Manager.MouseState.Used) == true)
                         {
                             cam.curCamPos = camPos;
+                            manager.PlayAudio(4);
                             transition.rect.anchoredPosition = Vector3.zero;
                         }
                     }
