@@ -1,10 +1,3 @@
-tesla tower fire sound.
-sniper tower fire sound.
-bomb tower bomb drop sound.
 ice/freezing for ice tower sound.
-fire for flamethrower tower sound.
-digger sound.
-tire sound.
-boombox driving sound.
 background music.
 tower destroy sound.
