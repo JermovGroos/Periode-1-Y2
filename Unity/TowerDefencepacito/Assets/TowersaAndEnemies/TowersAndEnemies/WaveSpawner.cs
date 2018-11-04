@@ -10,11 +10,11 @@ public class WaveSpawner : MonoBehaviour {
     public GameObject[] targetLocations;
     [Space]
     public GameObject tireEnemy;
-    public float tireAmount;
+    public int tireAmount;
     public GameObject boomBoxEnemy;
-    public float boomBoxAmount;
+    public int boomBoxAmount;
     public GameObject diggerEnemy;
-    public float diggerAmount;
+    public int diggerAmount;
     [Space]
     public float timeBetweenEnemySpawns = 1;
     public List<EnemiesPerWave> ePW = new List<EnemiesPerWave>();
@@ -31,7 +31,8 @@ public class WaveSpawner : MonoBehaviour {
     public Text tiresOfWave;
     public Text boxesOfWave;
     public Text diggersOfWave;
-    public GameObject nextWaveButton;
+    public GameObject mainWaveManager;
+    public bool nextWaveBool;
 
 	void Start ()
     {
@@ -49,15 +50,16 @@ public class WaveSpawner : MonoBehaviour {
         if (allEnemies.Length == 0 && waveInProgress)
         {
             waveInProgress = false;
+            mainWaveManager.GetComponent<WaveManager>().waveInProgress = false;
             if(wave == ePW.Count-1)
             {
                 //youwin
                 print("Won");
-                nextWaveButton.SetActive(false);
+                nextWaveBool = false;
             }
             else
             {
-                nextWaveButton.SetActive(true);
+                nextWaveBool = true;
                 tireAmount = ePW[wave + 1].tires;
                 boomBoxAmount = ePW[wave + 1].booms;
                 diggerAmount = ePW[wave + 1].diggers;
@@ -67,7 +69,7 @@ public class WaveSpawner : MonoBehaviour {
         {
             if(allEnemies.Length > 0)
             {
-                nextWaveButton.SetActive(false);
+                nextWaveBool = false;
             }
         }
         if (waveInProgress)
@@ -96,40 +98,47 @@ public class WaveSpawner : MonoBehaviour {
 
     public IEnumerator SpawnEnemies()
     {
+        print("It spawns");
         for (int i = 0; i < tireAmount; i++)
         {
             for (int ii = 0; ii < spawnLocations.Length; ii++)
             {
+                print("Atleast I started");
                 GameObject g = Instantiate(tireEnemy, spawnLocations[ii].transform);
                 g.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                 g.GetComponent<Enemy>().kindOfEnemy = 0;
                 g.GetComponent<Enemy>().waveManager = gameObject;
                 tires.Capacity++;
                 tires.Add(g);
+                print("Spawned a Tire");
             }
             yield return new WaitForSeconds(timeBetweenEnemySpawns);
             for (int io = 0; io < boomBoxAmount; io++)
             {
                 for (int ii = 0; ii < spawnLocations.Length; ii++)
                 {
+                    print("Atleast I started");
                     GameObject ge = Instantiate(boomBoxEnemy, spawnLocations[ii].transform);
                     ge.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                     ge.GetComponent<Enemy>().kindOfEnemy = 1;
                     ge.GetComponent<Enemy>().waveManager = gameObject;
                     boxes.Capacity++;
                     boxes.Add(ge);
+                    print("Spawned a Box");
                 }
                 yield return new WaitForSeconds(timeBetweenEnemySpawns);
                 for (int ioo = 0; ioo < diggerAmount; ioo++)
                 {
                     for (int ii = 0; ii < spawnLocations.Length; ii++)
                     {
+                        print("Atleast I started");
                         GameObject go = Instantiate(diggerEnemy, spawnLocations[ii].transform);
                         go.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                         go.GetComponent<Enemy>().kindOfEnemy = 2;
                         go.GetComponent<Enemy>().waveManager = gameObject;
                         diggers.Capacity++;
                         diggers.Add(go);
+                        print("Spawned a digger");
                     }
                     yield return new WaitForSeconds(timeBetweenEnemySpawns);
                 }

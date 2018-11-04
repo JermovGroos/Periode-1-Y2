@@ -31,38 +31,53 @@ public class TowerSelection : MonoBehaviour
     //By Casper
     Cam cam;
     Manager manager;
+    [Header("Casper editions")]
     public Light selectLight;
-
+    public Text descriptionText;
+    public string[] descriptions;
+    public GameObject spawnParticle;
+    bool canClick = true;
     // Use this for initialization
     void Start()
     {
         cam = FindObjectOfType<Cam>();
         manager = FindObjectOfType<Manager>();
+        transform.localScale = Vector3.zero;
     }
 
     // Update is called once per frame
     void Update()
     {
         currencyShower.text = "$" + currencyAmount;
-        RayShizzle();
         if (canDoStuff)
         {
+            descriptionText.text = descriptions[currentTowerSelected];
+            gameObject.transform.localScale = gameObject.transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * 3, Time.deltaTime * 30);
             TheRotation();
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonUp("Fire1"))
             {
                 //BuySelected(currencyAmount, towers[currentTowerSelected], 
+                canClick = false;
                 BuySelected(currencyAmount, towers[currentTowerSelected], location.transform.position);
-                gameObject.transform.localScale = new Vector3(0, 0, 0);
                 canDoStuff = false;
                 Cursor.lockState = CursorLockMode.None;
             }
-            if (Input.GetButtonDown("Fire2"))
+            if (Input.GetButtonUp("Fire2"))
             {
-                gameObject.transform.localScale = new Vector3(0, 0, 0);
                 canDoStuff = false;
                 Cursor.lockState = CursorLockMode.None;
-                 manager.PlayAudio(2);
+                manager.PlayAudio(2);
             }
+        }
+        else
+        {
+            gameObject.transform.localScale = Vector3.zero;
+        }
+        if (canClick == true)
+        {
+            RayShizzle();
+        } else if(Input.GetButtonUp("Fire1") == true){
+            canClick = true;
         }
     }
 
@@ -78,9 +93,11 @@ public class TowerSelection : MonoBehaviour
             currencyAmount -= t.cost;
             location.GetComponent<TowerSpawnPlace>().isTaken = true;
             Instantiate(towers[currentTowerSelected], location.transform, false);
+            GameObject toKill = Instantiate(spawnParticle, location.transform.position + (location.transform.forward * 5), Quaternion.identity);
+            Destroy(toKill, 1);
             manager.PlayAudio(1);
-             manager.PlayAudio(0);
-              manager.PlayAudio(13);
+            manager.PlayAudio(0);
+            manager.PlayAudio(13);
         }
         else
         {
@@ -117,7 +134,7 @@ public class TowerSelection : MonoBehaviour
                     if (Input.GetButtonUp("Fire1"))
                     {
                         gameObject.transform.position = Input.mousePosition;
-                        gameObject.transform.localScale = new Vector3(3, 3, 3);
+                        transform.position = new Vector3(Mathf.Clamp(transform.position.x, Screen.width * 0.1f, Screen.width * 0.75f), Mathf.Clamp(transform.position.y, Screen.height * 0.2f, Screen.height * 0.8f), 0);
                         location = buildspot;
                         canDoStuff = true;
                         Cursor.lockState = CursorLockMode.Locked;
@@ -131,7 +148,7 @@ public class TowerSelection : MonoBehaviour
                     {
                         Destroy(buildspot.transform.GetChild(0).gameObject);
                         hit.transform.gameObject.GetComponent<TowerSpawnPlace>().isTaken = false;
-                         manager.PlayAudio(1);
+                        manager.PlayAudio(1);
                     }
                     buildspot = null;
                     SetMouseInfo(true);
@@ -149,6 +166,10 @@ public class TowerSelection : MonoBehaviour
             buildspot = null;
         }
         //print(buildspot);
+        if (canDoStuff == true)
+        {
+            buildspot = null;
+        }
         if (buildspot != null)
         {
             SetMouseInfo(true);

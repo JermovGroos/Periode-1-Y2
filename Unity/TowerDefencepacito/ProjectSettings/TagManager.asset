@@ -9,6 +9,7 @@ TagManager:
   - Currency
   - Platform
   - UIColor
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - 
   - PostProcessing
   - ScrollUI
-  - 
-  - 
+  - Tower
+  - Enemy
   - 
   - 
   - 

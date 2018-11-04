@@ -33,8 +33,10 @@ public class Cam : MonoBehaviour
             if (Cursor.lockState == CursorLockMode.None)
             {
                 Zoom();
+                Rotate();
+            } else if(curCamPos == 0){
+                camHelp.rotation = Quaternion.Euler(rotValue);
             }
-            Rotate();
             SetCamPos();
         }
     }
