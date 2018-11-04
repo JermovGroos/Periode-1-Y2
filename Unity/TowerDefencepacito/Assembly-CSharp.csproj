@@ -160,6 +160,7 @@
      <Compile Include="Assets\Scripts\DefenceTower.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\DialogueStats.cs" />
+     <Compile Include="Assets\Scripts\EnemyCount.cs" />
      <Compile Include="Assets\Scripts\MainMenuButton.cs" />
      <Compile Include="Assets\Scripts\MainMenuTransition.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
