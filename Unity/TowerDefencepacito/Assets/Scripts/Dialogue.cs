@@ -8,43 +8,44 @@ public class Dialogue : MonoBehaviour
 
     Text txt;
     public List<string> dialogue;
-    public List<Sprite> sprites;
-    public Image[] talkerSprites;
-    int curDialogue = 0;
+    public int curDialogue = 0;
     Manager manager;
+    public GameObject[] arrows;
 
     void Start()
     {
         txt = transform.GetComponent<Text>();
         manager = FindObjectOfType<Manager>();
+        Cursor.lockState = CursorLockMode.None;
     }
 
     void Update()
     {
-        if (manager.talking == true)
+         Cursor.lockState = CursorLockMode.Locked;
+        if (Input.GetButtonDown("Fire1") == true)
         {
-            if (Input.GetButtonDown("Fire1") == true)
+            if (curDialogue < dialogue.Count - 1)
             {
-                if (curDialogue < dialogue.Count - 1)
-                {
-                    curDialogue++;
-                }
-                else
-                {
-                    curDialogue = 0;
-                    manager.talking = false;
-                    //manager.inBetweenWaves = true;
-                    manager.justTalked = true;
-                    //manager.NewWave();
-                    //manager.inBetweenWaves = true;
-                }
+                curDialogue++;
+            }
+            else
+            {
+                //no more text
+                transform.parent.gameObject.SetActive(false);
+                 Cursor.lockState = CursorLockMode.None;
             }
         }
-
-        txt.text = dialogue[curDialogue];
-        for (int i = 0; i < talkerSprites.Length; i++)
+        for (int i = 0; i < arrows.Length; i++)
         {
-            talkerSprites[i].sprite = sprites[curDialogue];
+            if (i == curDialogue)
+            {
+                arrows[i].SetActive(true);
+            }
+            else
+            {
+                arrows[i].SetActive(false);
+            }
         }
+        txt.text = dialogue[curDialogue];
     }
 }

@@ -52,6 +52,7 @@ public class Manager : MonoBehaviour
         normalUIHider.anchoredPosition = new Vector3(0, 2239, 0);
         diaHider.anchoredPosition = new Vector3(380, -177, 0);
         twrWheel = FindObjectOfType<TowerSelection>();
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public bool SetMouseState(MouseState newMouseState)
@@ -147,9 +148,7 @@ public class Manager : MonoBehaviour
     {
         talking = true;
         diaScript.dialogue.Clear();
-        diaScript.sprites.Clear();
         diaScript.dialogue.AddRange(dia[diaNumber].dialogue);
-        diaScript.sprites.AddRange(dia[diaNumber].sprites);
         diaNumber++;
     }
 
