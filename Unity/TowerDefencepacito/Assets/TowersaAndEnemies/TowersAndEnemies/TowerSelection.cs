@@ -31,13 +31,17 @@ public class TowerSelection : MonoBehaviour
     //By Casper
     Cam cam;
     Manager manager;
+    [Header("Casper editions")]
     public Light selectLight;
+    public Text descriptionText;
+    public string[] descriptions;
 
     // Use this for initialization
     void Start()
     {
         cam = FindObjectOfType<Cam>();
         manager = FindObjectOfType<Manager>();
+        transform.localScale =  Vector3.zero;
     }
 
     // Update is called once per frame
@@ -47,22 +51,24 @@ public class TowerSelection : MonoBehaviour
         RayShizzle();
         if (canDoStuff)
         {
+            descriptionText.text = descriptions[currentTowerSelected];
+            gameObject.transform.localScale = gameObject.transform.localScale =  Vector3.Lerp(transform.localScale,Vector3.one * 3,Time.deltaTime * 30);
             TheRotation();
             if (Input.GetButtonDown("Fire1"))
             {
                 //BuySelected(currencyAmount, towers[currentTowerSelected], 
                 BuySelected(currencyAmount, towers[currentTowerSelected], location.transform.position);
-                gameObject.transform.localScale = new Vector3(0, 0, 0);
                 canDoStuff = false;
                 Cursor.lockState = CursorLockMode.None;
             }
             if (Input.GetButtonDown("Fire2"))
             {
-                gameObject.transform.localScale = new Vector3(0, 0, 0);
                 canDoStuff = false;
                 Cursor.lockState = CursorLockMode.None;
                  manager.PlayAudio(2);
             }
+        } else {
+            gameObject.transform.localScale =  Vector3.zero;
         }
     }
 
@@ -117,7 +123,7 @@ public class TowerSelection : MonoBehaviour
                     if (Input.GetButtonUp("Fire1"))
                     {
                         gameObject.transform.position = Input.mousePosition;
-                        gameObject.transform.localScale = new Vector3(3, 3, 3);
+                        transform.position = new Vector3(Mathf.Clamp(transform.position.x,Screen.width * 0.1f,Screen.width * 0.75f),Mathf.Clamp(transform.position.y,Screen.height * 0.2f,Screen.height * 0.8f),0);
                         location = buildspot;
                         canDoStuff = true;
                         Cursor.lockState = CursorLockMode.Locked;
@@ -149,6 +155,9 @@ public class TowerSelection : MonoBehaviour
             buildspot = null;
         }
         //print(buildspot);
+        if(canDoStuff == true){
+            buildspot = null;
+        }
         if (buildspot != null)
         {
             SetMouseInfo(true);
