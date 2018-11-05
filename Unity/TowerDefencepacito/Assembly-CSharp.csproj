@@ -107,6 +107,7 @@
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\MouseHider.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
