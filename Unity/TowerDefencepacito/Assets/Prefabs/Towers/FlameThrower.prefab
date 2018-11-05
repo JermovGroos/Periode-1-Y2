@@ -423,7 +423,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1236770025681176}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 1
+  simulationSpeed: 2.06
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -5022,7 +5022,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1307199605291950}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 1
+  simulationSpeed: 2.06
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -8493,7 +8493,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -8546,7 +8546,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -9568,7 +9568,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1623798987607310}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 1
+  simulationSpeed: 2.06
   stopAction: 0
   looping: 1
   prewarm: 0

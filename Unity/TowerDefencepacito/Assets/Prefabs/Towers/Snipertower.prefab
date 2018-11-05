@@ -948,14 +948,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0969f732e217ac46a97a08653436b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 7
   cost: 20
   range: 300
   barrel: {fileID: 1266670010841244}
   lM:
     serializedVersion: 2
     m_Bits: 2048
-  firingSpeed: 0.7
+  firingSpeed: 1.5
   canFire: 1
   bulletParticle: {fileID: 198250378557257618}
 --- !u!198 &198250378557257618
@@ -970,7 +970,7 @@ ParticleSystem:
   stopAction: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1

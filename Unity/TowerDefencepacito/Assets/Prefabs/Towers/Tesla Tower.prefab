@@ -666,7 +666,7 @@ LineRenderer:
     alignment: 0
     textureMode: 3
     generateLightingData: 0
-  m_UseWorldSpace: 0
+  m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!198 &198538124416928568
 ParticleSystem:
