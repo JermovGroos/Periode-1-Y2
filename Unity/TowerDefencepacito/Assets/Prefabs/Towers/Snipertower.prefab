@@ -954,7 +954,7 @@ MonoBehaviour:
   barrel: {fileID: 1266670010841244}
   lM:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 2048
   firingSpeed: 0.7
   canFire: 1
   bulletParticle: {fileID: 198250378557257618}
