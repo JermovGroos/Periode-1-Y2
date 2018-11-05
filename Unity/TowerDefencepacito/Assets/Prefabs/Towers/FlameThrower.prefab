@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d5d98ede432a04db0e517b227e5f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0
   cost: 13
   range: 15
   barrel: {fileID: 1192699688458248}

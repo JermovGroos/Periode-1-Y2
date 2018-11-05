@@ -1461,6 +1461,8 @@ MonoBehaviour:
   targetLocation: {fileID: 0}
   worth: 10
   waveManager: {fileID: 0}
+  onFireTime: 1.5
+  onFireDmg: 0.1
   kindOfEnemy: 0
   explodeDistance: 3
   explosion: {fileID: 198572300013136068}
