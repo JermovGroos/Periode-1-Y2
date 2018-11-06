@@ -11,17 +11,29 @@ public class Dialogue : MonoBehaviour
     public int curDialogue = 0;
     Manager manager;
     public GameObject[] arrows;
+    Cam cam;
+    Transition transition;
+    public int[] camPosses;
 
     void Start()
     {
         txt = transform.GetComponent<Text>();
         manager = FindObjectOfType<Manager>();
         Cursor.lockState = CursorLockMode.None;
+        cam = FindObjectOfType<Cam>();
+        transition = FindObjectOfType<Transition>();
     }
 
     void Update()
     {
-         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
+        SetCurDia();
+        SetArrow();
+        txt.text = dialogue[curDialogue];
+    }
+
+    void SetCurDia()
+    {
         if (Input.GetButtonDown("Fire1") == true)
         {
             if (curDialogue < dialogue.Count - 1)
@@ -32,20 +44,40 @@ public class Dialogue : MonoBehaviour
             {
                 //no more text
                 transform.parent.gameObject.SetActive(false);
-                 Cursor.lockState = CursorLockMode.None;
+                Cursor.lockState = CursorLockMode.None;
             }
+            SetCamPerp();
         }
+    }
+
+    void SetArrow()
+    {
         for (int i = 0; i < arrows.Length; i++)
         {
             if (i == curDialogue)
             {
-                arrows[i].SetActive(true);
+                if (arrows[i] != null)
+                {
+                    arrows[i].SetActive(true);
+                }
             }
             else
             {
-                arrows[i].SetActive(false);
+                if (arrows[i] != null)
+                {
+                    arrows[i].SetActive(false);
+                }
             }
         }
-        txt.text = dialogue[curDialogue];
+    }
+
+    void SetCamPerp()
+    {
+        if (cam.curCamPos != camPosses[curDialogue])
+        {
+            cam.curCamPos = camPosses[curDialogue];
+            transition.rect.anchoredPosition = Vector3.zero;
+            FindObjectOfType<Manager>().PlayAudio(4);
+        }
     }
 }
