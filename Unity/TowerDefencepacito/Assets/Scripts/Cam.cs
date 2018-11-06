@@ -24,6 +24,7 @@ public class Cam : MonoBehaviour
     {
         cam = transform.GetComponent<Camera>();
         manager = FindObjectOfType<Manager>();
+        orthoSize = maxZoomDistance;
     }
 
     void Update()
