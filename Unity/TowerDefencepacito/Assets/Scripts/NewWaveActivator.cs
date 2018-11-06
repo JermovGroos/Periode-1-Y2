@@ -7,19 +7,23 @@ public class NewWaveActivator : MonoBehaviour, IPointerEnterHandler, IPointerExi
 {
 
     Manager manager;
+    WaveManager waveManager;
     bool isOver = false;
     RectTransform rect;
+    WaveIndicator waveIndicator;
 
     void Start()
     {
         manager = FindObjectOfType<Manager>();
+        waveManager = FindObjectOfType<WaveManager>();
+        waveIndicator = FindObjectOfType<WaveIndicator>();
         rect = transform.GetComponent<RectTransform>();
         rect.rotation = Quaternion.Euler(0, 0, -90);
     }
 
     void Update()
     {
-        if (manager.inBetweenWaves == true)
+        if (waveManager.waveInProgress == false)
         {
             // rect.eulerAngles = Vector3.Lerp(rect.eulerAngles, new Vector3(rect.eulerAngles.x, rect.eulerAngles.y, 0), Time.deltaTime * 36);
             rect.rotation = Quaternion.Lerp(rect.rotation, Quaternion.Euler(0, 0, 0), Time.deltaTime * 10);
@@ -29,8 +33,9 @@ public class NewWaveActivator : MonoBehaviour, IPointerEnterHandler, IPointerExi
                 {
                     if (manager.SetMouseState(Manager.MouseState.Used) == true)
                     {
-                        manager.inBetweenWaves = false;
-                        manager.NewWave();
+                        manager.PlayAudio(14);
+                        waveIndicator.NewWave();
+                        waveManager.NextWavey();
                     }
                 }
             }
