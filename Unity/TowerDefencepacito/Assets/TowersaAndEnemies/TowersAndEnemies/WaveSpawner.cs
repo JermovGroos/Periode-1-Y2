@@ -22,7 +22,7 @@ public class WaveSpawner : MonoBehaviour {
     public Text waveShower;
 
     private GameObject[] allEnemies;
-    private bool waveInProgress = true;
+    public bool waveInProgress;
 
     public List<GameObject> tires;
     public List<GameObject> boxes;
@@ -47,7 +47,7 @@ public class WaveSpawner : MonoBehaviour {
         boxes.TrimExcess();
         diggers.TrimExcess();
         allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (allEnemies.Length == 0 && waveInProgress)
+        if (allEnemies.Length == 0)
         {
             waveInProgress = false;
             mainWaveManager.GetComponent<WaveManager>().waveInProgress = false;
@@ -82,9 +82,9 @@ public class WaveSpawner : MonoBehaviour {
         {
             if (!waveInProgress)
             {
-                tiresOfWave.text = (tireAmount * spawnLocations.Length).ToString();
-                boxesOfWave.text = (boomBoxAmount * spawnLocations.Length).ToString();
-                diggersOfWave.text = (diggerAmount * spawnLocations.Length).ToString();
+                tiresOfWave.text = (ePW[wave + 1].tires * spawnLocations.Length).ToString();
+                boxesOfWave.text = (ePW[wave + 1].booms * spawnLocations.Length).ToString();
+                diggersOfWave.text = (ePW[wave + 1].diggers * spawnLocations.Length).ToString();
             }
         }
     }
@@ -101,48 +101,40 @@ public class WaveSpawner : MonoBehaviour {
 
     public IEnumerator SpawnEnemies()
     {
-        print("It spawns");
-        print(tireAmount);
         for (int i = 0; i < tireAmount; i++)
         {
             for (int ii = 0; ii < spawnLocations.Length; ii++)
             {
-                print("Atleast I started");
                 GameObject g = Instantiate(tireEnemy, spawnLocations[ii].transform, false);
                 g.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                 g.GetComponent<Enemy>().kindOfEnemy = 0;
                 g.GetComponent<Enemy>().waveManager = gameObject;
                 tires.Capacity++;
                 tires.Add(g);
-                print("Spawned a Tire");
             }
             yield return new WaitForSeconds(timeBetweenEnemySpawns);
             for (int io = 0; io < boomBoxAmount; io++)
             {
                 for (int ii = 0; ii < spawnLocations.Length; ii++)
                 {
-                    print("Atleast I started");
                     GameObject ge = Instantiate(boomBoxEnemy, spawnLocations[ii].transform, false);
                     ge.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                     ge.GetComponent<Enemy>().kindOfEnemy = 1;
                     ge.GetComponent<Enemy>().waveManager = gameObject;
                     boxes.Capacity++;
                     boxes.Add(ge);
-                    print("Spawned a Box");
                 }
                 yield return new WaitForSeconds(timeBetweenEnemySpawns);
                 for (int ioo = 0; ioo < diggerAmount; ioo++)
                 {
                     for (int ii = 0; ii < spawnLocations.Length; ii++)
                     {
-                        print("Atleast I started");
                         GameObject go = Instantiate(diggerEnemy, spawnLocations[ii].transform, false);
                         go.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                         go.GetComponent<Enemy>().kindOfEnemy = 2;
                         go.GetComponent<Enemy>().waveManager = gameObject;
                         diggers.Capacity++;
                         diggers.Add(go);
-                        print("Spawned a digger");
                     }
                     yield return new WaitForSeconds(timeBetweenEnemySpawns);
                 }
