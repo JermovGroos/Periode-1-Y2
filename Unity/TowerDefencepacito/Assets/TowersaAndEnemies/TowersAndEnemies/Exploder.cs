@@ -18,10 +18,22 @@ public class Exploder : Enemy {
 
     void Update () {
         IsDead();
-        if (Vector3.Distance(gameObject.transform.position, targetLocation.transform.position) < explodeDistance && !hasExploded)
+        if (!waveManager.GetComponent<WaveSpawner>().mainWaveManager.GetComponent<WaveManager>().enemiesWon)
         {
-            Explode();
-            hasExploded = true;
+            if (Vector3.Distance(gameObject.transform.position, targetLocation.transform.position) < explodeDistance && !hasExploded)
+            {
+                Explode();
+                hasExploded = true;
+            }
+        }
+        else
+        {
+            if (Vector3.Distance(gameObject.transform.position, targetLocation.transform.position) < explodeDistance)
+            {
+                print("Enemy Entered The Building");
+                //add a "*Teleports behind you* nothing personell kid"
+                Die();
+            }
         }
 	}
 
@@ -37,20 +49,10 @@ public class Exploder : Enemy {
             {
                 g.GetComponent<Enemy>().Die();
             }
-            /* not existent yet
-            if (g.GetComponent<BoomBox>())
+            if (g.GetComponent<BaseManager>())
             {
-                g.GetComponent<BoomBox>().DoDamage(damage);
+                g.GetComponent<BaseManager>().health -= damage;
             }
-            if (g.GetComponent<BoomBox>())
-            {
-                g.GetComponent<BoomBox>().DoDamage(damage);
-            }
-            if (g.GetComponent<BoomBox>())
-            {
-                g.GetComponent<BoomBox>().DoDamage(damage);
-            }
-            base damage*/
         }
 
         DoDamage(999);

@@ -24,6 +24,8 @@ public class Enemy : MonoBehaviour {
     [Space]
     public float onFireTime = 1.5f;
     public float onFireDmg = 1;
+    [Space]
+    public BaseManager baseManager;
 
     NavMeshAgent agent;
 
@@ -31,6 +33,7 @@ public class Enemy : MonoBehaviour {
 
     public void Awaken()
     {
+        baseManager = GameObject.FindGameObjectWithTag("Base").GetComponent<BaseManager>();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;
         currencyHolder = GameObject.FindGameObjectWithTag("Currency");
@@ -86,7 +89,7 @@ public class Enemy : MonoBehaviour {
         {
             waveManager.GetComponent<WaveSpawner>().diggers.Remove(gameObject);
         }
-        Destroy(gameObject, 2f);
+        Destroy(gameObject);
     }
 
     //flamethrower and area of effect detection

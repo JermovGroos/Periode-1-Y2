@@ -10,21 +10,41 @@ public class Digger : Enemy {
     public ParticleSystem surfacingParticle;
     private float maxHealth;
     public Animation surfacingAni;
+    public float minTimeTillAscend = 10f;
+    public float maxTimeTillAscend = 20f;
 
 	// Use this for initialization
 	void Awake () {
         Awaken();
         maxHealth = health;
-        timeTillAscend = Random.Range(10.0f, 20.0f);
+        timeTillAscend = Random.Range(minTimeTillAscend, maxTimeTillAscend);
         StartCoroutine("TillAscend");
 	}
 	
 	// Update is called once per frame
 	void Update () {
         IsDead();
+
         if (underground)
         {
             health = maxHealth;
+        }
+
+        if (!waveManager.GetComponent<WaveSpawner>().mainWaveManager.GetComponent<WaveManager>().enemiesWon)
+        {
+            if (Vector3.Distance(gameObject.transform.position, targetLocation.transform.position) < 1)
+            {
+                baseManager.health -= damage * Time.deltaTime;
+            }
+        }
+        else
+        {
+            if (Vector3.Distance(gameObject.transform.position, targetLocation.transform.position) < 1)
+            {
+                print("Enemy Entered The Building");
+                //add a "*Teleports behind you* nothing personell kid"
+                Die();
+            }
         }
     }
 

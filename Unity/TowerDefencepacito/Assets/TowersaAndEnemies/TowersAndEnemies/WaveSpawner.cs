@@ -33,6 +33,8 @@ public class WaveSpawner : MonoBehaviour {
     public Text diggersOfWave;
     public GameObject mainWaveManager;
     public bool nextWaveBool;
+    [HideInInspector]
+    public bool won;
 
 	void Start ()
     {
@@ -55,6 +57,7 @@ public class WaveSpawner : MonoBehaviour {
             {
                 //youwin
                 print("Won");
+                won = true;
                 nextWaveBool = false;
             }
             else

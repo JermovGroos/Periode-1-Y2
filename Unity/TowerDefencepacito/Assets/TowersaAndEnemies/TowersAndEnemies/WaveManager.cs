@@ -16,6 +16,7 @@ public class WaveManager : MonoBehaviour {
 
     [HideInInspector]
     public bool waveInProgress;
+    public bool enemiesWon;
 
 	// Use this for initialization
 	void Start () {
