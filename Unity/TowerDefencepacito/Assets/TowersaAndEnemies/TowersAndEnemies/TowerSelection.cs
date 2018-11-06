@@ -21,7 +21,8 @@ public class TowerSelection : MonoBehaviour
     [HideInInspector]
     public bool canDoStuff;
     public Text currencyShower;
-    GameObject location;
+    [HideInInspector]
+    public GameObject location;
     //72
 
     //now to actual selection of towers//
@@ -49,6 +50,12 @@ public class TowerSelection : MonoBehaviour
     void Update()
     {
         currencyShower.text = "$" + currencyAmount;
+
+        if (cam.curCamPos == 0)
+        {
+            canClick = false;
+        }
+
         if (canDoStuff)
         {
             descriptionText.text = descriptions[currentTowerSelected];
@@ -56,11 +63,14 @@ public class TowerSelection : MonoBehaviour
             TheRotation();
             if (Input.GetButtonUp("Fire1"))
             {
-                //BuySelected(currencyAmount, towers[currentTowerSelected], 
-                canClick = false;
-                BuySelected(currencyAmount, towers[currentTowerSelected], location.transform.position);
-                canDoStuff = false;
-                Cursor.lockState = CursorLockMode.None;
+                if (FindObjectOfType<Dialogue>() == null)
+                {
+                    //BuySelected(currencyAmount, towers[currentTowerSelected], 
+                    canClick = false;
+                    BuySelected(currencyAmount, towers[currentTowerSelected], location.transform.position);
+                    canDoStuff = false;
+                    Cursor.lockState = CursorLockMode.None;
+                }
             }
             if (Input.GetButtonUp("Fire2"))
             {
@@ -76,7 +86,9 @@ public class TowerSelection : MonoBehaviour
         if (canClick == true)
         {
             RayShizzle();
-        } else if(Input.GetButtonUp("Fire1") == true){
+        }
+        else if (Input.GetButtonUp("Fire1") == true)
+        {
             canClick = true;
         }
     }

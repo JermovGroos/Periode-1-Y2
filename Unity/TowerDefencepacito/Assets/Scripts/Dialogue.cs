@@ -14,6 +14,10 @@ public class Dialogue : MonoBehaviour
     Cam cam;
     Transition transition;
     public int[] camPosses;
+    TowerSelection twrWheel;
+    public int towerWheelTime = 10;
+    public Transform towerSpawnLocation;
+    bool towerPlaced = false;
 
     void Start()
     {
@@ -22,6 +26,7 @@ public class Dialogue : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         cam = FindObjectOfType<Cam>();
         transition = FindObjectOfType<Transition>();
+        twrWheel = FindObjectOfType<TowerSelection>();
     }
 
     void Update()
@@ -29,7 +34,27 @@ public class Dialogue : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         SetCurDia();
         SetArrow();
+        SetTowerWheel();
         txt.text = dialogue[curDialogue];
+    }
+
+    void SetTowerWheel()
+    {
+        if (curDialogue == towerWheelTime)
+        {
+            twrWheel.canDoStuff = true;
+        }
+        else if (curDialogue == towerWheelTime + 1)
+        {
+            if (towerPlaced == false)
+            {
+                twrWheel.location = towerSpawnLocation.gameObject;
+                twrWheel.BuySelected(twrWheel.currencyAmount, twrWheel.towers[0], towerSpawnLocation.position);
+                //BuySelected(currencyAmount, towers[currentTowerSelected], location.transform.position);
+                twrWheel.canDoStuff = false;
+                towerPlaced = true;
+            }
+        }
     }
 
     void SetCurDia()

@@ -1558,7 +1558,7 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53814810}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9444185, w: -0.32874572}
+  m_LocalRotation: {x: 0, y: 0, z: -0.42618752, w: -0.90463483}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.4601867, y: 1.4601867, z: 1.460186}
   m_Children: []
@@ -1596,7 +1596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7be9d4fa7fbb3eb4795d7f135baf02ae, type: 3}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3211,7 +3211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &113814245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10556,7 +10556,7 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 264804742}
-  m_LocalRotation: {x: 0, y: 0, z: -0.50244236, w: 0.86461073}
+  m_LocalRotation: {x: 0, y: 0, z: -0.98957074, w: -0.14404808}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.9620531, y: 1.9620531, z: 1.9620379}
   m_Children: []
@@ -10667,7 +10667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12118,7 +12118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13580,7 +13580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   images:
-  - {fileID: 1379451815}
   - {fileID: 53814813}
   - {fileID: 267038006}
   - {fileID: 341688317}
@@ -13591,9 +13590,11 @@ MonoBehaviour:
   - {fileID: 1221883198}
   - {fileID: 1248835140}
   - {fileID: 1365785323}
+  - {fileID: 1379451815}
   - {fileID: 1480467616}
   - {fileID: 1589629937}
-  curColor: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  - {fileID: 2091102691}
+  curColor: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   allColors:
   - {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
   - {r: 0.101960786, g: 0.101960786, b: 0.101960786, a: 1}
@@ -17462,7 +17463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17915,7 +17916,7 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 626111470}
-  m_LocalRotation: {x: 0, y: 0, z: -0.49699473, w: 0.8677536}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99045706, w: -0.13782176}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3558495, y: 1.3558495, z: 1.3558434}
   m_Children: []
@@ -22023,6 +22024,7 @@ MonoBehaviour:
   currencyAmount: 100
   canDoStuff: 0
   currencyShower: {fileID: 1027184250}
+  location: {fileID: 0}
   towers:
   - {fileID: 1615860115082158, guid: abeb0907ea672f1489e037fc14f055be, type: 2}
   - {fileID: 1668645850556642, guid: 06a3436d2f6f38f4fa30fa8c835977e4, type: 2}
@@ -22588,7 +22590,7 @@ MonoBehaviour:
   dialogue:
   - They are coming.
   - I must defend myself from the enemy.
-  - Luckily, they come in waves, so I can manage ourselfs.
+  - Luckily, they come in waves, so I can manage myself.
   - Before I begin, I should recap the controlls.
   - If I press this button, the enemies will find me.
   - Normally I would never press it, but it should be usefull today.
@@ -22624,6 +22626,8 @@ MonoBehaviour:
   - {fileID: 947738122}
   - {fileID: 0}
   camPosses: 0000000000000000000000000000000000000000000000000000000000000000000000000100000001000000010000000100000001000000010000000000000000000000000000000000000000000000
+  towerWheelTime: 11
+  towerSpawnLocation: {fileID: 2036345379}
 --- !u!114 &832654895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22962,7 +22966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23306,7 +23310,7 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 883558022}
-  m_LocalRotation: {x: 0, y: 0, z: -0.49699473, w: 0.8677536}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99045706, w: -0.13782176}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.1520436, y: 2.1520436, z: 2.15203}
   m_Children: []
@@ -25449,7 +25453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -25871,7 +25875,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4045303984888516, guid: 77f1d82a74f2abe4eba58b9897544803, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.7869094
+      value: 0.06689417
       objectReference: {fileID: 0}
     - target: {fileID: 4045303984888516, guid: 77f1d82a74f2abe4eba58b9897544803, type: 2}
       propertyPath: m_LocalRotation.z
@@ -25879,7 +25883,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4045303984888516, guid: 77f1d82a74f2abe4eba58b9897544803, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.6170686
+      value: -0.9977601
       objectReference: {fileID: 0}
     - target: {fileID: 4045303984888516, guid: 77f1d82a74f2abe4eba58b9897544803, type: 2}
       propertyPath: m_RootOrder
@@ -25887,21 +25891,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4385637262598040, guid: 77f1d82a74f2abe4eba58b9897544803, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.9960913
+      value: -0.042591717
       objectReference: {fileID: 0}
     - target: {fileID: 4385637262598040, guid: 77f1d82a74f2abe4eba58b9897544803, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.08833001
+      value: -0.99909264
       objectReference: {fileID: 0}
     - target: {fileID: 137668603465750876, guid: 77f1d82a74f2abe4eba58b9897544803,
         type: 2}
       propertyPath: m_AABB.m_Center.x
-      value: -0.058746338
+      value: -0.05871582
       objectReference: {fileID: 0}
     - target: {fileID: 137668603465750876, guid: 77f1d82a74f2abe4eba58b9897544803,
         type: 2}
       propertyPath: m_AABB.m_Center.y
-      value: 2.3008118
+      value: 2.3007507
       objectReference: {fileID: 0}
     - target: {fileID: 137668603465750876, guid: 77f1d82a74f2abe4eba58b9897544803,
         type: 2}
@@ -25911,17 +25915,17 @@ Prefab:
     - target: {fileID: 137668603465750876, guid: 77f1d82a74f2abe4eba58b9897544803,
         type: 2}
       propertyPath: m_AABB.m_Extent.x
-      value: 0.3680932
+      value: 0.2859982
       objectReference: {fileID: 0}
     - target: {fileID: 137668603465750876, guid: 77f1d82a74f2abe4eba58b9897544803,
         type: 2}
       propertyPath: m_AABB.m_Extent.y
-      value: 0.49767303
+      value: 0.46259975
       objectReference: {fileID: 0}
     - target: {fileID: 137668603465750876, guid: 77f1d82a74f2abe4eba58b9897544803,
         type: 2}
       propertyPath: m_AABB.m_Extent.z
-      value: 0.17958608
+      value: 0.17907837
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 195232256149647736, guid: 77f1d82a74f2abe4eba58b9897544803, type: 2}
@@ -28030,7 +28034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -30303,7 +30307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -30352,7 +30356,7 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1224813842}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9653655, w: 0.26090124}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6018581, w: -0.7986031}
   m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 2.1798, y: 2.1798, z: 0}
   m_Children: []
@@ -30926,7 +30930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7be9d4fa7fbb3eb4795d7f135baf02ae, type: 3}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -33178,6 +33182,8 @@ MonoBehaviour:
   curDialogue: 0
   arrows: []
   camPosses: 
+  towerWheelTime: 10
+  towerSpawnLocation: {fileID: 0}
 --- !u!114 &1336510110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33679,7 +33685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -34075,7 +34081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -35415,7 +35421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -37496,7 +37502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10369039, g: 0.10369039, b: 0.10369039, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -40274,6 +40280,8 @@ MonoBehaviour:
   curDialogue: 0
   arrows: []
   camPosses: 
+  towerWheelTime: 10
+  towerSpawnLocation: {fileID: 0}
 --- !u!114 &1714775192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42379,7 +42387,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4250021385974268, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.99645555
+      value: 0.60338145
       objectReference: {fileID: 0}
     - target: {fileID: 4250021385974268, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.z
@@ -42387,7 +42395,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4250021385974268, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.08412184
+      value: -0.7974527
       objectReference: {fileID: 0}
     - target: {fileID: 4250021385974268, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_RootOrder
@@ -42395,35 +42403,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4352460255556722, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.96993744
+      value: -0.4401915
       objectReference: {fileID: 0}
     - target: {fileID: 4352460255556722, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.2433546
+      value: 0.89790386
       objectReference: {fileID: 0}
     - target: {fileID: 4430794806144030, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.96993744
+      value: -0.4401915
       objectReference: {fileID: 0}
     - target: {fileID: 4430794806144030, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.2433546
+      value: 0.89790386
       objectReference: {fileID: 0}
     - target: {fileID: 4800141737332332, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.96993744
+      value: -0.4401915
       objectReference: {fileID: 0}
     - target: {fileID: 4800141737332332, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.2433546
+      value: 0.89790386
       objectReference: {fileID: 0}
     - target: {fileID: 4777376407751464, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.96993744
+      value: -0.4401915
       objectReference: {fileID: 0}
     - target: {fileID: 4777376407751464, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.2433546
+      value: 0.89790386
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 195466934867854546, guid: e07c3e4db865abd47adca8278b52716f, type: 2}
@@ -43486,7 +43494,7 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875755370}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9653655, w: 0.26090124}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6018581, w: -0.7986031}
   m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 2.1798, y: 2.1798, z: 0}
   m_Children: []
@@ -44791,7 +44799,7 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1921862083}
-  m_LocalRotation: {x: 0, y: 0, z: -0.64770895, w: 0.7618879}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9483816, w: -0.31713164}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.1520426, y: 2.1520426, z: 2.152033}
   m_Children: []
@@ -46822,7 +46830,7 @@ GameObject:
   - component: {fileID: 2036345380}
   - component: {fileID: 2036345383}
   m_Layer: 0
-  m_Name: TowerHill (20)
+  m_Name: TowerHill (20)(forTutorial)
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48237,7 +48245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10360719, g: 0.10360719, b: 0.10360719, a: 1}
+  m_Color: {r: 0.10376794, g: 0.10376794, b: 0.10376794, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
