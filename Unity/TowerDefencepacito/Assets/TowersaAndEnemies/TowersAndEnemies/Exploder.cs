@@ -11,7 +11,12 @@ public class Exploder : Enemy {
     public LayerMask lM;
     private bool hasExploded;
 
-	void Update () {
+    void Awake()
+    {
+        Awaken();
+    }
+
+    void Update () {
         IsDead();
         if (Vector3.Distance(gameObject.transform.position, targetLocation.transform.position) < explodeDistance && !hasExploded)
         {

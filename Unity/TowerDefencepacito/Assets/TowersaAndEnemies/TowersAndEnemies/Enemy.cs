@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour {
 
     public int kindOfEnemy;
 
-    void Awake()
+    public void Awaken()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;
