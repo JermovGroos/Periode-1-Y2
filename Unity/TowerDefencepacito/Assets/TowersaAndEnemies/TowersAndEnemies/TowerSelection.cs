@@ -75,9 +75,12 @@ public class TowerSelection : MonoBehaviour
             }
             if (Input.GetButtonUp("Fire2"))
             {
-                canDoStuff = false;
-                Cursor.lockState = CursorLockMode.None;
-                manager.PlayAudio(2);
+                if (FindObjectOfType<Dialogue>() == null)
+                {
+                    canDoStuff = false;
+                    Cursor.lockState = CursorLockMode.None;
+                    manager.PlayAudio(2);
+                }
             }
         }
         else
@@ -210,38 +213,41 @@ public class TowerSelection : MonoBehaviour
         }
         if (!isRotatingLeft && !isRotatingRight)
         {
-            if (Input.GetAxis("Mouse ScrollWheel") > 0)
+            if (FindObjectOfType<Dialogue>() == null)
             {
-                //rotatingObject.transform.Rotate(0, 0, 72);
-                movement = 72;
-                isRotatingRight = true;
-                manager.PlayAudio(10);
-
-                if (currentTowerSelected == 4)
+                if (Input.GetAxis("Mouse ScrollWheel") > 0)
                 {
-                    currentTowerSelected = 0;
-                }
-                else
-                {
-                    currentTowerSelected++;
-                }
-            }
-            else
-            {
-                if (Input.GetAxis("Mouse ScrollWheel") < 0)
-                {
-                    //rotatingObject.transform.Rotate(0, 0, -72);
-                    movement = -72;
-                    isRotatingLeft = true;
+                    //rotatingObject.transform.Rotate(0, 0, 72);
+                    movement = 72;
+                    isRotatingRight = true;
                     manager.PlayAudio(10);
 
-                    if (currentTowerSelected == 0)
+                    if (currentTowerSelected == 4)
                     {
-                        currentTowerSelected = 4;
+                        currentTowerSelected = 0;
                     }
                     else
                     {
-                        currentTowerSelected--;
+                        currentTowerSelected++;
+                    }
+                }
+                else
+                {
+                    if (Input.GetAxis("Mouse ScrollWheel") < 0)
+                    {
+                        //rotatingObject.transform.Rotate(0, 0, -72);
+                        movement = -72;
+                        isRotatingLeft = true;
+                        manager.PlayAudio(10);
+
+                        if (currentTowerSelected == 0)
+                        {
+                            currentTowerSelected = 4;
+                        }
+                        else
+                        {
+                            currentTowerSelected--;
+                        }
                     }
                 }
             }

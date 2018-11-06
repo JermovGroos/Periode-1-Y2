@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class TowerHealth : MonoBehaviour {
 
-public int health = 7;
-public GameObject[] hearts;
-
+public float health = 100;
+public float maxHealth = 100;
+[Range(0,100)]
+public float percent = 100;
+RectTransform toScale;
+float startScale;
 	void Start () {
-		
+		toScale = GetComponent<RectTransform>();
+		startScale = toScale.localScale.x;
 	}
 	
 	void Update () {
-		for (int i = 0; i < hearts.Length; i++)
-		{
-			if(health < i){
-				hearts[i].SetActive(false);
-			} else {
-				hearts[i].SetActive(true);
-			}
-		}
+		percent = GetPercent();
+		toScale.localScale = new Vector3(startScale * (percent / 100),toScale.localScale.y,toScale.localScale.z);
+	}
+
+	float GetPercent(){
+		return (health / maxHealth) * 100;
 	}
 }

@@ -31,11 +31,13 @@ public class Cam : MonoBehaviour
     {
         if (manager.talking == false)
         {
+            Rotate();
             if (Cursor.lockState == CursorLockMode.None)
             {
                 Zoom();
-                Rotate();
-            } else if(curCamPos == 0){
+            }
+            else if (curCamPos == 0)
+            {
                 camHelp.rotation = Quaternion.Euler(rotValue);
             }
             SetCamPos();
@@ -72,7 +74,10 @@ public class Cam : MonoBehaviour
         //Vector3 rotValue;
         if (Input.GetAxis("Fire2") != 0)
         {
-            rotValue += new Vector3(0, Input.GetAxis("Mouse X") * rotateSpeed, 0);
+            if (Cursor.lockState == CursorLockMode.None)
+            {
+                rotValue += new Vector3(0, Input.GetAxis("Mouse X") * rotateSpeed, 0);
+            }
         }
         if (rotValue.y < 0)
         {

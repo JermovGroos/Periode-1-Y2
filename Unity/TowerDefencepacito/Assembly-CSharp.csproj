@@ -182,6 +182,7 @@
      <Compile Include="Assets\Scripts\WaveIndicator.cs" />
      <Compile Include="Assets\Scripts\WaveStats.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\AreaOfEffect.cs" />
+     <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\BaseManager.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\Bomb.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\BulletTower.cs" />
      <Compile Include="Assets\TowersaAndEnemies\TowersAndEnemies\Digger.cs" />

@@ -10,6 +10,7 @@ TagManager:
   - Platform
   - UIColor
   - Enemy
+  - Base
   layers:
   - Default
   - TransparentFX

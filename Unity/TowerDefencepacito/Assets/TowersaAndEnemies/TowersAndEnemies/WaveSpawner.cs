@@ -20,8 +20,8 @@ public class WaveSpawner : MonoBehaviour {
     public List<EnemiesPerWave> ePW = new List<EnemiesPerWave>();
     public int wave;
     public Text waveShower;
-
-    private GameObject[] allEnemies;
+    [HideInInspector]
+    public GameObject[] allEnemies;
     public bool waveInProgress;
 
     public List<GameObject> tires;
@@ -85,9 +85,9 @@ public class WaveSpawner : MonoBehaviour {
         {
             if (!waveInProgress)
             {
-                tiresOfWave.text = (ePW[wave + 1].tires * spawnLocations.Length).ToString();
-                boxesOfWave.text = (ePW[wave + 1].booms * spawnLocations.Length).ToString();
-                diggersOfWave.text = (ePW[wave + 1].diggers * spawnLocations.Length).ToString();
+                tiresOfWave.text = (ePW[wave + 1].tires * spawnLocations.Length - 1).ToString();
+                boxesOfWave.text = (ePW[wave + 1].booms * spawnLocations.Length - 1).ToString();
+                diggersOfWave.text = (ePW[wave + 1].diggers * spawnLocations.Length - 1).ToString();
             }
         }
     }
