@@ -8,7 +8,6 @@ public class WaveManager : MonoBehaviour {
     public WaveSpawner waveSpawnerEast;
     public WaveSpawner waveSpawnerSouth;
     public WaveSpawner waveSpawnerWest;
-    public GameObject nextWaveButton;
     [Space]
     public int enemiesNorth;
     public int enemiesEast;
@@ -21,21 +20,6 @@ public class WaveManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (waveSpawnerNorth.nextWaveBool &&
-        waveSpawnerEast.nextWaveBool &&
-        waveSpawnerSouth.nextWaveBool &&
-        waveSpawnerWest.nextWaveBool) 
-        {
-            nextWaveButton.SetActive(true);
-        }
-        else
-        {
-            nextWaveButton.SetActive(false);
-        }
 	}
 
     public void EnemyNumbers()
@@ -58,7 +42,6 @@ public class WaveManager : MonoBehaviour {
 
     public void NextWavey()
     {
-        nextWaveButton.SetActive(false);
         waveInProgress = true;
         waveSpawnerNorth.NextWave();
         waveSpawnerNorth.nextWaveBool = false;

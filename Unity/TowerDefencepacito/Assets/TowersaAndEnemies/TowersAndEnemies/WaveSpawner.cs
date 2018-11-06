@@ -93,18 +93,22 @@ public class WaveSpawner : MonoBehaviour {
     {
         waveInProgress = true;
         wave++;
+        tireAmount = ePW[wave].tires;
+        boomBoxAmount = ePW[wave].booms;
+        diggerAmount = ePW[wave].diggers;
         StartCoroutine("SpawnEnemies");
     }
 
     public IEnumerator SpawnEnemies()
     {
         print("It spawns");
+        print(tireAmount);
         for (int i = 0; i < tireAmount; i++)
         {
             for (int ii = 0; ii < spawnLocations.Length; ii++)
             {
                 print("Atleast I started");
-                GameObject g = Instantiate(tireEnemy, spawnLocations[ii].transform);
+                GameObject g = Instantiate(tireEnemy, spawnLocations[ii].transform, false);
                 g.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                 g.GetComponent<Enemy>().kindOfEnemy = 0;
                 g.GetComponent<Enemy>().waveManager = gameObject;
@@ -118,7 +122,7 @@ public class WaveSpawner : MonoBehaviour {
                 for (int ii = 0; ii < spawnLocations.Length; ii++)
                 {
                     print("Atleast I started");
-                    GameObject ge = Instantiate(boomBoxEnemy, spawnLocations[ii].transform);
+                    GameObject ge = Instantiate(boomBoxEnemy, spawnLocations[ii].transform, false);
                     ge.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                     ge.GetComponent<Enemy>().kindOfEnemy = 1;
                     ge.GetComponent<Enemy>().waveManager = gameObject;
@@ -132,7 +136,7 @@ public class WaveSpawner : MonoBehaviour {
                     for (int ii = 0; ii < spawnLocations.Length; ii++)
                     {
                         print("Atleast I started");
-                        GameObject go = Instantiate(diggerEnemy, spawnLocations[ii].transform);
+                        GameObject go = Instantiate(diggerEnemy, spawnLocations[ii].transform, false);
                         go.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
                         go.GetComponent<Enemy>().kindOfEnemy = 2;
                         go.GetComponent<Enemy>().waveManager = gameObject;

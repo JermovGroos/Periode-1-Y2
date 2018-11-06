@@ -37,10 +37,14 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     List<MainMenuButton> others = new List<MainMenuButton>();
     public Transform selecter;
     public Transform transition;
+    public int hoverAudio = -1;
+    public int clickAudio = -1;
+    MainMenuTransition manager;
 
 
     void Start()
     {
+        manager = FindObjectOfType<MainMenuTransition>();
         others.Clear();
         others.AddRange(FindObjectsOfType<MainMenuButton>());
         if (transform.GetComponent<Image>() != null)
@@ -97,6 +101,9 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             }
             if (Input.GetButtonDown("Fire1"))
             {
+                if(clickAudio != -1){
+                    manager.PlayAudio(clickAudio);
+                }
                 if (transition != null)
                 {
                     transition.eulerAngles = new Vector3(0, 0, 71.12601f);
@@ -104,7 +111,7 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
                 switch (clickEvent)
                 {
                     case Ev.StartGame:
-                        StartGame();
+                       StartCoroutine(StartGame());
                         break;
                     case Ev.Options:
                         Options();
@@ -138,8 +145,15 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         }
     }
 
-    void StartGame()
+    IEnumerator StartGame()
     {
+        FindObjectOfType<Music>().ChangeMusic(1);
+        transition.GetChild(0).GetComponent<Image>().color = new Color(1,1,1,0);
+        Time.timeScale = 0;
+        yield return new WaitForSecondsRealtime(1.8f);
+        transition.GetChild(0).GetComponent<Image>().color = Color.black;
+        yield return new WaitForSecondsRealtime(3);
+        Time.timeScale = 1;
         SceneManager.LoadScene(nextLevel);
     }
 
@@ -160,6 +174,9 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if(isOver == false && hoverAudio != -1){
+            manager.PlayAudio(hoverAudio);
+        }
         isOver = true;
     }
 

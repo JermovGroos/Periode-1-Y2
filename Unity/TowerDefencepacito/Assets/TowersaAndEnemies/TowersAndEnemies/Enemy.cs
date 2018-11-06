@@ -20,6 +20,10 @@ public class Enemy : MonoBehaviour {
     GameObject currencyHolder;
     bool died = false;
     public GameObject waveManager;
+    private bool ignited;
+    [Space]
+    public float onFireTime = 1.5f;
+    public float onFireDmg = 1;
 
     NavMeshAgent agent;
 
@@ -46,6 +50,10 @@ public class Enemy : MonoBehaviour {
             currencyHolder.GetComponent<TowerSelection>().currencyAmount += worth;
             TemporaryDyingAnimation();
             died = true;
+        }
+        if (ignited)
+        {
+            DoDamage(onFireDmg * Time.deltaTime);
         }
     }
 
@@ -87,6 +95,8 @@ public class Enemy : MonoBehaviour {
         if (other.gameObject.GetComponentInParent<FlameThrower>())
         {
             DoDamage(other.gameObject.GetComponentInParent<FlameThrower>().damage*Time.deltaTime);
+            ignited = true;
+            StartCoroutine("DMGoverTimeDuration");
         }
         if (other.gameObject.GetComponentInParent<Frost>())
         {
@@ -97,6 +107,12 @@ public class Enemy : MonoBehaviour {
         {
             DoDamage(other.gameObject.GetComponentInParent<Bomb>().damage/10);
         }
+    }
+
+    public IEnumerator DMGoverTimeDuration()
+    {
+        yield return new WaitForSeconds(onFireTime);
+        ignited = false;
     }
 
     public IEnumerator SlowTime()
