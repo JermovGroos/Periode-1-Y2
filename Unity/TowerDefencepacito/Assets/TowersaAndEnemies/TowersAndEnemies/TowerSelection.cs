@@ -37,6 +37,7 @@ public class TowerSelection : MonoBehaviour
     public Text descriptionText;
     public string[] descriptions;
     public GameObject spawnParticle;
+    public GameObject dieParticle;
     bool canClick = true;
     // Use this for initialization
     void Start()
@@ -105,7 +106,7 @@ public class TowerSelection : MonoBehaviour
             currencyAmount -= t.cost;
             location.GetComponent<TowerSpawnPlace>().isTaken = true;
             Instantiate(towers[currentTowerSelected], location.transform, false);
-            GameObject toKill = Instantiate(spawnParticle, location.transform.position + (location.transform.forward * 5), Quaternion.identity);
+            GameObject toKill = Instantiate(spawnParticle, location.transform.position, Quaternion.identity);
             Destroy(toKill, 1);
             manager.PlayAudio(1);
             manager.PlayAudio(0);
@@ -158,8 +159,9 @@ public class TowerSelection : MonoBehaviour
                     buildspot = hit.transform.gameObject;
                     if (Input.GetButtonUp("Fire1"))
                     {
-                        Destroy(buildspot.transform.GetChild(0).gameObject);
                         hit.transform.gameObject.GetComponent<TowerSpawnPlace>().isTaken = false;
+                        GameObject toKill = Instantiate(dieParticle, buildspot.transform.transform.position, Quaternion.identity);
+                        Destroy(buildspot.transform.GetChild(0).gameObject);
                         manager.PlayAudio(1);
                     }
                     buildspot = null;
