@@ -46,7 +46,6 @@ public class WaveSpawner : MonoBehaviour {
     {
         if (!won)
         {
-            won = true;
             GameObject.FindGameObjectWithTag("Base").GetComponent<BaseManager>().YouWin();
         }
     }
@@ -72,7 +71,9 @@ public class WaveSpawner : MonoBehaviour {
                 //youwin
                 //print("Won");
                 Winny();
+                won = true;
                 nextWaveBool = false;
+                return;
             }
             else
             {
@@ -109,6 +110,11 @@ public class WaveSpawner : MonoBehaviour {
 
     public void NextWave() //access this with the ui button//
     {
+        if (won)
+        {
+            return;
+        }
+
         waveInProgress = true;
         wave++;
         tireAmount = ePW[wave].tires;

@@ -3791,6 +3791,8 @@ MonoBehaviour:
   onFireDmg: 0.1
   baseManager: {fileID: 0}
   kindOfEnemy: 0
+  dyingParticlePrefab: {fileID: 1015084987732518, guid: a3513c97595e9c346bd6afcc89149ae4,
+    type: 2}
   timeTillAscend: 1
   dustTrail: {fileID: 198439417386596854}
   surfacingParticle: {fileID: 198278691190436950}
