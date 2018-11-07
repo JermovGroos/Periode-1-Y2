@@ -501,6 +501,8 @@ MonoBehaviour:
   onFireDmg: 0.1
   baseManager: {fileID: 0}
   kindOfEnemy: 0
+  dyingParticlePrefab: {fileID: 1015084987732518, guid: a3513c97595e9c346bd6afcc89149ae4,
+    type: 2}
   explodeDistance: 2
   explosion: {fileID: 198466072951333970}
   explosionRange: 5

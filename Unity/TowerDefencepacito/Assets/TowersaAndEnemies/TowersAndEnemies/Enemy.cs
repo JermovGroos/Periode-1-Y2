@@ -30,6 +30,8 @@ public class Enemy : MonoBehaviour {
     NavMeshAgent agent;
 
     public int kindOfEnemy;
+    [Space]
+    public GameObject dyingParticlePrefab;
 
     public void Awaken()
     {
@@ -89,6 +91,7 @@ public class Enemy : MonoBehaviour {
         {
             waveManager.GetComponent<WaveSpawner>().diggers.Remove(gameObject);
         }
+        GameObject d = Instantiate(dyingParticlePrefab, gameObject.transform.position,gameObject.transform.rotation, waveManager.transform);
         Destroy(gameObject,1);
     }
 

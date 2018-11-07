@@ -104,7 +104,7 @@ public class TowerSelection : MonoBehaviour
             return;
         }
         Tower t = tower.GetComponent<Tower>();
-        if (currency > t.cost)
+        if (currency >= t.cost)
         {
             currencyAmount -= t.cost;
             location.GetComponent<TowerSpawnPlace>().isTaken = true;
