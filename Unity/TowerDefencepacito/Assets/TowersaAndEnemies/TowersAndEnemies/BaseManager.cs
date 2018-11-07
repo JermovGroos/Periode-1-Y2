@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BaseManager : MonoBehaviour {
 
+    [Range(0,100)]
     public float health;
     public GameObject waveManager;
     private bool enemiesHasWon;
     private bool hasWon;
     public WaveSpawner anyWaveSpawner;
-    public Slider healthbar;
+    public TowerHealth healthbar;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +22,7 @@ public class BaseManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        healthbar.value = Mathf.Clamp(health, 0, 100);
+        healthbar.health = health;
 		if(health <= 0)
         {
             if (!enemiesHasWon)
@@ -41,11 +43,13 @@ public class BaseManager : MonoBehaviour {
     {
         //do losing things
         print("U did losey");
+        SceneManager.LoadScene(2);
     }
     
     public void YouWin()
     {
         //do winning things
         print("U has won much");
+        //doe iets pls
     }
 }

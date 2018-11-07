@@ -3783,17 +3783,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   speed: 2
-  damage: 10
+  damage: 1
   targetLocation: {fileID: 0}
   worth: 20
   waveManager: {fileID: 0}
   onFireTime: 1.5
   onFireDmg: 0.1
+  baseManager: {fileID: 0}
   kindOfEnemy: 0
   timeTillAscend: 1
   dustTrail: {fileID: 198439417386596854}
   surfacingParticle: {fileID: 198278691190436950}
   surfacingAni: {fileID: 111283824193101698}
+  minTimeTillAscend: 10
+  maxTimeTillAscend: 20
 --- !u!114 &114918860692699114
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -31,7 +31,7 @@ public class Exploder : Enemy {
             if (Vector3.Distance(gameObject.transform.position, targetLocation.transform.position) < explodeDistance)
             {
                 print("Enemy Entered The Building");
-                //add a "*Teleports behind you* nothing personell kid"
+                baseManager.EnemiesWin();
                 Die();
             }
         }

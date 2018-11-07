@@ -23,6 +23,11 @@ public class WaveManager : MonoBehaviour {
 		
 	}
 
+    public void Update()
+    {
+        waveInProgress = waveSpawnerNorth.waveInProgress;
+    }
+
     public void EnemyNumbers()
     {
         if (waveInProgress)
