@@ -21,7 +21,7 @@ public class Compass : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, cam.eulerAngles.y + 90);
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, cam.eulerAngles.y + 180);
 
         for (int i = 0; i < noswWaveSpawner.Length; i++)
         {

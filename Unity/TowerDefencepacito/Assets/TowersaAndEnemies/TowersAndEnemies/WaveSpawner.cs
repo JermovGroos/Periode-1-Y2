@@ -41,10 +41,24 @@ public class WaveSpawner : MonoBehaviour {
         StartCoroutine("SpawnEnemies");
         waveInProgress = true;
 	}
+
+    public void Winny()
+    {
+        if (!won)
+        {
+            won = true;
+            GameObject.FindGameObjectWithTag("Base").GetComponent<BaseManager>().YouWin();
+        }
+    }
 	
 	void Update ()
     {
-        waveShower.text = wave.ToString();
+        if (won)
+        {
+            return;
+        }
+
+        waveShower.text = "Wave " + wave.ToString();
         tires.TrimExcess();
         boxes.TrimExcess();
         diggers.TrimExcess();
@@ -56,8 +70,8 @@ public class WaveSpawner : MonoBehaviour {
             if(wave == ePW.Count-1)
             {
                 //youwin
-                print("Won");
-                won = true;
+                //print("Won");
+                Winny();
                 nextWaveBool = false;
             }
             else
@@ -72,6 +86,7 @@ public class WaveSpawner : MonoBehaviour {
         {
             if(allEnemies.Length > 0)
             {
+                waveInProgress = true;
                 nextWaveBool = false;
             }
         }
@@ -85,9 +100,9 @@ public class WaveSpawner : MonoBehaviour {
         {
             if (!waveInProgress)
             {
-                tiresOfWave.text = (ePW[wave + 1].tires * spawnLocations.Length - 1).ToString();
-                boxesOfWave.text = (ePW[wave + 1].booms * spawnLocations.Length - 1).ToString();
-                diggersOfWave.text = (ePW[wave + 1].diggers * spawnLocations.Length - 1).ToString();
+                tiresOfWave.text = (ePW[wave + 1].tires * spawnLocations.Length).ToString();
+                boxesOfWave.text = (ePW[wave + 1].booms * spawnLocations.Length).ToString();
+                diggersOfWave.text = (ePW[wave + 1].diggers * spawnLocations.Length).ToString();
             }
         }
     }
@@ -104,18 +119,24 @@ public class WaveSpawner : MonoBehaviour {
 
     public IEnumerator SpawnEnemies()
     {
-        for (int i = 0; i < tireAmount; i++)
+        for (int times = 0; times < (tireAmount+boomBoxAmount+diggerAmount); times++)
         {
-            for (int ii = 0; ii < spawnLocations.Length; ii++)
+            for (int i = 0; i < tireAmount; i++)
             {
-                GameObject g = Instantiate(tireEnemy, spawnLocations[ii].transform, false);
-                g.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
-                g.GetComponent<Enemy>().kindOfEnemy = 0;
-                g.GetComponent<Enemy>().waveManager = gameObject;
-                tires.Capacity++;
-                tires.Add(g);
+                for (int ii = 0; ii < spawnLocations.Length; ii++)
+                {
+                    GameObject g = Instantiate(tireEnemy, spawnLocations[ii].transform, false);
+                    g.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
+                    g.GetComponent<Enemy>().kindOfEnemy = 0;
+                    g.GetComponent<Enemy>().waveManager = gameObject;
+                    tires.Capacity++;
+                    tires.Add(g);
+                    yield return new WaitForSeconds(timeBetweenEnemySpawns);
+                }
             }
+
             yield return new WaitForSeconds(timeBetweenEnemySpawns);
+
             for (int io = 0; io < boomBoxAmount; io++)
             {
                 for (int ii = 0; ii < spawnLocations.Length; ii++)
@@ -126,22 +147,27 @@ public class WaveSpawner : MonoBehaviour {
                     ge.GetComponent<Enemy>().waveManager = gameObject;
                     boxes.Capacity++;
                     boxes.Add(ge);
-                }
-                yield return new WaitForSeconds(timeBetweenEnemySpawns);
-                for (int ioo = 0; ioo < diggerAmount; ioo++)
-                {
-                    for (int ii = 0; ii < spawnLocations.Length; ii++)
-                    {
-                        GameObject go = Instantiate(diggerEnemy, spawnLocations[ii].transform, false);
-                        go.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
-                        go.GetComponent<Enemy>().kindOfEnemy = 2;
-                        go.GetComponent<Enemy>().waveManager = gameObject;
-                        diggers.Capacity++;
-                        diggers.Add(go);
-                    }
                     yield return new WaitForSeconds(timeBetweenEnemySpawns);
                 }
             }
+
+            yield return new WaitForSeconds(timeBetweenEnemySpawns);
+
+            for (int ioo = 0; ioo < diggerAmount; ioo++)
+            {
+                for (int ii = 0; ii < spawnLocations.Length; ii++)
+                {
+                    GameObject go = Instantiate(diggerEnemy, spawnLocations[ii].transform, false);
+                    go.GetComponent<Enemy>().SetTarget(targetLocations[ii]);
+                    go.GetComponent<Enemy>().kindOfEnemy = 2;
+                    go.GetComponent<Enemy>().waveManager = gameObject;
+                    diggers.Capacity++;
+                    diggers.Add(go);
+                    yield return new WaitForSeconds(timeBetweenEnemySpawns);
+                }
+            }
+
+            yield return new WaitForSeconds(timeBetweenEnemySpawns);
         }
     }
 }

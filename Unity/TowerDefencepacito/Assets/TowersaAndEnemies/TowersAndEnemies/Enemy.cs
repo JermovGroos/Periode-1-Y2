@@ -89,7 +89,7 @@ public class Enemy : MonoBehaviour {
         {
             waveManager.GetComponent<WaveSpawner>().diggers.Remove(gameObject);
         }
-        Destroy(gameObject);
+        Destroy(gameObject,1);
     }
 
     //flamethrower and area of effect detection

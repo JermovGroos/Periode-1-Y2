@@ -1463,13 +1463,14 @@ MonoBehaviour:
   waveManager: {fileID: 0}
   onFireTime: 1.5
   onFireDmg: 0.1
+  baseManager: {fileID: 0}
   kindOfEnemy: 0
-  explodeDistance: 3
+  explodeDistance: 2
   explosion: {fileID: 198572300013136068}
   explosionRange: 3
   lM:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 6144
 --- !u!114 &114758885332663708
 MonoBehaviour:
   m_ObjectHideFlags: 1
