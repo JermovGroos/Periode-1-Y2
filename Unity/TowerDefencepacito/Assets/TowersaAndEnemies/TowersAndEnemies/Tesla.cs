@@ -12,10 +12,12 @@ public class Tesla : AreaOfEffect {
 	// Use this for initialization
 	void Awake () {
         //InvokeRepeating("Shoot", 0, firingSpeed);
+        DamageMultiplyStart();
     }
 	
 	// Update is called once per frame
 	void Update () {
+        DamageMultiplyUpdate();
         enemies = GetEnemies(enemies, range);
         Shoot();
 	}

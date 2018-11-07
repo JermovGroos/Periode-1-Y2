@@ -160,16 +160,20 @@ public class TowerSelection : MonoBehaviour
                 else
                 {
                     buildspot = hit.transform.gameObject;
-                    if (Input.GetButtonUp("Fire1"))
+                    if (Input.GetButtonUp("Fire2"))
                     {
                         hit.transform.gameObject.GetComponent<TowerSpawnPlace>().isTaken = false;
                         GameObject toKill = Instantiate(dieParticle, buildspot.transform.transform.position, Quaternion.identity);
                         Destroy(buildspot.transform.GetChild(0).gameObject);
                         manager.PlayAudio(1);
                     }
+                    if(Input.GetButtonUp("Fire1")){
+                        manager.PlayAudio(2);
+                        buildspot.transform.GetChild(0).GetComponent<Tower>().level++;
+                    }
                     buildspot = null;
                     SetMouseInfo(true);
-                    manager.mouseInfo.text = "Destroy Tower";
+                    manager.mouseInfo.text = "Remove/Upgrade";
                     checkForExeption = true;
                 }
             }
