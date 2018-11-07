@@ -37,6 +37,12 @@ public class BaseManager : MonoBehaviour {
             YouWin();
         }
 
+
+        if(Input.GetKeyDown(KeyCode.M)){
+            if(Application.isEditor == true){
+                YouWin();
+            }
+        }
 	}
 
     public void EnemiesWin()
@@ -50,6 +56,7 @@ public class BaseManager : MonoBehaviour {
     {
         //do winning things
         print("U has won much");
+        SceneManager.LoadScene(1);
         //doe iets pls
     }
 }

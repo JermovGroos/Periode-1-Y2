@@ -18,6 +18,8 @@ public class Dialogue : MonoBehaviour
     public int towerWheelTime = 10;
     public Transform towerSpawnLocation;
     bool towerPlaced = false;
+    public int spawnManyTowerTime = 20;
+    public Transform[] manyTowerLocations;
 
     void Start()
     {
@@ -35,6 +37,7 @@ public class Dialogue : MonoBehaviour
         SetCurDia();
         SetArrow();
         SetTowerWheel();
+        SpawnTowers();
         txt.text = dialogue[curDialogue];
     }
 
@@ -54,6 +57,26 @@ public class Dialogue : MonoBehaviour
                 twrWheel.canDoStuff = false;
                 towerPlaced = true;
             }
+        }
+    }
+
+    void SpawnTowers()
+    {
+        if (curDialogue == spawnManyTowerTime)
+        {
+            if (towerPlaced == false)
+            {
+                for (int i = 0; i < manyTowerLocations.Length; i++)
+                {
+                    twrWheel.location = manyTowerLocations[i].gameObject;
+                    twrWheel.BuySelected(twrWheel.currencyAmount, twrWheel.towers[0], manyTowerLocations[i].position);
+                }
+                towerPlaced = true;
+            }
+        }
+        else if (curDialogue == spawnManyTowerTime - 1)
+        {
+            towerPlaced = false;
         }
     }
 

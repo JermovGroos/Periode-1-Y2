@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Credits.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -108,7 +107,6 @@
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Main Export Folder\Standard Assets\Utility\WaypointProgressTracker.cs" />
-     <Compile Include="Assets\MouseHider.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -159,6 +157,7 @@
      <Compile Include="Assets\Scripts\CamBack.cs" />
      <Compile Include="Assets\Scripts\CamPosSetter.cs" />
      <Compile Include="Assets\Scripts\Compass.cs" />
+     <Compile Include="Assets\Scripts\Credits.cs" />
      <Compile Include="Assets\Scripts\DefenceTower.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\DialogueStats.cs" />
@@ -166,6 +165,7 @@
      <Compile Include="Assets\Scripts\MainMenuButton.cs" />
      <Compile Include="Assets\Scripts\MainMenuTransition.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
+     <Compile Include="Assets\Scripts\MouseHider.cs" />
      <Compile Include="Assets\Scripts\MouseInfo.cs" />
      <Compile Include="Assets\Scripts\MoveWithMouse.cs" />
      <Compile Include="Assets\Scripts\Music.cs" />
