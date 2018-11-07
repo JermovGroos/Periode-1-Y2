@@ -8,9 +8,11 @@ public class MainMenuTransition : MonoBehaviour {
 public GameObject audioPrefab;
 public AudioClip[] clips;
 Image img;
+public int startMusic = 0;
 	void Start () {
 		transform.eulerAngles = new Vector3(0,0,71.12601f);
 		img = transform.GetChild(0).GetComponent<Image>();
+		FindObjectOfType<Music>().ChangeMusic(startMusic);
 	}
 	
 	void Update () {
