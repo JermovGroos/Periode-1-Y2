@@ -686,7 +686,7 @@ MonoBehaviour:
   cost: 10
   range: 0
   level: 1
-  speedMultiplier: 0.4
+  speedMultiplier: 0.5
 --- !u!198 &198086274152632096
 ParticleSystem:
   m_ObjectHideFlags: 1

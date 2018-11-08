@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0969f732e217ac46a97a08653436b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 7
+  damage: 6
   cost: 20
   range: 300
   level: 1
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   lM:
     serializedVersion: 2
     m_Bits: 2048
-  firingSpeed: 1.5
+  firingSpeed: 2
   canFire: 1
   bulletParticle: {fileID: 198868363777979706}
 --- !u!198 &198868363777979706
