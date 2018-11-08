@@ -8,7 +8,12 @@ public class FlameThrower : Ranged {
     public bool canFire;
     private bool isFiring;
 
+    void Awake(){
+        DamageMultiplyStart();
+    }
+
     void Update () {
+        DamageMultiplyUpdate();
         canFire = CanShoot();
         AimAtNearestEnemy(range);
 

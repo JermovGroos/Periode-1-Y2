@@ -10,4 +10,16 @@ public class Tower : MonoBehaviour {
     public float cost;
     [Tooltip("The Range of this Tower")]
     public float range;
+    //Casper stuff
+    float baseDamage;
+    public int level = 1;
+
+    public void DamageMultiplyStart(){
+        baseDamage = damage;
+    }
+
+    public void DamageMultiplyUpdate() {
+        damage = baseDamage * level;
+    }
+
 }

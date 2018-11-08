@@ -10,10 +10,12 @@ public class Bomb : Ranged {
     void Awake()
     {
         InvokeRepeating("Shoot", 0, firingSpeed);
+        DamageMultiplyStart();
     }
 
     void Update ()
     {
+        DamageMultiplyUpdate();
         AimAtNearestEnemy(range);
     }
 

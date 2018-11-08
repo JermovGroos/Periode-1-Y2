@@ -95,6 +95,7 @@ public class Dialogue : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
             }
             SetCamPerp();
+            manager.PlayAudio(10);
         }
     }
 
