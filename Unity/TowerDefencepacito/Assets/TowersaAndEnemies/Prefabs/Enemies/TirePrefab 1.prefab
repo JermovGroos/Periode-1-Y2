@@ -506,13 +506,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  speed: 4
+  speed: 5
   damage: 10
   targetLocation: {fileID: 0}
-  worth: 5
+  worth: 1
   waveManager: {fileID: 0}
-  onFireTime: 1.5
-  onFireDmg: 0.1
+  onFireTime: 1
+  onFireDmg: 0.05
   baseManager: {fileID: 0}
   kindOfEnemy: 0
   dyingParticlePrefab: {fileID: 1015084987732518, guid: a3513c97595e9c346bd6afcc89149ae4,

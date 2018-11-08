@@ -3775,7 +3775,7 @@ MonoBehaviour:
   speed: 2.5
   damage: 1
   targetLocation: {fileID: 0}
-  worth: 20
+  worth: 1
   waveManager: {fileID: 0}
   onFireTime: 1.5
   onFireDmg: 0.1

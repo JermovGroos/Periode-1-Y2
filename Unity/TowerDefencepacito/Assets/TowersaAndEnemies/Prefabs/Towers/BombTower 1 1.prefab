@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  cost: 20
+  cost: 45
   range: 20
   level: 1
   barrel: {fileID: 1402857774045496}
