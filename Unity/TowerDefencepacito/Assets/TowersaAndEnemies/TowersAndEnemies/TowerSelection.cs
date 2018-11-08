@@ -55,6 +55,8 @@ public class TowerSelection : MonoBehaviour
         if (cam.curCamPos == 0)
         {
             canClick = false;
+        } else{
+            manager.mouseInfo.text = "";
         }
 
         if (canDoStuff)
@@ -108,7 +110,8 @@ public class TowerSelection : MonoBehaviour
         {
             currencyAmount -= t.cost;
             location.GetComponent<TowerSpawnPlace>().isTaken = true;
-            Instantiate(towers[currentTowerSelected], location.transform, false);
+            Transform newTower = Instantiate(towers[currentTowerSelected], location.transform, false).transform;
+            newTower.eulerAngles -= new Vector3(90,0,0);
             GameObject toKill = Instantiate(spawnParticle, location.transform.position, Quaternion.identity);
             Destroy(toKill, 1);
             manager.PlayAudio(1);
@@ -160,20 +163,16 @@ public class TowerSelection : MonoBehaviour
                 else
                 {
                     buildspot = hit.transform.gameObject;
-                    if (Input.GetButtonUp("Fire2"))
+                    if (Input.GetButtonUp("Fire1"))
                     {
                         hit.transform.gameObject.GetComponent<TowerSpawnPlace>().isTaken = false;
                         GameObject toKill = Instantiate(dieParticle, buildspot.transform.transform.position, Quaternion.identity);
-                        Destroy(buildspot.transform.GetChild(0).gameObject);
+                        Destroy(buildspot.transform.GetChild(2).gameObject);
                         manager.PlayAudio(1);
-                    }
-                    if(Input.GetButtonUp("Fire1")){
-                        manager.PlayAudio(2);
-                        buildspot.transform.GetChild(0).GetComponent<Tower>().level++;
                     }
                     buildspot = null;
                     SetMouseInfo(true);
-                    manager.mouseInfo.text = "Remove/Upgrade";
+                    manager.mouseInfo.text = "Remove";
                     checkForExeption = true;
                 }
             }
