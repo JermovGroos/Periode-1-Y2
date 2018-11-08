@@ -1,1 +1,0 @@
-Assets/TowersaAndEnemies/Models/BoomBox/BoomBox _Material.001_MetallicSmoothness.png

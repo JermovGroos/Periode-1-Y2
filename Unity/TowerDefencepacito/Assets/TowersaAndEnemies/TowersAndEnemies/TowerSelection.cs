@@ -210,7 +210,7 @@ public class TowerSelection : MonoBehaviour
 
     public void TheRotation()
     {
-        if (towers[currentTowerSelected].GetComponent<Tower>())
+        if (towers[currentTowerSelected].GetComponent<Tower>() != null)
         {
             costOfTower.text = towers[currentTowerSelected].GetComponent<Tower>().cost.ToString();
         }
