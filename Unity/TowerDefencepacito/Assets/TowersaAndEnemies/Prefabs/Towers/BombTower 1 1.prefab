@@ -998,14 +998,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  cost: 15
+  cost: 20
   range: 20
   level: 1
   barrel: {fileID: 1402857774045496}
   lM:
     serializedVersion: 2
     m_Bits: 2048
-  firingSpeed: 3
+  firingSpeed: 5
   canFire: 0
   bombParticle: {fileID: 198603947233191124}
 --- !u!114 &114757909001692106
