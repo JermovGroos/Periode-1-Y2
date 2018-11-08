@@ -16,6 +16,12 @@ public class BaseManager : MonoBehaviour
     public TowerHealth healthbar;
     public int nextLevel = 1;
 
+    private Camera cam;
+    [Header("WinExplosion")]
+    public GameObject boomPos;
+    public float explosionTime = 3;
+    public GameObject explosionParticle;
+
     [Header("WinTransition")]
     public int newMusic = 0;
     public Image winImage;
@@ -45,6 +51,14 @@ public class BaseManager : MonoBehaviour
             YouWin();
         }
 
+        if (enemiesHasWon)
+        {
+            cam = Camera.main;
+
+            cam.transform.position = boomPos.transform.position;
+            cam.transform.rotation = boomPos.transform.rotation;
+        }
+
 
         if (Input.GetKeyDown(KeyCode.M))
         {
@@ -63,6 +77,14 @@ public class BaseManager : MonoBehaviour
     {
         //do losing things
         print("U did losey");
+        enemiesHasWon = true;
+        explosionParticle.SetActive(true);
+        StartCoroutine("EnnyWinny");
+    }
+
+    public IEnumerator EnnyWinny()
+    {
+        yield return new WaitForSeconds(explosionTime);
         SceneManager.LoadScene(2);
     }
 
