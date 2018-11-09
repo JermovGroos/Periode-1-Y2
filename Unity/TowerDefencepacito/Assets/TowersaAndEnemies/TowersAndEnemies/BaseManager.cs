@@ -85,7 +85,6 @@ public class BaseManager : MonoBehaviour
     public IEnumerator EnnyWinny()
     {
         yield return new WaitForSeconds(explosionTime);
-        PlayerPrefs.SetInt("lastScene",SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(2);
     }
 
