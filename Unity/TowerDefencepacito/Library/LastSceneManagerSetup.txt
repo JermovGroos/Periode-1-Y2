@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/WinScreen.unity
+=======
+- path: Assets/Scenes/MainScene 2.unity
+>>>>>>> parent of 0fe053f8... Working version of the game
   isLoaded: 1
   isActive: 1
