@@ -16,6 +16,7 @@ public class Tower : MonoBehaviour {
 
     public void DamageMultiplyStart(){
         baseDamage = damage;
+        level = 2;
     }
 
     public void DamageMultiplyUpdate() {

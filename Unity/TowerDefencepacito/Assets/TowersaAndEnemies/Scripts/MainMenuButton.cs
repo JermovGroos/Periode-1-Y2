@@ -40,10 +40,14 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public int hoverAudio = -1;
     public int clickAudio = -1;
     MainMenuTransition manager;
+    public bool isGameOverretry = false;
 
 
     void Start()
     {
+        if(isGameOverretry == true){
+            nextLevel = PlayerPrefs.GetInt("lastScene");
+        }
         manager = FindObjectOfType<MainMenuTransition>();
         others.Clear();
         others.AddRange(FindObjectsOfType<MainMenuButton>());

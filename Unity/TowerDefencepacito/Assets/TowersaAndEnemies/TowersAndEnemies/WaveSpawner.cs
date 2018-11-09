@@ -36,7 +36,7 @@ public class WaveSpawner : MonoBehaviour {
     [HideInInspector]
     public bool won;
 
-	void Start ()
+	void Awake ()
     {
         StartCoroutine("SpawnEnemies");
         waveInProgress = true;
