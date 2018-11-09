@@ -40,7 +40,7 @@ public class TowerSelection : MonoBehaviour
     public GameObject dieParticle;
     bool canClick = true;
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         cam = FindObjectOfType<Cam>();
         manager = FindObjectOfType<Manager>();
